@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Hội Thảo & Sự Kiện Du Học 2026 - 2027 | Du Học Hằng Lương</title>
+  <meta name="description" content="Lịch các ngày hội du học quốc tế, triển lãm du học, phỏng vấn học bổng 1:1 với đại diện các trường Đại học tại TP.HCM, Tây Ninh và Đà Lạt.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { navy: '#1B365D', navyDark: '#0F1E36', navyLight: '#2A4B7C', gold: '#C58A19', goldLight: '#EAB308', goldDark: '#9A6B0F', slate: '#F8FAFC' } },
+          fontFamily: { sans: ['"Be Vietnam Pro"', 'sans-serif'], heading: ['"Outfit"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-brand-navy flex items-center justify-center text-brand-gold shadow">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/></svg>
+        </div>
+        <div>
+          <div class="text-base font-extrabold text-brand-navy tracking-tight font-heading">DU HỌC HẰNG LƯƠNG</div>
+          <div class="text-[9px] uppercase font-semibold text-slate-500">20+ Năm Uy Tín Tuyển Sinh</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="/" class="hover:text-brand-navy">Trang Chủ</a>
+        <a href="/quoc-gia" class="hover:text-brand-navy">Quốc Gia</a>
+        <a href="/hoc-bong" class="hover:text-brand-navy">Học Bổng</a>
+        <a href="/su-kien" class="text-amber-600 font-bold">Hội Thảo</a>
+        <a href="/gioi-thieu" class="hover:text-brand-navy">Về Hằng Lương</a>
+        <a href="/lien-he" class="hover:text-brand-navy">Liên Hệ</a>
+      </nav>
+      <button onclick="openConsultModal()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs shadow">
+        Đăng Ký Tham Gia
+      </button>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="bg-brand-navy text-white py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center space-y-3">
+      <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Sự Kiện Giáo Dục Quốc Tế</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold font-heading">Lịch Triển Lãm & Ngày Hội Phỏng Vấn Học Bổng 1:1</h1>
+      <p class="text-sm text-slate-300 max-w-2xl mx-auto">
+        Cơ hội gặp trực tiếp đại diện tuyển sinh các trường đại học hàng đầu thế giới, nộp hồ sơ tại chỗ và xét duyệt học bổng ngay trong sự kiện.
+      </p>
+    </div>
+  </section>
+
+  <!-- Events List -->
+  <section class="py-12 max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
+    
+    <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div class="space-y-2">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-brand-navy">Trụ sở chính TP.HCM</span>
+        <h3 class="text-xl font-bold text-slate-900 font-heading">Triển Lãm Du Học Toàn Cầu 2027: Khai Xuân Chọn Hướng</h3>
+        <p class="text-xs text-slate-500 flex items-center gap-1.5">
+          📅 08:30 - 12:00 | Chủ Nhật • 📍 Khách Sạn Rex, 141 Nguyễn Huệ, Quận 1, TP.HCM
+        </p>
+        <p class="text-xs text-slate-600">Quy tụ 40+ trường đại học Úc, Mỹ, Canada, Singapore, Malaysia. Xét duyệt học bổng 50% - 100% tại chỗ.</p>
+      </div>
+      <button onclick="openConsultModal('Triển Lãm Du Học TP.HCM')" class="w-full md:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm whitespace-nowrap shadow">
+        Đăng Ký Tham Gia Miễn Phí
+      </button>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div class="space-y-2">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900">Chi nhánh Tây Ninh</span>
+        <h3 class="text-xl font-bold text-slate-900 font-heading">Ngày Hội Tư Vấn Học Bổng Úc & Canada</h3>
+        <p class="text-xs text-slate-500 flex items-center gap-1.5">
+          📅 14:00 - 17:30 | Thứ Bảy • 📍 322 Đại lộ 30/4, Khu phố 1, Phường 3, TP. Tây Ninh
+        </p>
+        <p class="text-xs text-slate-600">Phỏng vấn học bổng 1:1, hướng dẫn chuẩn bị chứng minh tài chính và lộ trình visa định cư tay nghề Úc.</p>
+      </div>
+      <button onclick="openConsultModal('Ngày Hội Học Bổng Tây Ninh')" class="w-full md:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm whitespace-nowrap shadow">
+        Đăng Ký Tham Gia Miễn Phí
+      </button>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div class="space-y-2">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-900">Chi nhánh Đà Lạt</span>
+        <h3 class="text-xl font-bold text-slate-900 font-heading">Workshop: Du Học Singapore & Malaysia Tiết Kiệm 70% Chi Phí</h3>
+        <p class="text-xs text-slate-500 flex items-center gap-1.5">
+          📅 09:00 - 11:30 | Chủ Nhật • 📍 23 Thông Thiên Học, Phường 2, TP. Đà Lạt, Lâm Đồng
+        </p>
+        <p class="text-xs text-slate-600">Giải pháp học đại học nhận bằng Anh/Úc với mức học phí chỉ từ 150 triệu/năm, không cần chứng minh tài chính phức tạp.</p>
+      </div>
+      <button onclick="openConsultModal('Workshop Du Học Đà Lạt')" class="w-full md:w-auto px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm whitespace-nowrap shadow">
+        Đăng Ký Tham Gia Miễn Phí
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navyDark text-slate-300 py-8 border-t border-slate-800 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <div>&copy; 2026 Du Học Quốc Tế Hằng Lương. Hotline 24/7: <a href="tel:0908558959" class="text-amber-400 font-bold">0908 558 959</a></div>
+      <div class="text-slate-400">Trụ sở chính TP.HCM | Chi nhánh Đà Lạt | Chi nhánh Tây Ninh</div>
+    </div>
+  </footer>
+
+  <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 border border-slate-200 shadow-xl">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold text-base text-brand-navy">Đăng Ký Tham Gia Sự Kiện</h3>
+        <button class="modal-close text-slate-400 hover:text-slate-700">&times;</button>
+      </div>
+      <form class="lead-form space-y-3">
+        <input type="text" name="fullname" required placeholder="Họ và tên *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs">
+        <input type="tel" name="phone" required placeholder="Số điện thoại / Zalo *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs">
+        <button type="submit" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs">Giữ Chỗ Sự Kiện</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

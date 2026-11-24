@@ -1,0 +1,20 @@
+{
+  "name": "hangluong-edu-website",
+  "version": "2.0.0",
+  "description": "Website Du Học Quốc Tế Hằng Lương - Nền tảng tư vấn du học và săn học bổng toàn cầu",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "du-hoc",
+    "hang-luong",
+    "hoc-bong",
+    "du-hoc-uc",
+    "du-hoc-my",
+    "du-hoc-singapore",
+    "du-hoc-malaysia"
+  ],
+  "author": "Du Học Hằng Lương",
+  "license": "MIT"
+}

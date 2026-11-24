@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quốc Gia Du Học Trọng Điểm 2026 - 2027 | Du Học Hằng Lương</title>
+  <meta name="description" content="Khám phá lộ trình du học, điều kiện visa và cơ hội học bổng tại Úc, Mỹ, Canada, Singapore, Malaysia, Anh Quốc cùng Du Học Hằng Lương.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: '#1B365D', navyDark: '#0F1E36', navyLight: '#2A4B7C', gold: '#C58A19', goldLight: '#EAB308', goldDark: '#9A6B0F', slate: '#F8FAFC' }
+          },
+          fontFamily: { sans: ['"Be Vietnam Pro"', 'sans-serif'], heading: ['"Outfit"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-brand-navy flex items-center justify-center text-brand-gold shadow">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/></svg>
+        </div>
+        <div>
+          <div class="text-base font-extrabold text-brand-navy tracking-tight font-heading">DU HỌC HẰNG LƯƠNG</div>
+          <div class="text-[9px] uppercase font-semibold text-slate-500">20+ Năm Uy Tín Tuyển Sinh</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="/" class="hover:text-brand-navy">Trang Chủ</a>
+        <a href="/quoc-gia" class="text-amber-600 font-bold">Quốc Gia</a>
+        <a href="/hoc-bong" class="hover:text-brand-navy">Học Bổng</a>
+        <a href="/su-kien" class="hover:text-brand-navy">Hội Thảo</a>
+        <a href="/gioi-thieu" class="hover:text-brand-navy">Về Hằng Lương</a>
+        <a href="/lien-he" class="hover:text-brand-navy">Liên Hệ</a>
+      </nav>
+      <button onclick="openConsultModal()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs shadow">
+        Đăng Ký Tư Vấn
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="bg-brand-navy text-white py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center space-y-3">
+      <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Điểm Đến Du Học Toàn Cầu</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold font-heading">Chọn Quốc Gia - Định Hình Tương Lai</h1>
+      <p class="text-sm text-slate-300 max-w-2xl mx-auto">
+        Tìm hiểu chi tiết về điều kiện đầu vào, học phí, cơ hội việc làm và chính sách visa mới nhất của các nền giáo dục hàng đầu.
+      </p>
+    </div>
+  </section>
+
+  <!-- Country Detail Cards -->
+  <section class="py-12 max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
+    
+    <!-- Australia -->
+    <div id="uc" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm scroll-mt-24">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-4xl">🇦🇺</span>
+        <div>
+          <h2 class="text-2xl font-bold text-brand-navy font-heading">Du Học Úc (Australia)</h2>
+          <p class="text-xs text-emerald-600 font-semibold">Chính sách xét duyệt Visa AL2 ưu tiên • Cơ hội ở lại làm việc 2 - 4 năm</p>
+        </div>
+      </div>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        Úc là điểm đến mơ ước của hàng triệu du học sinh với hệ thống giáo dục đẳng cấp thế giới, khí hậu tương đồng Việt Nam và chính sách định cư diện tay nghề rộng mở cho các ngành: Công nghệ thông tin, Kỹ thuật, Y tế - Điều dưỡng, Giáo dục mầm non.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs bg-slate-50 p-4 rounded-xl mb-4">
+        <div><strong>Học phí trung bình:</strong> 22,000 - 45,000 AUD/năm</div>
+        <div><strong>Học bổng:</strong> 20% - 100% học phí</div>
+        <div><strong>Trường tiêu biểu:</strong> Monash, Deakin, Curtin, UTS, La Trobe</div>
+      </div>
+      <button onclick="openConsultModal('Du Học Úc', 'Tư vấn lộ trình visa & học bổng Úc')" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
+        Tư Vấn Hồ Sơ Du Học Úc Miễn Phí
+      </button>
+    </div>
+
+    <!-- Malaysia -->
+    <div id="malaysia" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm scroll-mt-24">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-4xl">🇲🇾</span>
+        <div>
+          <h2 class="text-2xl font-bold text-brand-navy font-heading">Du Học Malaysia</h2>
+          <p class="text-xs text-amber-600 font-semibold">Tiết kiệm 70% chi phí • Nhận bằng gốc Đại học Anh, Úc, Pháp</p>
+        </div>
+      </div>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        Thế mạnh độc quyền của Hằng Lương hơn 20 năm qua. Học sinh học tập tại Kuala Lumpur năng động, sinh hoạt phí chỉ 8 - 10 triệu/tháng nhưng tốt nghiệp với bằng cấp danh giá từ Lancaster University (UK), University of London hay Le Cordon Bleu (Pháp).
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs bg-slate-50 p-4 rounded-xl mb-4">
+        <div><strong>Học phí trung bình:</strong> 6,000 - 10,000 USD/năm</div>
+        <div><strong>Học bổng:</strong> 30% - 100% học phí</div>
+        <div><strong>Trường tiêu biểu:</strong> Taylor's University, APU, Sunway University</div>
+      </div>
+      <button onclick="openConsultModal('Du Học Malaysia', 'Tư vấn chương trình chuyển tiếp & bằng kép')" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
+        Tư Vấn Du Học Malaysia Tiết Kiệm
+      </button>
+    </div>
+
+    <!-- Singapore -->
+    <div id="singapore" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm scroll-mt-24">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-4xl">🇸🇬</span>
+        <div>
+          <h2 class="text-2xl font-bold text-brand-navy font-heading">Du Học Singapore</h2>
+          <p class="text-xs text-purple-600 font-semibold">Trung tâm tài chính Châu Á • Chuyển tiếp 100% sang Úc & Anh Quốc</p>
+        </div>
+      </div>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        Môi trường sống an toàn số 1 thế giới, chỉ cách Việt Nam 2 giờ bay. Chương trình đào tạo 3 học kỳ/năm giúp sinh viên nhận bằng Cử nhân chỉ sau 2 năm đến 2.5 năm, tiết kiệm 1 năm ăn ở và gia nhập thị trường lao động sớm hơn.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs bg-slate-50 p-4 rounded-xl mb-4">
+        <div><strong>Học phí trung bình:</strong> 15,000 - 25,000 SGD/năm</div>
+        <div><strong>Học bổng:</strong> 50% - 100% học phí</div>
+        <div><strong>Trường tiêu biểu:</strong> SIM, Curtin Singapore, Kaplan, James Cook</div>
+      </div>
+      <button onclick="openConsultModal('Du Học Singapore', 'Tư vấn học bổng & rút ngắn thời gian')" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
+        Tư Vấn Du Học Singapore Nhanh
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navyDark text-slate-300 py-8 border-t border-slate-800 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <div>&copy; 2026 Du Học Quốc Tế Hằng Lương. Hotline 24/7: <a href="tel:0908558959" class="text-amber-400 font-bold">0908 558 959</a></div>
+      <div class="text-slate-400">Trụ sở chính TP.HCM | Chi nhánh Đà Lạt | Chi nhánh Tây Ninh</div>
+    </div>
+  </footer>
+
+  <!-- Consultation Modal -->
+  <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl shadow-2xl p-6 border border-slate-200">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold text-base text-brand-navy">Đăng Ký Tư Vấn Điểm Đến</h3>
+        <button class="modal-close text-slate-400 hover:text-slate-700">&times;</button>
+      </div>
+      <form class="lead-form space-y-3">
+        <input type="text" name="fullname" required placeholder="Họ và tên *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs">
+        <input type="tel" name="phone" required placeholder="Số điện thoại / Zalo *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs">
+        <select name="country" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs">
+          <option value="Úc">Du học Úc</option>
+          <option value="Mỹ">Du học Mỹ</option>
+          <option value="Canada">Du học Canada</option>
+          <option value="Singapore">Du học Singapore</option>
+          <option value="Malaysia">Du học Malaysia</option>
+        </select>
+        <button type="submit" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs">Gửi Đăng Ký</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
