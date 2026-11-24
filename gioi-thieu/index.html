@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Về Du Học Hằng Lương | Bề Dày Hơn 20 Năm Đồng Hành Cùng Du Học Sinh</title>
-  <meta name="description" content="Lịch sử hình thành, sứ mệnh, tầm nhìn và hệ thống bằng khen, chứng nhận đối tác chiến lược của Du Học Quốc Tế Hằng Lương suốt 20 năm qua.">
+  <title>Về Du Học Hằng Lương | Hồ Sơ Năng Lực 20+ Năm Uy Tín & Tuyển Dụng</title>
+  <meta name="description" content="Hồ sơ năng lực Du Học Quốc Tế Hằng Lương 20+ năm uy tín: Giấy phép Sở GD&ĐT, chứng nhận ICEF, mạng lưới 500+ trường, quy trình 5 bước tư vấn minh bạch và cơ hội việc làm tại Hằng Lương Careers.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -19,97 +19,586 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 py-3.5">
+
+  <!-- Canonical Header (Bỏ nút Trang Chủ theo chỉ đạo) -->
+  <header id="main-header" class="sticky top-0 z-50 glass-nav transition-all duration-300 border-b border-slate-200/80 py-3.5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
-      <a href="/" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-brand-navy flex items-center justify-center text-brand-gold shadow">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/></svg>
+      
+      <!-- Logo Hằng Lương -->
+      <a href="/" title="Về Trang Chủ Du Học Hằng Lương" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full bg-brand-navy flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
+          </svg>
         </div>
         <div>
-          <div class="text-base font-extrabold text-brand-navy tracking-tight font-heading">DU HỌC HẰNG LƯƠNG</div>
-          <div class="text-[9px] uppercase font-semibold text-slate-500">20+ Năm Uy Tín Tuyển Sinh</div>
+          <div class="text-lg font-extrabold text-brand-navy tracking-tight font-heading leading-tight group-hover:text-amber-600 transition-colors">
+            DU HỌC HẰNG LƯƠNG
+          </div>
+          <div class="text-[10px] uppercase font-semibold text-slate-500 tracking-wider">
+            20+ Năm Đồng Hành Cùng Du Học Sinh
+          </div>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
-        <a href="/" class="hover:text-brand-navy">Trang Chủ</a>
-        <a href="/quoc-gia" class="hover:text-brand-navy">Quốc Gia</a>
-        <a href="/hoc-bong" class="hover:text-brand-navy">Học Bổng</a>
-        <a href="/su-kien" class="hover:text-brand-navy">Hội Thảo</a>
-        <a href="/gioi-thieu" class="text-amber-600 font-bold">Về Hằng Lương</a>
-        <a href="/lien-he" class="hover:text-brand-navy">Liên Hệ</a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-700">
+        <a href="/quoc-gia" class="hover:text-brand-navy transition-colors">Quốc Gia</a>
+        <a href="/truong-hoc" class="hover:text-brand-navy transition-colors">Trường Học</a>
+        <a href="/hoc-bong" class="hover:text-brand-navy transition-colors text-amber-600 font-bold flex items-center gap-1">
+          Học Bổng
+          <span class="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full font-extrabold uppercase">Hot</span>
+        </a>
+        <a href="/hoi-thao" class="hover:text-brand-navy transition-colors">Hội Thảo</a>
+        <a href="/su-kien" class="hover:text-brand-navy transition-colors">Sự Kiện</a>
+        <a href="/tim-khoa-hoc" class="hover:text-brand-navy transition-colors text-blue-700 font-bold flex items-center gap-1">
+          🔍 Tìm Khóa Học
+        </a>
+        <a href="/gioi-thieu" class="text-amber-600 font-bold transition-colors">Về Hằng Lương</a>
+        <a href="/lien-he" class="hover:text-brand-navy transition-colors">Liên Hệ</a>
       </nav>
-      <button onclick="openConsultModal()" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs shadow">
-        Đăng Ký Tư Vấn
+
+      <!-- CTA Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openConsultModal('Đăng ký từ Giới thiệu', '', false)" class="px-5 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-lg text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+          Đăng Ký Tư Vấn
+        </button>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="mobile-menu-btn" aria-label="Mở Menu" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
+
     </div>
   </header>
 
-  <!-- Banner -->
-  <section class="bg-brand-navy text-white py-12 md:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center space-y-3">
-      <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Câu Chuyện Hơn 2 Thập Kỷ</span>
-      <h1 class="text-3xl sm:text-4xl font-extrabold font-heading">Hơn 20 Năm Vun Đắp Giấc Mơ Tri Thức Toàn Cầu</h1>
-      <p class="text-sm text-slate-300 max-w-2xl mx-auto">
-        Từ những ngày đầu thành lập đến nay, Hằng Lương luôn kiên định với sứ mệnh: Trung thực - Tận tâm - Chuyên nghiệp và đặt lợi ích của học sinh lên hàng đầu.
+  <!-- Hero Banner: Company Profile Master Presentation -->
+  <section class="bg-brand-navy text-white py-14 md:py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C58A19_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-bold uppercase tracking-wider">
+        🏆 Hồ Sơ Năng Lực Doanh Nghiệp (Company Profile)
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold font-heading leading-tight">
+        Hơn 20 Năm Vun Đắp Ước Mơ Tri Thức Toàn Cầu
+      </h1>
+      <p class="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Du Học Quốc Tế Hằng Lương là đại diện tuyển sinh chính thức của hơn 500+ Viện & Trường Đại học danh tiếng thế giới. Chúng tôi mang đến giải pháp du học trung thực, tận tâm, chuẩn hóa lộ trình từ học bổng đến định cư.
       </p>
-    </div>
-  </section>
 
-  <!-- Content -->
-  <section class="py-12 max-w-4xl mx-auto px-4 sm:px-6 space-y-10">
-    
-    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-      <h2 class="text-xl font-bold text-brand-navy font-heading">Lịch Sử & Dấu Ấn Phát Triển (Milestones)</h2>
-      <p class="text-sm text-slate-600 leading-relaxed">
-        Được cấp phép chính thức bởi Sở Giáo dục & Đào tạo TP.HCM (Giấy phép số 1184/QĐ-GDĐT-TC), Hằng Lương tự hào là một trong những đơn vị tiên phong tại Việt Nam trong lĩnh vực du học Singapore, Malaysia, Úc và Bắc Mỹ.
-      </p>
-      
-      <div class="border-l-2 border-amber-500 pl-4 space-y-4 mt-6">
-        <div>
-          <span class="text-xs font-bold text-amber-600">Giai đoạn thành lập & Đặt nền móng:</span>
-          <p class="text-xs text-slate-600 mt-0.5">Xây dựng quan hệ hợp tác trực tiếp với các trường đại học công lập và tư thục hàng đầu Singapore, Malaysia.</p>
+      <!-- Key Numbers -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto pt-6">
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+          <div class="text-3xl font-extrabold text-amber-400 font-heading">20+ Năm</div>
+          <div class="text-xs text-slate-300 mt-1">Bề Dày Hoạt Động</div>
         </div>
-        <div>
-          <span class="text-xs font-bold text-amber-600">Mốc 10 năm & Chứng nhận ICEF Toàn cầu:</span>
-          <p class="text-xs text-slate-600 mt-0.5">Được công nhận là Đại diện tuyển sinh uy tín quốc tế theo tiêu chuẩn ICEF, mở rộng mạng lưới sang Úc, Mỹ, Canada.</p>
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+          <div class="text-3xl font-extrabold text-amber-400 font-heading">5.000+</div>
+          <div class="text-xs text-slate-300 mt-1">Học Sinh Đậu Visa</div>
         </div>
-        <div>
-          <span class="text-xs font-bold text-amber-600">Mở rộng chi nhánh Tây Ninh & Đà Lạt:</span>
-          <p class="text-xs text-slate-600 mt-0.5">Thành lập Chi nhánh Tây Ninh và Chi nhánh Đà Lạt nhằm hỗ trợ trực tiếp phụ huynh, học sinh khu vực miền Đông Nam Bộ và Tây Nguyên.</p>
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+          <div class="text-3xl font-extrabold text-emerald-400 font-heading">99.2%</div>
+          <div class="text-xs text-slate-300 mt-1">Tỷ Lệ Visa Thành Công</div>
         </div>
-        <div>
-          <span class="text-xs font-bold text-amber-600">Hiện tại & Tương lai:</span>
-          <p class="text-xs text-slate-600 mt-0.5">Đại diện hơn 500+ trường, tỷ lệ visa 99.2%, tiếp tục chuyển đổi số và nâng tầm chất lượng dịch vụ du học chuẩn quốc tế.</p>
+        <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+          <div class="text-3xl font-extrabold text-amber-400 font-heading">500+</div>
+          <div class="text-xs text-slate-300 mt-1">Trường Đại Học Đối Tác</div>
         </div>
       </div>
     </div>
-
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-brand-navyDark text-slate-300 py-8 border-t border-slate-800 text-center text-xs">
-    <div class="max-w-7xl mx-auto px-4 space-y-2">
-      <div>&copy; 2026 Du Học Quốc Tế Hằng Lương. Hotline: 0908 558 959</div>
-      <div class="text-slate-400">Trụ sở chính TP.HCM | Chi nhánh Đà Lạt | Chi nhánh Tây Ninh</div>
+  <!-- Quick Nav Anchor Bar -->
+  <div class="bg-white border-b border-slate-200 sticky top-[73px] z-40 shadow-sm overflow-x-auto">
+    <div class="max-w-7xl mx-auto px-4 flex gap-6 text-xs sm:text-sm font-semibold text-slate-600 whitespace-nowrap py-3">
+      <a href="#phap-ly" class="hover:text-brand-navy">⚖️ Tính Pháp Lý</a>
+      <a href="#lich-su" class="hover:text-brand-navy">🏛️ Lịch Sử 20 Năm</a>
+      <a href="#quy-trinh" class="hover:text-brand-navy">📋 Quy Trình 5 Bước</a>
+      <a href="#doi-tac" class="hover:text-brand-navy">🎓 Đối Tác Quốc Tế</a>
+      <a href="#doi-ngu" class="hover:text-brand-navy">👥 Ban Cố Vấn</a>
+      <a href="#tuyen-dung" class="text-amber-600 font-bold hover:text-amber-700">💼 Cơ Hội Việc Làm (Tuyển Dụng)</a>
+      <a href="#lien-he-chi-nhanh" class="hover:text-brand-navy">📍 Trụ Sở & Chi Nhánh</a>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-16">
+
+    <!-- Section 1: Pháp Lý & Chứng Nhận Quốc Tế -->
+    <section id="phap-ly" class="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm space-y-6">
+      <div class="max-w-3xl space-y-2">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Minh Bạch & Pháp Lý Vững Chắc</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-navy font-heading">Giấy Phép Hoạt Động & Tiêu Chuẩn Quốc Tế</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Để quý phụ huynh và học sinh hoàn toàn an tâm trao gửi tương lai, Du Học Hằng Lương hoạt động với đầy đủ tư cách pháp nhân được Nhà nước và các tổ chức giáo dục toàn cầu công nhận:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-navy flex items-center justify-center font-bold text-xl">
+            🏛️
+          </div>
+          <h3 class="font-bold text-base text-slate-900 font-heading">Giấy Phép Sở GD&ĐT</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Được cấp phép chính thức theo Quyết định số <strong>1184/QĐ-GDĐT-TC</strong> của Sở Giáo dục & Đào tạo TP.HCM. Đạt chuẩn kiểm định định kỳ về cơ sở vật chất và hợp đồng du học sinh.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl">
+            🌍
+          </div>
+          <h3 class="font-bold text-base text-slate-900 font-heading">Chứng Nhận ICEF Toàn Cầu</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Hằng Lương là đại diện giáo dục được công nhận bởi <strong>ICEF (International Consultants for Education and Fairs)</strong>, khẳng định quy chuẩn tư vấn đạo đức và chuyên môn đạt chuẩn quốc tế.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl">
+            🎖️
+          </div>
+          <h3 class="font-bold text-base text-slate-900 font-heading">Top Agency Xuất Sắc</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Liên tục nhận giải thưởng <em>"Top Performing Agent"</em> từ các đại học hàng đầu như Đại học Monash (Úc), Sunway University, Taylor's University, APU (Malaysia), Fanshawe College (Canada).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Lịch Sử & Dấu Ấn 20 Năm -->
+    <section id="lich-su" class="space-y-6">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Dấu Ấn Hành Trình</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-navy font-heading">Hơn 2 Thập Kỷ Kiến Tạo Tri Thức (2004 - 2026)</h2>
+        <p class="text-sm text-slate-600">
+          Hành trình từ những ngày đầu đặt nền móng du học Đông Nam Á đến khi trở thành cầu nối tuyển sinh của hơn 500 trường khắp 5 châu lục.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative">
+          <div class="text-2xl font-extrabold text-amber-500 font-heading mb-2">2004 - 2008</div>
+          <h3 class="font-bold text-sm text-slate-900 mb-2">Khởi Đầu & Khai Phá Thị Trường</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Thành lập tại TP.HCM. Là đơn vị tiên phong đưa chương trình du học chất lượng cao tại Singapore và Malaysia tiếp cận đông đảo phụ huynh Việt Nam với chi phí hợp lý.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative">
+          <div class="text-2xl font-extrabold text-amber-500 font-heading mb-2">2009 - 2017</div>
+          <h3 class="font-bold text-sm text-slate-900 mb-2">Vươn Tầm Quốc Tế & Chứng Nhận ICEF</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Mở rộng mạng lưới tuyển sinh sang Úc, Mỹ, Anh, Canada và Thụy Sĩ. Đạt chuẩn chứng nhận đại diện tuyển sinh toàn cầu ICEF và xây dựng trung tâm luyện phỏng vấn visa chuyên sâu.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative">
+          <div class="text-2xl font-extrabold text-amber-500 font-heading mb-2">2018 - 2023</div>
+          <h3 class="font-bold text-sm text-slate-900 mb-2">Mở Rộng Hệ Thống Chi Nhánh</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Chính thức thành lập Chi nhánh Lâm Đồng tại Đà Lạt và Chi nhánh Tây Ninh nhằm phục vụ tận nơi phụ huynh, học sinh khu vực Tây Nguyên và Đông Nam Bộ.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-amber-400 bg-amber-50/30 shadow-sm relative">
+          <div class="text-2xl font-extrabold text-brand-navy font-heading mb-2">2024 - 2026+</div>
+          <h3 class="font-bold text-sm text-slate-900 mb-2">Chuyển Đổi Số & Đồng Hành Toàn Diện</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Ra mắt hệ thống Course Finder thông minh, trắc nghiệm hướng nghiệp Holland online, hỗ trợ tư vấn linh hoạt ngoài giờ (17h-21h) và đại diện 500+ trường top thế giới.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Quy Trình 5 Bước Tư Vấn Minh Bạch -->
+    <section id="quy-trinh" class="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm space-y-8">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Quy Trình Chuẩn SOP</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-navy font-heading">Quy Trình 5 Bước Tư Vấn Du Học Minh Bạch</h2>
+        <p class="text-sm text-slate-600">
+          Cam kết rõ ràng, chi phí minh bạch không phát sinh chi phí ẩn. Mỗi hồ sơ đều được phụ trách bởi 1 chuyên viên chính và 1 chuyên viên pháp lý visa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-full bg-brand-navy text-amber-400 font-bold flex items-center justify-center text-sm">1</div>
+          <h4 class="font-bold text-sm text-slate-900">Định Hướng Nghề</h4>
+          <p class="text-xs text-slate-600">Trắc nghiệm Holland, đánh giá học lực & tài chính để chọn đúng ngành, trường, quốc gia.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-full bg-brand-navy text-amber-400 font-bold flex items-center justify-center text-sm">2</div>
+          <h4 class="font-bold text-sm text-slate-900">Săn Học Bổng</h4>
+          <p class="text-xs text-slate-600">Hỗ trợ viết luận SOP, dịch thuật hồ sơ và nộp hồ sơ xin học bổng từ 30% - 100%.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-full bg-brand-navy text-amber-400 font-bold flex items-center justify-center text-sm">3</div>
+          <h4 class="font-bold text-sm text-slate-900">Luyện Phỏng Vấn</h4>
+          <p class="text-xs text-slate-600">Mô phỏng phỏng vấn Visa 1:1, giải trình tài chính minh bạch, tỷ lệ đậu visa 99.2%.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-full bg-brand-navy text-amber-400 font-bold flex items-center justify-center text-sm">4</div>
+          <h4 class="font-bold text-sm text-slate-900">Sắp Xếp Bay & Ở</h4>
+          <p class="text-xs text-slate-600">Đặt vé máy bay, đăng ký ký túc xá / homestay, đón tại sân bay và hướng dẫn trước khi bay.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-full bg-brand-navy text-amber-400 font-bold flex items-center justify-center text-sm">5</div>
+          <h4 class="font-bold text-sm text-slate-900">Đồng Hành Trọn Đời</h4>
+          <p class="text-xs text-slate-600">Gia hạn visa, chuyển trường, hỗ trợ visa thăm thân cho phụ huynh trong suốt quá trình du học.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Đối Tác Tiêu Biểu -->
+    <section id="doi-tac" class="space-y-6">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Mạng Lưới Toàn Cầu</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-navy font-heading">Đại Diện Chính Thức 500+ Viện & Trường Đại Học</h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center h-28">
+          <div class="font-bold text-slate-900 text-sm font-heading">Monash University</div>
+          <span class="text-[10px] text-amber-600 font-semibold">Top 50 Thế Giới (Úc)</span>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center h-28">
+          <div class="font-bold text-slate-900 text-sm font-heading">Taylor's University</div>
+          <span class="text-[10px] text-amber-600 font-semibold">Top 1 Tư thục ĐNÁ</span>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center h-28">
+          <div class="font-bold text-slate-900 text-sm font-heading">Sunway University</div>
+          <span class="text-[10px] text-amber-600 font-semibold">Đối tác Lancaster UK</span>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center h-28">
+          <div class="font-bold text-slate-900 text-sm font-heading">APU University</div>
+          <span class="text-[10px] text-amber-600 font-semibold">Số 1 Công Nghệ & AI</span>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center h-28">
+          <div class="font-bold text-slate-900 text-sm font-heading">SIM Singapore</div>
+          <span class="text-[10px] text-amber-600 font-semibold">Học viện Quản lý SIM</span>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center h-28">
+          <div class="font-bold text-slate-900 text-sm font-heading">Deakin University</div>
+          <span class="text-[10px] text-amber-600 font-semibold">Top 1% Thế Giới (Úc)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: CHUYÊN MỤC TUYỂN DỤNG (Theo đúng chỉ đạo Chị Hằng) -->
+    <section id="tuyen-dung" class="bg-gradient-to-br from-slate-900 via-brand-navy to-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-slate-800 shadow-xl space-y-8 relative overflow-hidden">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-400 px-3 py-1 rounded-full border border-amber-500/40 inline-block">
+          Hằng Lương Careers • Gia Nhập Đội Ngũ
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white">
+          Cơ Hội Nghề Nghiệp & Phát Triển Cùng Du Học Hằng Lương
+        </h2>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Tại Hằng Lương, chúng tôi xây dựng môi trường làm việc minh bạch, trọng dụng nhân tài và trao cơ hội đào tạo chuẩn hóa. Nhân sự được tiếp cận quy trình chuyên nghiệp, tham gia các chuyến công tác fam-trip nước ngoài và lộ trình thăng tiến rõ ràng.
+        </p>
+      </div>
+
+      <!-- Job Openings Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Job 1 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 uppercase">Full-time</span>
+            <h3 class="text-lg font-bold text-white font-heading">Chuyên Viên Tư Vấn Du Học</h3>
+            <p class="text-xs text-amber-300 font-semibold">Thị trường: Úc, New Zealand, Anh, Mỹ, Singapore, Malaysia</p>
+            <div class="text-xs text-slate-300 space-y-1 pt-2">
+              <p>• <strong>Thu nhập:</strong> 15.000.000đ - 35.000.000đ/tháng (Lương cứng + Hoa hồng hồ sơ visa).</p>
+              <p>• <strong>Yêu cầu:</strong> Tốt nghiệp CĐ/ĐH, tiếng Anh giao tiếp khá, đam mê giáo dục.</p>
+              <p>• <strong>Quyền lợi:</strong> Tham gia Fam-trip khảo sát trường tại Úc, Singapore; được cấp tài liệu SOP đào tạo 3 ngày là làm được ngay.</p>
+            </div>
+          </div>
+          <button onclick="openCareerApply('Chuyên Viên Tư Vấn Du Học')" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition-colors shadow">
+            Ứng Tuyển Vị Trí Này
+          </button>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-blue-400 text-slate-950 uppercase">Full-time</span>
+            <h3 class="text-lg font-bold text-white font-heading">Chuyên Viên Content Marketing & Media</h3>
+            <p class="text-xs text-amber-300 font-semibold">Phụ trách: Sản xuất nội dung, Video ngắn & SEO</p>
+            <div class="text-xs text-slate-300 space-y-1 pt-2">
+              <p>• <strong>Thu nhập:</strong> 10.000.000đ - 20.000.000đ/tháng + Thưởng KPI chiến dịch.</p>
+              <p>• <strong>Yêu cầu:</strong> Có kỹ năng viết bài chuẩn SEO, quay dựng video ngắn (CapCut/Premiere), quản trị mạng xã hội.</p>
+              <p>• <strong>Quyền lợi:</strong> Môi trường năng động, trang thiết bị làm việc hiện đại, thưởng các đợt Ngày hội Du học lớn.</p>
+            </div>
+          </div>
+          <button onclick="openCareerApply('Chuyên Viên Content Marketing & Media')" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition-colors shadow">
+            Ứng Tuyển Vị Trí Này
+          </button>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 uppercase">Intern / Part-time</span>
+            <h3 class="text-lg font-bold text-white font-heading">Thực Tập Sinh Du Học & Marketing</h3>
+            <p class="text-xs text-amber-300 font-semibold">Địa điểm: TP.HCM & Chi nhánh Lâm Đồng</p>
+            <div class="text-xs text-slate-300 space-y-1 pt-2">
+              <p>• <strong>Thu nhập:</strong> Trợ cấp thực tập + Thưởng hồ sơ đạt visa + Chứng nhận thực tập.</p>
+              <p>• <strong>Yêu cầu:</strong> Sinh viên năm 3, năm cuối các ngành Kinh tế, Ngoại ngữ, Marketing, Báo chí.</p>
+              <p>• <strong>Quyền lợi:</strong> Được chuyên viên cấp cao kèm cặp 1:1, cơ hội trở thành nhân viên chính thức sau 3 tháng.</p>
+            </div>
+          </div>
+          <button onclick="openCareerApply('Thực Tập Sinh Du Học & Marketing')" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition-colors shadow">
+            Ứng Tuyển Vị Trí Này
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Quick Apply CV Form -->
+      <div id="apply-box" class="bg-slate-950/80 rounded-2xl p-6 sm:p-8 border border-white/10 max-w-2xl mx-auto space-y-4">
+        <div class="text-center space-y-1">
+          <h3 class="text-lg font-bold text-white font-heading">Gửi Hồ Sơ Ứng Tuyển Trực Tiếp</h3>
+          <p class="text-xs text-slate-400">Ban Nhân sự Hằng Lương sẽ liên hệ phỏng vấn trong vòng 48 giờ làm việc.</p>
+        </div>
+        <form onsubmit="handleJobApplication(event)" class="space-y-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <input type="text" id="applicant-name" required placeholder="Họ và tên *" class="w-full bg-slate-900 border border-slate-700 p-2.5 rounded-lg text-xs text-white">
+            <input type="tel" id="applicant-phone" required placeholder="Số điện thoại / Zalo *" class="w-full bg-slate-900 border border-slate-700 p-2.5 rounded-lg text-xs text-white">
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <input type="email" id="applicant-email" required placeholder="Email liên hệ *" class="w-full bg-slate-900 border border-slate-700 p-2.5 rounded-lg text-xs text-white">
+            <select id="applicant-position" class="w-full bg-slate-900 border border-slate-700 p-2.5 rounded-lg text-xs text-slate-200">
+              <option value="Chuyên Viên Tư Vấn Du Học">Chuyên Viên Tư Vấn Du Học</option>
+              <option value="Chuyên Viên Content Marketing & Media">Chuyên Viên Content Marketing & Media</option>
+              <option value="Thực Tập Sinh Du Học & Marketing">Thực Tập Sinh Du Học & Marketing</option>
+            </select>
+          </div>
+          <input type="url" id="applicant-link" placeholder="Link CV / Link Google Drive hồ sơ của bạn *" required class="w-full bg-slate-900 border border-slate-700 p-2.5 rounded-lg text-xs text-white">
+          <button type="submit" class="w-full py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl text-xs transition-colors shadow">
+            Nộp Hồ Sơ Ứng Tuyển Ngay
+          </button>
+        </form>
+      </div>
+
+    </section>
+
+    <!-- Section 6: Hệ Thống Chi Nhánh Xếp Theo Quy Mô -->
+    <section id="lien-he-chi-nhanh" class="space-y-6">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Hệ Thống Mạng Lưới</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-brand-navy font-heading">Hệ Thống Trụ Sở & Chi Nhánh Toàn Diện</h2>
+        <p class="text-sm text-slate-600">Phục vụ trực tiếp phụ huynh, học sinh tại các trung tâm kinh tế và khu vực trọng điểm</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- 1. TP.HCM -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-brand-navy/30 shadow-md space-y-3 relative">
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-brand-navy uppercase">1. Trụ Sở Chính</span>
+          <h3 class="text-lg font-bold text-slate-900 font-heading">Trụ Sở TP. Hồ Chí Minh</h3>
+          <p class="text-xs text-slate-600">📍 108 Hoa Hồng, Phường 2, Quận Phú Nhuận, TP.HCM</p>
+          <p class="text-xs text-slate-600">📞 Tel: (028) 38 48 48 48 - Hotline: 0908 558 959</p>
+          <p class="text-xs text-slate-600">✉️ Email: info@duhochangluong.edu.vn</p>
+          <div class="text-[11px] text-amber-800 bg-amber-50 p-2.5 rounded-lg font-medium">
+            ⏰ Giờ hành chính: 08h00 - 17h30 | Hỗ trợ ngoài giờ (17h00 - 21h00) đặt lịch trước
+          </div>
+        </div>
+
+        <!-- 2. Chi nhánh Lâm Đồng -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3">
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-900 uppercase">2. Chi Nhánh Lâm Đồng</span>
+          <h3 class="text-lg font-bold text-slate-900 font-heading">Chi Nhánh Lâm Đồng</h3>
+          <p class="text-xs text-slate-600">📍 23 Thông Thiên Học, Phường 2, TP. Đà Lạt, Tỉnh Lâm Đồng</p>
+          <p class="text-xs text-slate-600">📞 Hotline: 0932 232 521</p>
+          <p class="text-xs text-slate-600">✉️ Email: lamdong@duhochangluong.edu.vn</p>
+          <div class="text-[11px] text-purple-800 bg-purple-50 p-2.5 rounded-lg font-medium">
+            🌲 Phục vụ tư vấn học sinh THPT & đại học toàn tỉnh Lâm Đồng và Tây Nguyên
+          </div>
+        </div>
+
+        <!-- 3. Chi nhánh Tây Ninh -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3">
+          <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 uppercase">3. Chi Nhánh Tây Ninh</span>
+          <h3 class="text-lg font-bold text-slate-900 font-heading">Chi Nhánh Tây Ninh</h3>
+          <p class="text-xs text-slate-600">📍 322 Đại lộ 30/4, Khu phố 1, Phường 3, TP. Tây Ninh</p>
+          <p class="text-xs text-slate-600">📞 Hotline: 0908 558 959</p>
+          <p class="text-xs text-slate-600">✉️ Email: tayninh@duhochangluong.edu.vn</p>
+          <div class="text-[11px] text-amber-800 bg-amber-50 p-2.5 rounded-lg font-medium">
+            ☀️ Trung tâm tư vấn du học hàng đầu khu vực Đông Nam Bộ
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Canonical Footer -->
+  <footer class="bg-brand-navyDark text-slate-300 pt-14 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: About -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-full bg-amber-500 flex items-center justify-center text-slate-950 font-bold">
+              HL
+            </div>
+            <span class="text-lg font-extrabold text-white font-heading">HẰNG LƯƠNG EDU</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Công ty Cổ phần Tư vấn Du học Quốc tế Hằng Lương. Hơn 20 năm đại diện tuyển sinh chính thức của hơn 500 trường đại học, cao đẳng danh tiếng toàn cầu.
+          </p>
+          <div class="text-xs text-amber-400 font-semibold">
+            Giấy phép hoạt động tư vấn du học số 1184/QĐ-GDĐT-TC do Sở Giáo dục & Đào tạo cấp.
+          </div>
+        </div>
+
+        <!-- Col 2: Hệ thống Chi nhánh -->
+        <div class="space-y-3 lg:col-span-2">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-heading">Hệ Thống Trụ Sở & Chi Nhánh (Xếp theo quy mô)</h4>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+            <div class="p-3 bg-slate-900/60 rounded-xl border border-amber-500/30 space-y-1">
+              <div class="font-bold text-amber-400 flex items-center gap-1">
+                <span>🏢</span> 1. TRỤ SỞ CHÍNH TP.HCM
+              </div>
+              <p class="text-slate-400">108 Hoa Hồng, Phường 2, Q. Phú Nhuận, TP.HCM</p>
+              <p class="text-white font-semibold pt-1">Tel: (028) 38 48 48 48</p>
+            </div>
+
+            <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+              <div class="font-bold text-amber-400 flex items-center gap-1">
+                <span>🌲</span> 2. CHI NHÁNH LÂM ĐỒNG
+              </div>
+              <p class="text-slate-400">23 Thông Thiên Học, Phường 2, TP. Đà Lạt, Tỉnh Lâm Đồng</p>
+              <p class="text-white font-semibold pt-1">Hotline: 0932 232 521</p>
+            </div>
+
+            <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+              <div class="font-bold text-amber-400 flex items-center gap-1">
+                <span>☀️</span> 3. CHI NHÁNH TÂY NINH
+              </div>
+              <p class="text-slate-400">322 Đại lộ 30/4, Khu phố 1, P. 3, TP. Tây Ninh</p>
+              <p class="text-white font-semibold pt-1">Hotline: 0908 558 959</p>
+            </div>
+          </div>
+
+          <div class="p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg text-xs text-amber-300 mt-2 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+            <div>
+              🌙 <strong>Khung giờ tư vấn ngoài giờ:</strong> Nhận tư vấn trực tiếp và online từ <strong>17h00 đến 21h00</strong> các ngày trong tuần và Thứ Bảy.
+            </div>
+            <button onclick="openConsultModal('Tư vấn ngoài giờ 17h-21h', '', true)" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded text-[11px] whitespace-nowrap">
+              Đặt Lịch Ngay
+            </button>
+          </div>
+        </div>
+
+        <!-- Col 4: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-heading">Liên Kết Nhanh</h4>
+          <ul class="space-y-1.5 text-xs text-slate-400">
+            <li><a href="/quoc-gia" class="hover:text-amber-400 transition-colors">&rarr; Danh sách quốc gia du học</a></li>
+            <li><a href="/truong-hoc" class="hover:text-amber-400 transition-colors">&rarr; 500+ Trường đại học đối tác</a></li>
+            <li><a href="/hoc-bong" class="hover:text-amber-400 transition-colors">&rarr; Săn học bổng 50% - 100%</a></li>
+            <li><a href="/hoi-thao" class="hover:text-amber-400 transition-colors">&rarr; Lịch hội thảo theo nước</a></li>
+            <li><a href="/tim-khoa-hoc" class="hover:text-amber-400 transition-colors">&rarr; Cổng tìm kiếm khóa học</a></li>
+            <li><a href="#tuyen-dung" class="hover:text-amber-400 transition-colors text-amber-500 font-bold">&rarr; Cơ hội việc làm & Tuyển dụng</a></li>
+            <li><a href="/lien-he" class="hover:text-amber-400 transition-colors">&rarr; Đặt lịch hẹn tư vấn</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <div>&copy; 2026 Du Học Quốc Tế Hằng Lương. All Rights Reserved.</div>
+        <div class="flex gap-4">
+          <a href="/gioi-thieu" class="hover:text-slate-400">Về chúng tôi</a>
+          <span>•</span>
+          <a href="/lien-he" class="hover:text-slate-400">Liên hệ & Hỗ trợ ngoài giờ</a>
+          <span>•</span>
+          <a href="#tuyen-dung" class="hover:text-slate-400 text-amber-500 font-bold">Tuyển dụng</a>
+        </div>
+      </div>
+
     </div>
   </footer>
 
+  <!-- Consultation Modal with After-hours slot -->
   <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-white w-full max-w-md rounded-2xl p-6 border border-slate-200 shadow-xl">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="font-bold text-base text-brand-navy">Đăng Ký Tư Vấn</h3>
-        <button class="modal-close text-slate-400 hover:text-slate-700">&times;</button>
+    <div class="bg-white w-full max-w-lg rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-2xl relative">
+      <div class="flex justify-between items-center mb-4 border-b border-slate-100 pb-3">
+        <div>
+          <h3 id="modal-title" class="font-bold text-lg text-brand-navy font-heading">Đăng Ký Tư Vấn Du Học</h3>
+          <p class="text-xs text-slate-500">Chuyên viên Hằng Lương sẽ liên hệ bảo mật trong 1 giờ làm việc</p>
+        </div>
+        <button class="modal-close text-slate-400 hover:text-slate-700 text-2xl font-bold">&times;</button>
       </div>
-      <form class="lead-form space-y-3">
-        <input type="text" name="fullname" required placeholder="Họ và tên *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs">
-        <input type="tel" name="phone" required placeholder="Số điện thoại / Zalo *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs">
-        <button type="submit" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs">Gửi Đăng Ký</button>
+
+      <form class="lead-form space-y-3.5" onsubmit="handleConsultSubmit(event)">
+        <input type="text" name="fullname" required placeholder="Họ và tên học sinh / phụ huynh *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs focus:ring-2 focus:ring-amber-500">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <input type="tel" name="phone" required placeholder="Số điện thoại / Zalo *" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs focus:ring-2 focus:ring-amber-500">
+          <input type="email" name="email" placeholder="Địa chỉ Email" class="w-full border border-slate-300 p-2.5 rounded-lg text-xs focus:ring-2 focus:ring-amber-500">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-600 mb-1">Chi nhánh thuận tiện nhất</label>
+            <select name="branch" class="w-full border border-slate-300 p-2 rounded-lg text-xs">
+              <option value="Trụ sở chính TP.HCM">Trụ sở chính TP.HCM</option>
+              <option value="Chi nhánh Lâm Đồng">Chi nhánh Lâm Đồng (Đà Lạt)</option>
+              <option value="Chi nhánh Tây Ninh">Chi nhánh Tây Ninh</option>
+              <option value="Tư vấn Online từ xa">Tư vấn Online từ xa</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-600 mb-1">Khung giờ tư vấn mong muốn</label>
+            <select name="time_slot" id="modal-time-slot" class="w-full border border-slate-300 p-2 rounded-lg text-xs">
+              <option value="Giờ hành chính (08h00 - 17h30)">Giờ hành chính (08:00 - 17:30)</option>
+              <option value="Ngoài giờ (17h00 - 21h00)">🌙 Ngoài giờ hành chính (17:00 - 21:00)</option>
+              <option value="Thứ Bảy / Cuối tuần">Thứ Bảy / Cuối tuần</option>
+            </select>
+          </div>
+        </div>
+
+        <textarea name="note" id="modal-note" rows="2" placeholder="Quốc gia hoặc ngành học bạn đang quan tâm..." class="w-full border border-slate-300 p-2.5 rounded-lg text-xs"></textarea>
+
+        <button type="submit" class="w-full py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-xl text-sm transition-all shadow-md">
+          Xác Nhận Đăng Ký Tư Vấn
+        </button>
       </form>
     </div>
   </div>
 
   <div id="toast-container"></div>
   <script src="/assets/js/main.js"></script>
+  <script>
+    function openCareerApply(position) {
+      const posSelect = document.getElementById('applicant-position');
+      if (posSelect) posSelect.value = position;
+      const applyBox = document.getElementById('apply-box');
+      if (applyBox) {
+        applyBox.scrollIntoView({ behavior: 'smooth' });
+        applyBox.classList.add('ring-4', 'ring-amber-500');
+        setTimeout(() => applyBox.classList.remove('ring-4', 'ring-amber-500'), 2000);
+      }
+    }
+
+    function handleJobApplication(e) {
+      e.preventDefault();
+      const name = document.getElementById('applicant-name').value;
+      const pos = document.getElementById('applicant-position').value;
+      showToast('Cảm ơn ' + name + '! Hồ sơ ứng tuyển vị trí "' + pos + '" đã được gửi tới Ban Nhân sự Hằng Lương. Chúng tôi sẽ phản hồi trong 48h.');
+      e.target.reset();
+    }
+  </script>
 </body>
 </html>

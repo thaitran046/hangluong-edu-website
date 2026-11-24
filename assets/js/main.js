@@ -1,6 +1,6 @@
 /**
- * Hằng Lương Edu - Main Interactive Engine
- * Handles Course Finder, Countdown, Modals, Forms & Mobile Drawer
+ * Hằng Lương Edu - Main Interactive Engine v2.1
+ * Updated with Holland Career Quiz, URL Query Param Filter, After-hours Booking & Vercel Optimization
  */
 
 // Sample Database for Course Finder
@@ -13,6 +13,7 @@ const COURSE_DATABASE = [
     flag: "🇦🇺",
     level: "Đại học",
     major: "Công nghệ thông tin",
+    holland: "R",
     scholarship: "100%",
     duration: "3 năm",
     tuition: "45,000 AUD/năm",
@@ -25,7 +26,8 @@ const COURSE_DATABASE = [
     country: "Malaysia",
     flag: "🇲🇾",
     level: "Đại học",
-    major: "Kinh tế - Kinh doanh",
+    major: "Kinh tế",
+    holland: "E",
     scholarship: "50%",
     duration: "3 năm",
     tuition: "8,500 USD/năm",
@@ -39,6 +41,7 @@ const COURSE_DATABASE = [
     flag: "🇲🇾",
     level: "Thạc sĩ",
     major: "Công nghệ thông tin",
+    holland: "I",
     scholarship: "30%",
     duration: "1.5 năm",
     tuition: "10,200 USD/khóa",
@@ -51,7 +54,8 @@ const COURSE_DATABASE = [
     country: "Malaysia",
     flag: "🇲🇾",
     level: "Đại học",
-    major: "Du lịch - Khách sạn",
+    major: "Du lịch",
+    holland: "E",
     scholarship: "100%",
     duration: "3 năm",
     tuition: "9,000 USD/năm",
@@ -64,7 +68,8 @@ const COURSE_DATABASE = [
     country: "Singapore",
     flag: "🇸🇬",
     level: "Đại học",
-    major: "Kinh tế - Kinh doanh",
+    major: "Kinh tế",
+    holland: "E",
     scholarship: "100%",
     duration: "2 - 3 năm",
     tuition: "18,000 SGD/năm",
@@ -77,7 +82,8 @@ const COURSE_DATABASE = [
     country: "Úc",
     flag: "🇦🇺",
     level: "Đại học",
-    major: "Y dược - Điều dưỡng",
+    major: "Y dược",
+    holland: "S",
     scholarship: "50%",
     duration: "3 - 4 năm",
     tuition: "38,000 AUD/năm",
@@ -90,7 +96,8 @@ const COURSE_DATABASE = [
     country: "Canada",
     flag: "🇨🇦",
     level: "Cao đẳng",
-    major: "Du lịch - Khách sạn",
+    major: "Du lịch",
+    holland: "E",
     scholarship: "Học bổng nhập học $2,000",
     duration: "2 năm",
     tuition: "16,500 CAD/năm",
@@ -104,10 +111,39 @@ const COURSE_DATABASE = [
     flag: "🇺🇸",
     level: "Đại học",
     major: "Kỹ thuật",
+    holland: "R",
     scholarship: "Học bổng $15,000/năm",
     duration: "4 năm",
     tuition: "33,000 USD/năm",
-    badge: "Top 1 Đại học Đổi mới sáng tạo Mỹ (US News)"
+    badge: "Top 1 Đại học Đổi mới sáng tạo Mỹ"
+  },
+  {
+    id: 9,
+    name: "Thạc sĩ Quản trị Truyền thông Quốc tế",
+    school: "University of Westminster",
+    country: "Anh",
+    flag: "🇬🇧",
+    level: "Thạc sĩ",
+    major: "Kinh tế",
+    holland: "A",
+    scholarship: "5,000 GBP",
+    duration: "1 năm",
+    tuition: "16,000 GBP/năm",
+    badge: "Ngay trung tâm London"
+  },
+  {
+    id: 10,
+    name: "Luyện IELTS Cấp Tốc Mô Hình Sparta 1:1",
+    school: "SMEAG Global Education",
+    country: "Philippines",
+    flag: "🇵🇭",
+    level: "Tiếng Anh",
+    major: "Kinh tế",
+    holland: "S",
+    scholarship: "Tặng lệ phí thi IELTS",
+    duration: "8 - 12 tuần",
+    tuition: "1,500 USD/tháng trọn gói",
+    badge: "Khảo thí ủy quyền British Council"
   }
 ];
 
@@ -119,6 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initForms();
   initMobileMenu();
   initStickyHeader();
+  initHollandQuiz();
+  checkUrlParamsForFinder();
 });
 
 // 1. Live Countdown Timer
@@ -176,6 +214,25 @@ function initCourseFinder() {
   });
 }
 
+function checkUrlParamsForFinder() {
+  const params = new URLSearchParams(window.location.search);
+  const majorParam = params.get("major");
+  const countryParam = params.get("country");
+  const hollandParam = params.get("holland");
+
+  if (document.getElementById("search-keyword") || document.getElementById("filter-major")) {
+    if (majorParam && document.getElementById("filter-major")) {
+      document.getElementById("filter-major").value = majorParam;
+    }
+    if (countryParam && document.getElementById("filter-country")) {
+      document.getElementById("filter-country").value = countryParam;
+    }
+    if (typeof runCourseFilter === "function") {
+      runCourseFilter();
+    }
+  }
+}
+
 function renderCourseResults(courses) {
   const list = document.getElementById("course-results-list");
   const countEl = document.getElementById("course-results-count");
@@ -209,7 +266,7 @@ function renderCourseResults(courses) {
   `).join("");
 }
 
-// 3. Modal Handlers
+// 3. Modal Handlers & After-Hours Booking
 function initModals() {
   document.querySelectorAll(".modal-close").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -226,13 +283,21 @@ function initModals() {
   });
 }
 
-function openConsultationModal(schoolName = "", courseName = "") {
+function openConsultationModal(schoolName = "", courseName = "", isAfterHours = false) {
   const modal = document.getElementById("consult-modal");
   if (!modal) return;
 
   const noteInput = document.getElementById("consult-note");
+  const timeInput = document.getElementById("consult-time-slot");
+
   if (noteInput && schoolName) {
-    noteInput.value = `Quan tâm trường: ${schoolName} (${courseName})`;
+    noteInput.value = `Quan tâm: ${schoolName} ${courseName ? '(' + courseName + ')' : ''}`;
+  }
+
+  if (isAfterHours && timeInput) {
+    timeInput.value = "17:30 - 19:00";
+    const afterNotice = document.getElementById("after-hours-notice");
+    if (afterNotice) afterNotice.classList.remove("hidden");
   }
 
   modal.classList.remove("hidden");
@@ -262,6 +327,8 @@ function initForms() {
         phone: formData.get("phone") || "",
         email: formData.get("email") || "",
         country: formData.get("country") || "Chung",
+        branch: formData.get("branch") || "Trụ sở TP.HCM",
+        time_slot: formData.get("time_slot") || "Giờ hành chính",
         note: formData.get("note") || "",
         time: new Date().toISOString()
       };
@@ -280,7 +347,7 @@ function initForms() {
         form.reset();
         document.querySelectorAll(".modal-overlay").forEach(m => m.classList.add("hidden"));
         document.body.style.overflow = "auto";
-        showToast("Đăng ký thành công! Chuyên viên Hằng Lương sẽ liên hệ trong vòng 15 phút.", "success");
+        showToast("Đăng ký thành công! Chuyên viên Hằng Lương sẽ liên hệ đúng khung giờ bạn yêu cầu.", "success");
       }, 700);
     });
   });
@@ -309,7 +376,62 @@ function showToast(message, type = "success") {
   }, 4500);
 }
 
-// 5. Mobile Menu Drawer
+// 5. Interactive Holland Quiz Engine
+function initHollandQuiz() {
+  const quizForm = document.getElementById("holland-quiz-form");
+  const resultCard = document.getElementById("holland-result-card");
+  if (!quizForm || !resultCard) return;
+
+  quizForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const q1 = document.querySelector('input[name="holland_q1"]:checked')?.value || "R";
+    const q2 = document.querySelector('input[name="holland_q2"]:checked')?.value || "E";
+
+    // Determine primary group
+    let groupTitle = "Nhóm Kỹ Thuật & Công Nghệ (Realistic - R)";
+    let desc = "Bạn có tư duy logic, thích thao tác kỹ thuật, công nghệ, thiết bị và giải quyết vấn đề thực tế.";
+    let majorParam = "Công nghệ thông tin";
+    let targetLink = "/tim-khoa-hoc?major=Công nghệ thông tin";
+
+    if (q1 === "E" || q2 === "E") {
+      groupTitle = "Nhóm Quản Lý & Kinh Doanh (Enterprising - E)";
+      desc = "Bạn có tố chất lãnh đạo, khả năng giao tiếp, thuyết phục, đam mê kinh doanh và vận hành dự án.";
+      majorParam = "Kinh tế";
+      targetLink = "/tim-khoa-hoc?major=Kinh tế";
+    } else if (q1 === "S" || q2 === "S") {
+      groupTitle = "Nhóm Xã Hội & Y Tế (Social - S)";
+      desc = "Bạn thích chăm sóc, hỗ trợ cộng đồng, có sự thấu cảm cao, phù hợp với ngành Y Dược, Điều Dưỡng, Giáo dục.";
+      majorParam = "Y dược";
+      targetLink = "/tim-khoa-hoc?major=Y dược";
+    }
+
+    const titleEl = document.getElementById("holland-result-title");
+    const descEl = document.getElementById("holland-result-desc");
+    const linkBtn = document.getElementById("holland-course-link");
+
+    if (titleEl) titleEl.textContent = groupTitle;
+    if (descEl) descEl.textContent = desc;
+    if (linkBtn) {
+      linkBtn.href = targetLink;
+      linkBtn.textContent = `Xem Danh Sách Khóa Học & Trường Cho ${majorParam} →`;
+    }
+
+    quizForm.classList.add("hidden");
+    resultCard.classList.remove("hidden");
+  });
+}
+
+function resetHollandQuiz() {
+  const quizForm = document.getElementById("holland-quiz-form");
+  const resultCard = document.getElementById("holland-result-card");
+  if (quizForm && resultCard) {
+    quizForm.reset();
+    quizForm.classList.remove("hidden");
+    resultCard.classList.add("hidden");
+  }
+}
+
+// 6. Mobile Menu Drawer
 function initMobileMenu() {
   const btn = document.getElementById("mobile-menu-btn");
   const drawer = document.getElementById("mobile-drawer");
@@ -335,7 +457,7 @@ function initMobileMenu() {
   if (backdrop) backdrop.addEventListener("click", close);
 }
 
-// 6. Sticky Header
+// 7. Sticky Header
 function initStickyHeader() {
   const header = document.getElementById("main-header");
   if (!header) return;
@@ -351,7 +473,8 @@ function initStickyHeader() {
   });
 }
 
-// Global hook for consultation buttons
-window.openConsultModal = function(school, course) {
-  openConsultationModal(school, course);
+// Global hooks
+window.openConsultModal = function(school, course, isAfterHours = false) {
+  openConsultationModal(school, course, isAfterHours);
 };
+window.resetHollandQuiz = resetHollandQuiz;
