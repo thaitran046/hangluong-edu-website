@@ -219,8 +219,12 @@ function checkUrlParamsForFinder() {
   const majorParam = params.get("major");
   const countryParam = params.get("country");
   const hollandParam = params.get("holland");
+  const searchParam = params.get("search") || params.get("keyword") || params.get("q");
 
   if (document.getElementById("search-keyword") || document.getElementById("filter-major")) {
+    if (searchParam && document.getElementById("search-keyword")) {
+      document.getElementById("search-keyword").value = decodeURIComponent(searchParam);
+    }
     if (majorParam && document.getElementById("filter-major")) {
       document.getElementById("filter-major").value = majorParam;
     }
