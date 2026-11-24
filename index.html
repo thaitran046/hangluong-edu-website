@@ -65,14 +65,14 @@
   </div>
 
   <!-- STICKY HEADER (XOÁ MỤC TRANG CHỦ THEO YÊU CẦU DO LOGO ĐÃ LÀ TRANG CHỦ) -->
-    <!-- ==================== HEADER (Phong cách Dual-Tier cao cấp chuẩn INEC nhưng mang bản sắc Hằng Lương) ==================== -->
+      <!-- ==================== HEADER (Phong cách Dual-Tier cao cấp chuẩn INEC nhưng mang bản sắc Hằng Lương) ==================== -->
   <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 shadow-sm">
     
     <!-- TẦNG 1: TOP UTILITY BAR (Thanh tiện ích trên cùng) -->
     <div class="bg-slate-100 border-b border-slate-200/80 text-[11px] sm:text-xs text-slate-600 py-1.5 px-4 sm:px-6">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
         
-        <!-- Bên trái: Hỗ trợ tư vấn, Hotline, Đặt lịch ngoài giờ & Chi nhánh -->
+        <!-- Bên trái: Hỗ trợ tư vấn, Hotline, Đăng Ký Tư Vấn (Chuyển lên vị trí trên theo đúng chỉ đạo) & Chi nhánh -->
         <div class="flex items-center flex-wrap gap-x-3 gap-y-1 justify-center sm:justify-start">
           <span class="text-slate-500 hidden sm:inline">Bạn cần hỗ trợ tư vấn?</span>
           <a href="tel:0908558959" class="font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 transition-colors">
@@ -80,9 +80,8 @@
             0908 558 959
           </a>
           <span class="text-slate-300">|</span>
-          <button onclick="openConsultModal('Tư vấn ngoài giờ 17h-21h', '', true)" class="text-amber-700 hover:text-amber-800 font-semibold flex items-center gap-1 transition-colors">
-            <span>🌙</span>
-            <span>Đặt lịch tư vấn ngoài giờ (17h00 - 21h00)</span>
+          <button onclick="openConsultModal('Đăng ký tư vấn từ Top Bar', '', false)" class="text-amber-600 hover:text-amber-700 font-bold hover:underline transition-colors flex items-center gap-1 cursor-pointer">
+            <span>Đăng Ký Tư Vấn</span>
           </button>
           <span class="text-slate-300 hidden lg:inline">|</span>
           <span class="text-slate-500 hidden lg:inline flex items-center gap-1">
@@ -197,18 +196,12 @@
           <a href="/lien-he" class=" hover:text-brand-navy transition-colors">Liên Hệ</a>
         </nav>
 
-        <!-- Action CTAs bên phải: Nút Tìm Kiếm Khóa Học Pill Button (Lấy cảm hứng từ INEC) + Nút Đăng Ký Tư Vấn -->
-        <div class="hidden md:flex items-center gap-2.5">
-          <!-- Nút Tìm Kiếm Khóa Học hình viên thuốc nổi bật viền xanh Navy chuẩn INEC style -->
-          <a href="/tim-khoa-hoc" class="px-4 py-2 rounded-full border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold text-xs transition-all shadow-sm flex items-center gap-1.5">
+        <!-- Action CTA bên phải: Nút Tìm Kiếm Khóa Học Pill Button (Chuẩn phong cách INEC nhưng mang nhận diện Hằng Lương) -->
+        <div class="hidden md:flex items-center">
+          <a href="/tim-khoa-hoc" class="px-5 py-2 rounded-full border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold text-xs transition-all shadow-sm flex items-center gap-1.5">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             <span>Tìm kiếm khoá học</span>
           </a>
-
-          <!-- Nút Đăng Ký Tư Vấn Nhanh -->
-          <button onclick="openConsultModal('Đăng ký từ Header', '', false)" class="px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-full text-xs shadow-md transition-all flex items-center gap-1">
-            <span>Đăng Ký Tư Vấn</span>
-          </button>
         </div>
 
         <!-- Mobile Controls (Hamburger + Quick Search) -->
