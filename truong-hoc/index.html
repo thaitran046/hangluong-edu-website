@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danh Sách 500+ Trường Đại Học Quốc Tế Đối Tác | Du Học Hằng Lương</title>
-  <meta name="description" content="Tra cứu danh sách hơn 500+ trường Đại học, Cao đẳng đối tác chính thức của Hằng Lương tại Úc, Mỹ, Anh, Canada, Singapore, Malaysia, Philippines.">
+  <title>Danh Sách Trường Học Quốc Tế Theo Quốc Gia | Hằng Lương Edu</title>
+  <meta name="description" content="Hệ thống hơn 500+ Viện & Trường Đại học, Cao đẳng đối tác chính thức của Hằng Lương tại Úc, Mỹ, Anh Quốc, Canada, Singapore, Malaysia, Philippines được phân loại chi tiết theo quốc gia.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -20,8 +20,30 @@
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased">
 
-  <!-- Header -->
-      <!-- ==================== HEADER (Phong cách Dual-Tier cao cấp chuẩn INEC nhưng mang bản sắc Hằng Lương) ==================== -->
+    <!-- TOP NOTIFICATION BAR -->
+  <div class="bg-brand-navyDark text-slate-300 text-xs py-2 px-4 border-b border-slate-700/50 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-amber-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          Tin nóng:
+        </span>
+        <span>Học bổng toàn phần 100% Úc, Singapore & Malaysia tuyển sinh 2026 - 2027</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <button onclick="openConsultModal('Tư vấn ngoài giờ', '', true)" class="text-amber-300 hover:text-amber-200 font-semibold flex items-center gap-1 transition-colors">
+          <span>🌙</span> Đặt lịch tư vấn ngoài giờ (17h00 - 21h00)
+        </button>
+        <span class="text-slate-600">|</span>
+        <a href="tel:0908558959" class="hover:text-amber-400 transition-colors flex items-center gap-1 font-semibold text-white">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          Hotline: 0908 558 959
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER (Phong cách Dual-Tier cao cấp chuẩn INEC nhưng mang bản sắc Hằng Lương) ==================== -->
   <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 shadow-sm">
     
     <!-- TẦNG 1: TOP UTILITY BAR (Thanh tiện ích trên cùng) -->
@@ -56,21 +78,21 @@
             </button>
           </form>
 
-          <!-- Social Icons hình tròn giống INEC nhưng tinh tế -->
+          <!-- Social Icons hình tròn -->
           <div class="hidden sm:flex items-center gap-1.5 text-slate-500">
-            <a href="https://facebook.com/duhochangluong" target="_blank" title="Facebook Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://facebook.com/duhochangluong" target="_blank" rel="noopener noreferrer" title="Facebook Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[10px] font-bold">f</span>
             </a>
-            <a href="https://tiktok.com/@duhochangluong" target="_blank" title="TikTok Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://tiktok.com/@duhochangluong" target="_blank" rel="noopener noreferrer" title="TikTok Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">tk</span>
             </a>
-            <a href="https://zalo.me/0908558959" target="_blank" title="Zalo Official Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-500 hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://zalo.me/0908558959" target="_blank" rel="noopener noreferrer" title="Zalo Official Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-500 hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">z</span>
             </a>
             <a href="mailto:info@duhochangluong.edu.vn" title="Email liên hệ" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-amber-500 hover:text-slate-950 flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">✉</span>
             </a>
-            <a href="https://youtube.com/@duhochangluong" target="_blank" title="YouTube Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://youtube.com/@duhochangluong" target="_blank" rel="noopener noreferrer" title="YouTube Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">▶</span>
             </a>
           </div>
@@ -84,9 +106,9 @@
     <div class="bg-white/95 backdrop-blur-md py-3 px-4 sm:px-6">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         
-        <!-- Logo Hằng Lương + Huy hiệu 20 Năm Đồng Hành (Lấy cảm hứng từ INEC 20 Years nhưng sang trọng bản sắc riêng) -->
-        <a href="/" title="Về Trang Chủ Du Học Hằng Lương" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-brand-navy flex items-center justify-center text-amber-400 shadow-md group-hover:scale-105 transition-transform">
+        <!-- Brand Identity / Logo + 20 Years Gold Emblem -->
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brand-navy flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
             </svg>
@@ -116,12 +138,12 @@
           </div>
         </a>
 
-        <!-- Desktop Menu Items -->
+        <!-- Desktop Menu Items (4 Dropdown theo quốc gia, Tin Du Học SEO, Giới Thiệu, KHÔNG CÓ LIÊN HỆ) -->
         <nav class="hidden xl:flex items-center gap-5 text-sm font-semibold text-slate-700">
           
-          <!-- Dropdown Quốc Gia -->
+          <!-- Dropdown 1: Quốc Gia -->
           <div class="relative group py-2">
-            <a href="/quoc-gia" class=" hover:text-brand-navy flex items-center gap-1 transition-colors">
+            <a href="/quoc-gia" class="hover:text-brand-navy flex items-center gap-1 transition-colors">
               Quốc Gia
               <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </a>
@@ -136,23 +158,67 @@
             </div>
           </div>
 
-          <a href="/truong-hoc" class="text-amber-600 font-bold hover:text-brand-navy transition-colors">Trường Học</a>
+          <!-- Dropdown 2: Trường Học (Liệt kê theo quốc gia) -->
+          <div class="relative group py-2">
+            <a href="/truong-hoc" class="text-brand-navy font-bold flex items-center gap-1 transition-colors">
+              Trường Học
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2.5 z-50">
+              <a href="/truong-hoc#uc" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇦🇺 Trường tại Úc</a>
+              <a href="/truong-hoc#my" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇺🇸 Trường tại Mỹ</a>
+              <a href="/truong-hoc#anh" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇬🇧 Trường tại Anh Quốc</a>
+              <a href="/truong-hoc#canada" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇨🇦 Trường tại Canada</a>
+              <a href="/truong-hoc#singapore" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇸🇬 Trường tại Singapore</a>
+              <a href="/truong-hoc#malaysia" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇲🇾 Trường tại Malaysia</a>
+              <a href="/truong-hoc#philip" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇵🇭 Trường tại Philippines</a>
+            </div>
+          </div>
           
-          <a href="/hoi-thao" class=" hover:text-brand-navy transition-colors">Hội Thảo</a>
+          <!-- Dropdown 3: Hội Thảo (Liệt kê theo quốc gia) -->
+          <div class="relative group py-2">
+            <a href="/hoi-thao" class="hover:text-brand-navy flex items-center gap-1 transition-colors">
+              Hội Thảo
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2.5 z-50">
+              <a href="/hoi-thao#uc" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇦🇺 Hội thảo du học Úc</a>
+              <a href="/hoi-thao#my" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇺🇸 Hội thảo du học Mỹ</a>
+              <a href="/hoi-thao#anh" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇬🇧 Hội thảo du học Anh</a>
+              <a href="/hoi-thao#canada" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇨🇦 Hội thảo du học Canada</a>
+              <a href="/hoi-thao#singapore" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇸🇬 Hội thảo Singapore</a>
+              <a href="/hoi-thao#malaysia" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇲🇾 Hội thảo Malaysia</a>
+              <a href="/hoi-thao#philip" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇵🇭 Hội thảo Philippines</a>
+            </div>
+          </div>
 
-          <a href="/hoc-bong" class=" hover:text-brand-navy transition-colors flex items-center gap-1">
-            Học Bổng
-            <span class="text-[9px] bg-red-100 text-red-600 px-1.5 py-0.2 rounded-full font-extrabold uppercase">Hot</span>
-          </a>
+          <!-- Dropdown 4: Học Bổng (XOÁ CHỮ HOT THEO YÊU CẦU NGƯỜI DÙNG) -->
+          <div class="relative group py-2">
+            <a href="/hoc-bong" class="hover:text-brand-navy flex items-center gap-1 transition-colors">
+              Học Bổng
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2.5 z-50">
+              <a href="/hoc-bong#uc" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇦🇺 Học bổng Úc</a>
+              <a href="/hoc-bong#my" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇺🇸 Học bổng Mỹ</a>
+              <a href="/hoc-bong#anh" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇬🇧 Học bổng Anh Quốc</a>
+              <a href="/hoc-bong#canada" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇨🇦 Học bổng Canada</a>
+              <a href="/hoc-bong#singapore" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇸🇬 Học bổng Singapore</a>
+              <a href="/hoc-bong#malaysia" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇲🇾 Học bổng Malaysia</a>
+              <a href="/hoc-bong#philip" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇵🇭 Học bổng Philippines</a>
+            </div>
+          </div>
 
-          <a href="/su-kien" class=" hover:text-brand-navy transition-colors">Tin Du Học & Sự Kiện</a>
+          <!-- Tin Du Học: Dạng bài viết SEO, không sự kiện -->
+          <a href="/tin-du-hoc" class="hover:text-brand-navy hover:text-brand-navy transition-colors">Tin Du Học</a>
           
-          <a href="/gioi-thieu" class=" hover:text-brand-navy transition-colors">Giới Thiệu</a>
+          <!-- Giới Thiệu -->
+          <a href="/gioi-thieu" class="hover:text-brand-navy hover:text-brand-navy transition-colors">Giới Thiệu</a>
           
-          <a href="/lien-he" class=" hover:text-brand-navy transition-colors">Liên Hệ</a>
+          <!-- KHÔNG CÓ MỤC LIÊN HỆ THEO YÊU CẦU NGƯỜI DÙNG -->
         </nav>
 
-        <!-- Action CTA bên phải: Nút Tìm Kiếm Khóa Học Pill Button (Chuẩn phong cách INEC nhưng mang nhận diện Hằng Lương) -->
+        <!-- Action CTA bên phải: Nút Tìm Kiếm Khóa Học Pill Button -->
         <div class="hidden md:flex items-center">
           <a href="/tim-khoa-hoc" class="px-5 py-2 rounded-full border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold text-xs transition-all shadow-sm flex items-center gap-1.5">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
@@ -173,7 +239,7 @@
       </div>
     </div>
 
-    <!-- DẢI VIỀN MÀU NHẬN DIỆN THƯƠNG HIỆU (Thay vì 4 màu INEC, Hằng Lương dùng Navy - Gold - Ruby đẳng cấp) -->
+    <!-- DẢI VIỀN MÀU NHẬN DIỆN THƯƠNG HIỆU (Navy 50% - Gold 30% - Red 20%) -->
     <div class="w-full h-[3.5px] flex">
       <div class="w-[50%] bg-brand-navy"></div>
       <div class="w-[30%] bg-amber-500"></div>
@@ -182,265 +248,546 @@
 
   </header>
 
-  <!-- Banner -->
+  <!-- Page Banner -->
   <section class="bg-brand-navy text-white py-12 md:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center space-y-3">
-      <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Đối Tác Tuyển Sinh Chính Thức</span>
-      <h1 class="text-3xl sm:text-4xl font-extrabold font-heading">Hệ Thống 500+ Trường Đại Học & Cao Đẳng Quốc Tế</h1>
+      <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Đối Tác Chiến Lược 20+ Năm</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold font-heading">Hệ Thống Trường Học Đối Tác Theo Quốc Gia</h1>
       <p class="text-sm text-slate-300 max-w-2xl mx-auto">
-        Tìm kiếm và lựa chọn ngôi trường phù hợp với năng lực học tập, ngân sách tài chính và mục tiêu nghề nghiệp tương lai của bạn.
+        Hằng Lương là đại diện tuyển sinh chính thức của hơn 500+ Viện & Trường Đại học danh tiếng toàn cầu. Dưới đây là danh sách trường được phân loại chi tiết theo từng quốc gia.
       </p>
     </div>
   </section>
 
-  <!-- Filter & School List -->
-  <section class="py-12 max-w-7xl mx-auto px-4 sm:px-6">
-    
-    <!-- Country Filter Pills -->
-    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 text-xs font-bold no-scrollbar">
-      <button onclick="filterSchools('all')" class="school-filter-btn px-4 py-2 rounded-full bg-brand-navy text-white shadow">Tất Cả Quốc Gia</button>
-      <button onclick="filterSchools('uc')" class="school-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">🇦🇺 Úc (Australia)</button>
-      <button onclick="filterSchools('my')" class="school-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">🇺🇸 Mỹ (USA)</button>
-      <button onclick="filterSchools('anh')" class="school-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">🇬🇧 Anh Quốc (UK)</button>
-      <button onclick="filterSchools('canada')" class="school-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">🇨🇦 Canada</button>
-      <button onclick="filterSchools('singapore')" class="school-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">🇸🇬 Singapore</button>
-      <button onclick="filterSchools('malaysia')" class="school-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">🇲🇾 Malaysia</button>
-      <button onclick="filterSchools('philip')" class="school-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-100 border border-slate-200">🇵🇭 Philippines</button>
+  <!-- Sticky Country Jump Bar -->
+  <div class="bg-white border-b border-slate-200 sticky top-[73px] z-40 shadow-sm overflow-x-auto">
+    <div class="max-w-7xl mx-auto px-4 flex gap-3 text-xs sm:text-sm font-semibold text-slate-600 whitespace-nowrap py-3">
+      <a href="#uc" class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-navy hover:text-white transition-colors">🇦🇺 Trường tại Úc</a>
+      <a href="#my" class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-navy hover:text-white transition-colors">🇺🇸 Trường tại Mỹ</a>
+      <a href="#anh" class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-navy hover:text-white transition-colors">🇬🇧 Trường tại Anh Quốc</a>
+      <a href="#canada" class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-navy hover:text-white transition-colors">🇨🇦 Trường tại Canada</a>
+      <a href="#singapore" class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-navy hover:text-white transition-colors">🇸🇬 Trường tại Singapore</a>
+      <a href="#malaysia" class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-navy hover:text-white transition-colors">🇲🇾 Trường tại Malaysia</a>
+      <a href="#philip" class="px-3.5 py-1.5 rounded-full bg-slate-100 hover:bg-brand-navy hover:text-white transition-colors">🇵🇭 Trường tại Philippines</a>
     </div>
+  </div>
 
-    <!-- School Grid -->
-    <div id="school-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-16">
 
-      <!-- Monash University (Úc) -->
-      <div class="school-card uc bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇦🇺</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">Group of Eight</span>
-          </div>
+    <!-- 1. ÚC -->
+    <section id="uc" class="scroll-mt-28 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🇦🇺</span>
           <div>
+            <h2 class="text-2xl font-bold text-brand-navy font-heading">Trường Đại Học & Cao Đẳng Tại Úc (Australia)</h2>
+            <p class="text-xs text-slate-500">Đại diện hơn 250+ Viện & Trường Đại học danh tiếng, nhóm Group of Eight, visa AL2 ưu tiên</p>
+          </div>
+        </div>
+        <a href="/tim-khoa-hoc?country=Úc" class="text-xs font-bold text-blue-700 hover:underline hidden sm:block">Xem tất cả trường Úc &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Top 50 Thế Giới</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 100%</span>
+            </div>
             <h3 class="text-lg font-bold text-slate-900 font-heading">Monash University</h3>
-            <p class="text-xs text-slate-500">Melbourne, Victoria, Úc</p>
+            <p class="text-xs text-slate-500">Melbourne, Victoria • Thành viên liên minh Group of Eight</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Kinh doanh, IT, Dược, Kỹ thuật</p>
+              <p>• <strong>Học phí:</strong> 38,000 - 49,000 AUD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.5, GPA 8.0+</p>
+            </div>
           </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> Top 50 Đại học hàng đầu thế giới (QS Ranking)</div>
-            <div>💼 <strong>Ngành mạnh:</strong> Dược, CNTT/AI, Kinh tế, Kỹ thuật</div>
-            <div>💰 <strong>Học phí:</strong> ~35,000 - 48,000 AUD/năm</div>
-            <div>🎁 <strong>Học bổng:</strong> 10,000 AUD đến 100% học phí</div>
-          </div>
-        </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('Monash University (Úc)')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
+          <button onclick="openConsultModal('Monash University', 'Tư vấn lộ trình học & học bổng')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
           </button>
         </div>
-      </div>
 
-      <!-- Deakin University (Úc) -->
-      <div class="school-card uc bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇦🇺</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">Top 1% Thế Giới</span>
-          </div>
-          <div>
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Top 1% Thế Giới</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 50% - 100%</span>
+            </div>
             <h3 class="text-lg font-bold text-slate-900 font-heading">Deakin University</h3>
-            <p class="text-xs text-slate-500">Melbourne & Geelong, Úc</p>
+            <p class="text-xs text-slate-500">Melbourne & Geelong, Victoria • Đứng đầu về sự hài lòng sinh viên</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Khoa học dữ liệu, Điều dưỡng, Truyền thông</p>
+              <p>• <strong>Học phí:</strong> 32,000 - 41,000 AUD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0 - 6.5, GPA 7.0+</p>
+            </div>
           </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> Top 1 bang Victoria về trải nghiệm học tập sinh viên</div>
-            <div>💼 <strong>Ngành mạnh:</strong> Điều dưỡng, Khoa học Thể thao, Kinh doanh</div>
-            <div>💰 <strong>Học phí:</strong> ~32,000 - 40,000 AUD/năm</div>
-            <div>🎁 <strong>Học bổng:</strong> 20% - 50% học phí cho sinh viên VN</div>
-          </div>
+          <button onclick="openConsultModal('Deakin University', 'Tư vấn lộ trình học & học bổng')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
         </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('Deakin University (Úc)')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Đại học Công nghệ</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 25%</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Curtin University</h3>
+            <p class="text-xs text-slate-500">Perth, Western Australia • Khu vực Regional cộng điểm định cư</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Khai khoáng, Kỹ thuật dầu khí, Kiến trúc</p>
+              <p>• <strong>Học phí:</strong> 31,000 - 40,000 AUD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0 - 6.5, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Curtin University', 'Tư vấn lộ trình học & học bổng')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
           </button>
         </div>
       </div>
+    </section>
 
-      <!-- Arizona State University (Mỹ) -->
-      <div class="school-card my bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇺🇸</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-rose-50 text-rose-800 border border-rose-200">Top 1 Innovation US</span>
-          </div>
+    <!-- 2. MỸ -->
+    <section id="my" class="scroll-mt-28 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🇺🇸</span>
           <div>
+            <h2 class="text-2xl font-bold text-brand-navy font-heading">Trường Đại Học & Cao Đẳng Tại Mỹ (USA)</h2>
+            <p class="text-xs text-slate-500">Hơn 300+ đối tác tại các bang California, New York, Texas, Washington, Arizona...</p>
+          </div>
+        </div>
+        <a href="/tim-khoa-hoc?country=Mỹ" class="text-xs font-bold text-blue-700 hover:underline hidden sm:block">Xem tất cả trường Mỹ &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Top 1 Đổi Mới Sáng Tạo</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng ,000/năm</span>
+            </div>
             <h3 class="text-lg font-bold text-slate-900 font-heading">Arizona State University (ASU)</h3>
-            <p class="text-xs text-slate-500">Phoenix, Arizona, Mỹ</p>
+            <p class="text-xs text-slate-500">Phoenix, Arizona • Đại học công lập lớn nhất nước Mỹ</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Kinh doanh (W.P. Carey), Kỹ thuật STEM</p>
+              <p>• <strong>Học phí:</strong> 31,000 - 35,000 USD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0 / TOEFL 61, GPA 7.5+</p>
+            </div>
           </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> #1 tại Mỹ về Đổi mới sáng tạo 9 năm liền</div>
-            <div>💼 <strong>Ngành mạnh:</strong> STEM (Kỹ thuật, Robotics, AI, Business Analytics)</div>
-            <div>💰 <strong>Học phí:</strong> ~33,000 USD/năm</div>
-            <div>🎁 <strong>Học bổng:</strong> Lên tới 15,000 USD/năm gia hạn 4 năm</div>
-          </div>
+          <button onclick="openConsultModal('Arizona State University', 'Tư vấn lộ trình học & học bổng')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
         </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('Arizona State University (Mỹ)')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Chuyên Ngành STEM & Hàng Không</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng ,000/năm</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Florida Institute of Technology</h3>
+            <p class="text-xs text-slate-500">Melbourne, Florida • Gần Trung tâm Vũ trụ NASA</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Kỹ thuật hàng không, AI, Khoa học máy tính</p>
+              <p>• <strong>Học phí:</strong> 42,000 USD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Florida Institute of Technology', 'Tư vấn lộ trình học & học bổng')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Cao Đẳng Cộng Đồng Top 1</span>
+              <span class="text-xs text-emerald-600 font-bold">Chuyển tiếp UW & UC</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Shoreline Community College</h3>
+            <p class="text-xs text-slate-500">Seattle, Washington • Lộ trình 2+2 tiết kiệm</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Chuyển tiếp Đại học Washington, UC Berkeley</p>
+              <p>• <strong>Học phí:</strong> 10,500 USD/năm (Rất tiết kiệm)</p>
+              <p>• <strong>Yêu cầu:</strong> Tốt nghiệp lớp 11/12, không bắt buộc IELTS</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Shoreline Community College', 'Tư vấn chuyển tiếp Mỹ 2+2')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
           </button>
         </div>
       </div>
+    </section>
 
-      <!-- Taylor's University (Malaysia) -->
-      <div class="school-card malaysia bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇲🇾</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-50 text-amber-800 border border-amber-200">Top 1 ĐH Tư Thục Đông Nam Á</span>
-          </div>
+    <!-- 3. ANH QUỐC -->
+    <section id="anh" class="scroll-mt-28 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🇬🇧</span>
           <div>
-            <h3 class="text-lg font-bold text-slate-900 font-heading">Taylor's University</h3>
-            <p class="text-xs text-slate-500">Subang Jaya, Kuala Lumpur, Malaysia</p>
-          </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> #251 Thế Giới (QS 2025) - Bằng cấp chuẩn Anh/Pháp</div>
-            <div>💼 <strong>Ngành mạnh:</strong> Quản trị Du lịch Khách sạn (Top 20 thế giới), Thiết kế, Kinh tế</div>
-            <div>💰 <strong>Học phí:</strong> ~7,500 - 9,500 USD/năm (Rẻ 1/4 so với Anh/Úc)</div>
-            <div>🎁 <strong>Học bổng:</strong> 25% - 50% - 100% học phí</div>
+            <h2 class="text-2xl font-bold text-brand-navy font-heading">Trường Đại Học Tại Anh Quốc (UK)</h2>
+            <p class="text-xs text-slate-500">Thành viên Russell Group, chương trình Thạc sĩ 1 năm tiết kiệm thời gian, visa 2 năm</p>
           </div>
         </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('Taylor University (Malaysia)')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
+        <a href="/tim-khoa-hoc?country=Anh" class="text-xs font-bold text-blue-700 hover:underline hidden sm:block">Xem tất cả trường Anh &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Top 100 Thế Giới</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng £5,000</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">University of Leeds</h3>
+            <p class="text-xs text-slate-500">Leeds, Anh Quốc • Thành viên Russell Group danh giá</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Tài chính kế toán, Kỹ thuật cơ khí, Luật</p>
+              <p>• <strong>Học phí:</strong> 24,000 - 32,000 GBP/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.5, GPA 8.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('University of Leeds', 'Tư vấn học bổng Anh Quốc')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Đại học Danh Giá</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng £2,500</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">University of Sheffield</h3>
+            <p class="text-xs text-slate-500">Sheffield, Anh Quốc • Russell Group, Top 15 tại UK</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Hàng không vũ trụ, Khoa học y sinh, Kiến trúc</p>
+              <p>• <strong>Học phí:</strong> 22,000 - 29,000 GBP/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.5, GPA 7.5+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('University of Sheffield', 'Tư vấn học bổng Anh Quốc')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Khu Vực Bờ Biển Nam</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng £3,500</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Bournemouth University</h3>
+            <p class="text-xs text-slate-500">Bournemouth, Anh Quốc • Chi phí sinh hoạt hợp lý</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Hiệu ứng kỹ xảo phim (VFX), Hoạt hình, Du lịch</p>
+              <p>• <strong>Học phí:</strong> 17,000 - 20,000 GBP/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Bournemouth University', 'Tư vấn học bổng Anh Quốc')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
           </button>
         </div>
       </div>
+    </section>
 
-      <!-- Asia Pacific University - APU (Malaysia) -->
-      <div class="school-card malaysia bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇲🇾</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-50 text-blue-800 border border-blue-200">#1 Công Nghệ & AI</span>
-          </div>
+    <!-- 4. CANADA -->
+    <section id="canada" class="scroll-mt-28 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🇨🇦</span>
           <div>
-            <h3 class="text-lg font-bold text-slate-900 font-heading">Asia Pacific University (APU)</h3>
-            <p class="text-xs text-slate-500">Technology Park Malaysia, Kuala Lumpur</p>
-          </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> Đại học số 1 Malaysia về Công nghệ, 100% việc làm sau tốt nghiệp</div>
-            <div>💼 <strong>Ngành mạnh:</strong> Khoa học Máy tính, An ninh mạng, AI, Game Design</div>
-            <div>💰 <strong>Học phí:</strong> ~7,000 - 8,500 USD/năm (Bằng kép ĐH De Montfort UK)</div>
-            <div>🎁 <strong>Học bổng:</strong> 30% - 50% học phí</div>
+            <h2 class="text-2xl font-bold text-brand-navy font-heading">Trường Đại Học & Cao Đẳng Tại Canada</h2>
+            <p class="text-xs text-slate-500">Hơn 180+ trường công lập chất lượng cao, thực tập hưởng lương Co-op và PGWP 3 năm</p>
           </div>
         </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('APU Malaysia')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
-          </button>
-        </div>
+        <a href="/tim-khoa-hoc?country=Canada" class="text-xs font-bold text-blue-700 hover:underline hidden sm:block">Xem tất cả trường Canada &rarr;</a>
       </div>
 
-      <!-- SIM Singapore (Singapore) -->
-      <div class="school-card singapore bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇸🇬</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-purple-50 text-purple-800 border border-purple-200">Học Viện Danh Giá</span>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-slate-900 font-heading">Singapore Institute of Management (SIM)</h3>
-            <p class="text-xs text-slate-500">Clementi Road, Singapore</p>
-          </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> Liên kết độc quyền cấp bằng University of London, RMIT Úc, Buffalo Mỹ</div>
-            <div>💼 <strong>Ngành mạnh:</strong> Tài chính - Ngân hàng, Phân tích dữ liệu, Truyền thông</div>
-            <div>💰 <strong>Học phí:</strong> ~16,000 - 22,000 SGD/năm (Tiết kiệm 1 năm thời gian học)</div>
-            <div>🎁 <strong>Học bổng:</strong> Học bổng 100% SIM GE Scholarship</div>
-          </div>
-        </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('SIM Singapore')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
-          </button>
-        </div>
-      </div>
-
-      <!-- Fanshawe College (Canada) -->
-      <div class="school-card canada bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇨🇦</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-red-50 text-red-800 border border-red-200">PGWP 3 Năm Đi Làm</span>
-          </div>
-          <div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Cao Đẳng Công Lập Lớn Nhất</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng ,000 CAD</span>
+            </div>
             <h3 class="text-lg font-bold text-slate-900 font-heading">Fanshawe College</h3>
-            <p class="text-xs text-slate-500">London, Ontario, Canada</p>
+            <p class="text-xs text-slate-500">London, Ontario • Tỷ lệ việc làm sau tốt nghiệp 90.3%</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Công nghệ thông tin, Quản trị chuỗi cung ứng, Cơ khí</p>
+              <p>• <strong>Học phí:</strong> 16,000 - 18,500 CAD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0, GPA 6.5+</p>
+            </div>
           </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> Top trường Cao đẳng lớn nhất tỉnh Ontario, tỷ lệ việc làm 90.3%</div>
-            <div>💼 <strong>Ngành mạnh:</strong> Co-op có lương: Nhà hàng Khách sạn, Cơ khí, Hàng không</div>
-            <div>💰 <strong>Học phí:</strong> ~16,000 - 18,000 CAD/năm</div>
-            <div>🎁 <strong>Học bổng:</strong> Entrance Scholarship 2,000 CAD</div>
-          </div>
+          <button onclick="openConsultModal('Fanshawe College', 'Tư vấn du học Canada')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
         </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('Fanshawe College (Canada)')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Trường Hàng Đầu Toronto</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng ,000 CAD</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Seneca College</h3>
+            <p class="text-xs text-slate-500">Toronto, Ontario • Đa dạng chuyên ngành và campus hiện đại</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Marketing quốc tế, Trí tuệ nhân tạo, Hàng không</p>
+              <p>• <strong>Học phí:</strong> 17,000 - 20,000 CAD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0, GPA 6.8+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Seneca College', 'Tư vấn du học Canada')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Đại Học Công Lập</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng ,000 CAD</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Thompson Rivers University</h3>
+            <p class="text-xs text-slate-500">Kamloops, British Columbia • Môi trường học tập thân thiện</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Kinh doanh, Quản trị du lịch môi trường, Khoa học</p>
+              <p>• <strong>Học phí:</strong> 19,000 - 23,000 CAD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.5, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Thompson Rivers University', 'Tư vấn du học Canada')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
           </button>
         </div>
       </div>
+    </section>
 
-      <!-- University of Westminster (Anh Quốc) -->
-      <div class="school-card anh bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇬🇧</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-50 text-blue-800 border border-blue-200">Trái Tim London</span>
-          </div>
+    <!-- 5. SINGAPORE -->
+    <section id="singapore" class="scroll-mt-28 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🇸🇬</span>
           <div>
-            <h3 class="text-lg font-bold text-slate-900 font-heading">University of Westminster</h3>
-            <p class="text-xs text-slate-500">London, Anh Quốc (UK)</p>
-          </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> Tọa lạc ngay trung tâm London, mạng lưới kết nối doanh nghiệp toàn cầu</div>
-            <div>💼 <strong>Ngành mạnh:</strong> Truyền thông Media, Tài chính, Kiến trúc, Thời trang</div>
-            <div>💰 <strong>Học phí:</strong> ~15,500 - 17,000 GBP/năm (Thạc sĩ chỉ 1 năm)</div>
-            <div>🎁 <strong>Học bổng:</strong> 2,000 - 5,000 GBP</div>
+            <h2 class="text-2xl font-bold text-brand-navy font-heading">Học Viện & Đại Học Quốc Tế Tại Singapore</h2>
+            <p class="text-xs text-slate-500">Trung tâm tài chính Châu Á, nhận bằng gốc ĐH Anh & Úc, tốt nghiệp chỉ sau 2 - 2.5 năm</p>
           </div>
         </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('University of Westminster (Anh)')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
+        <a href="/tim-khoa-hoc?country=Singapore" class="text-xs font-bold text-blue-700 hover:underline hidden sm:block">Xem tất cả trường Singapore &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Học Viện Lớn Nhất Singapore</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 100%</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Singapore Institute of Management (SIM)</h3>
+            <p class="text-xs text-slate-500">Singapore • Bằng gốc University of London, Birmingham, RMIT</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Kinh tế, Tài chính ngân hàng, Quản trị chuỗi cung ứng</p>
+              <p>• <strong>Học phí:</strong> 18,000 - 24,000 SGD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 5.5 - 6.0, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('SIM Singapore', 'Tư vấn nhận bằng ĐH Anh tại Singapore')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Campus Đại Học Úc</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 25% - 50%</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Curtin Singapore</h3>
+            <p class="text-xs text-slate-500">Singapore • Nhận bằng gốc Curtin Úc, chuyển tiếp 100% sang Úc</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Marketing quốc tế, Kế toán CPA, Truyền thông đại chúng</p>
+              <p>• <strong>Học phí:</strong> 20,000 - 25,000 SGD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 5.5 - 6.0, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Curtin Singapore', 'Tư vấn du học Singapore chuyển tiếp Úc')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Chứng Nhận EduTrust Star</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng lên tới 100%</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">James Cook University Singapore</h3>
+            <p class="text-xs text-slate-500">Singapore • Đại học công lập duy nhất của Úc có cơ sở tại Singapore</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Tâm lý học, Khoa học dữ liệu, Quản trị du lịch</p>
+              <p>• <strong>Học phí:</strong> 28,000 - 32,000 SGD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 6.0, GPA 7.5+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('James Cook Singapore', 'Tư vấn du học JCU Singapore')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
           </button>
         </div>
       </div>
+    </section>
 
-      <!-- SMEAG Global Education (Philippines) -->
-      <div class="school-card philip bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
-        <div class="space-y-3">
-          <div class="flex justify-between items-start">
-            <span class="text-2xl">🇵🇭</span>
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">Luyện IELTS Cấp Tốc</span>
-          </div>
+    <!-- 6. MALAYSIA -->
+    <section id="malaysia" class="scroll-mt-28 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🇲🇾</span>
           <div>
+            <h2 class="text-2xl font-bold text-brand-navy font-heading">Trường Đại Học Hàng Đầu Malaysia</h2>
+            <p class="text-xs text-slate-500">Thế mạnh độc quyền 20+ năm của Hằng Lương, nhận bằng gốc Anh, Úc, Pháp tiết kiệm 70% chi phí</p>
+          </div>
+        </div>
+        <a href="/tim-khoa-hoc?country=Malaysia" class="text-xs font-bold text-blue-700 hover:underline hidden sm:block">Xem tất cả trường Malaysia &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Top 1 Tư Thục ĐNÁ</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 50% - 100%</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Taylor's University</h3>
+            <p class="text-xs text-slate-500">Subang Jaya, Malaysia • Top 280 thế giới (QS 2026)</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Quản trị Du lịch Khách sạn (Top 16 TG), Kinh doanh, Kiến trúc</p>
+              <p>• <strong>Học phí:</strong> 7,500 - 10,000 USD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 5.5 - 6.0, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Taylor University', 'Tư vấn săn học bổng Taylor')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Bằng Kép Lancaster UK</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 100%</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Sunway University</h3>
+            <p class="text-xs text-slate-500">Bandar Sunway, Malaysia • Đối tác độc quyền Le Cordon Bleu Pháp</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Tài chính kế toán (ACCA), Ẩm thực & Nhà hàng khách sạn</p>
+              <p>• <strong>Học phí:</strong> 6,500 - 9,000 USD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 5.5 - 6.0, GPA 7.0+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Sunway University', 'Tư vấn học bổng Sunway 100%')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Số 1 Về Công Nghệ & AI</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng 30% - 50%</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">Asia Pacific University (APU)</h3>
+            <p class="text-xs text-slate-500">Kuala Lumpur, Malaysia • 100% sinh viên có việc làm ngay</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Trí tuệ nhân tạo (AI), An ninh mạng, Game Development</p>
+              <p>• <strong>Học phí:</strong> 6,800 - 8,500 USD/năm</p>
+              <p>• <strong>Yêu cầu:</strong> IELTS 5.5, GPA 6.8+</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('APU Malaysia', 'Tư vấn ngành AI & Công nghệ APU')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PHILIPPINES -->
+    <section id="philip" class="scroll-mt-28 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🇵🇭</span>
+          <div>
+            <h2 class="text-2xl font-bold text-brand-navy font-heading">Trường Anh Ngữ Quốc Tế Tại Philippines</h2>
+            <p class="text-xs text-slate-500">Mô hình học Sparta 1:1 tăng tốc IELTS 1.5 - 2.0 band điểm chỉ trong 8 - 12 tuần</p>
+          </div>
+        </div>
+        <a href="/tim-khoa-hoc?country=Philippines" class="text-xs font-bold text-blue-700 hover:underline hidden sm:block">Xem tất cả trường Philippines &rarr;</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Trung Tâm Khảo Thí British Council</span>
+              <span class="text-xs text-emerald-600 font-bold">Ưu đãi học phí 20%</span>
+            </div>
             <h3 class="text-lg font-bold text-slate-900 font-heading">SMEAG Global Education</h3>
-            <p class="text-xs text-slate-500">Cebu & Tarlac, Philippines</p>
+            <p class="text-xs text-slate-500">Cebu, Philippines • Học viện Anh ngữ lớn nhất Philippines</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Luyện thi IELTS Guarantee cam kết đầu ra, Cambridge ESOL</p>
+              <p>• <strong>Chi phí trọn gói:</strong> 1,200 - 1,600 USD/4 tuần (gồm học + ăn ở)</p>
+              <p>• <strong>Hình thức:</strong> 1 kèm 1 (4 - 6 tiết/ngày) + Lớp nhóm</p>
+            </div>
           </div>
-          <div class="text-xs text-slate-600 space-y-1.5 bg-slate-50 p-3.5 rounded-xl">
-            <div>🏆 <strong>Xếp hạng:</strong> Trường Anh ngữ lớn nhất Philippines, Trung tâm khảo thí IELTS ủy quyền của British Council</div>
-            <div>💼 <strong>Khóa học:</strong> Mô hình Sparta 1:1, Cam kết tăng 1.0 - 1.5 band IELTS sau 8-12 tuần</div>
-            <div>💰 <strong>Chi phí:</strong> ~1,400 - 1,800 USD/tháng (Bao gồm ăn ở trọn gói)</div>
-            <div>🎁 <strong>Ưu đãi:</strong> Miễn phí thi IELTS chính thức khi đăng ký qua Hằng Lương</div>
-          </div>
+          <button onclick="openConsultModal('SMEAG Philippines', 'Tư vấn khóa IELTS cam kết đầu ra')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
         </div>
-        <div class="pt-4 mt-4 border-t border-slate-100 flex gap-2">
-          <button onclick="openConsultModal('SMEAG Philippines', 'Khóa học tiếng Anh Sparta')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-            Tư Vấn Trường Này
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Campus Resort Cao Cấp</span>
+              <span class="text-xs text-emerald-600 font-bold">Học bổng </span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">CIA Cebu (Cebu International Academy)</h3>
+            <p class="text-xs text-slate-500">Mactan, Cebu • Cơ sở vật chất chuẩn resort 4 sao</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Tiếng Anh giao tiếp ESL, Trại hè tiếng Anh cho học sinh</p>
+              <p>• <strong>Chi phí trọn gói:</strong> 1,300 - 1,700 USD/4 tuần (đã bao gồm ăn ở)</p>
+              <p>• <strong>Hình thức:</strong> Semi-Sparta cân bằng học tập và trải nghiệm</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('CIA Cebu', 'Tư vấn học tiếng Anh tại CIA Cebu')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded bg-blue-100 text-brand-navy">Trường Mới Hiện Đại Nhất</span>
+              <span class="text-xs text-emerald-600 font-bold">Giảm /kỳ</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 font-heading">B'CEBU Academy</h3>
+            <p class="text-xs text-slate-500">Cebu, Philippines • Thiết kế phong cách campus Châu Âu</p>
+            <div class="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-xl">
+              <p>• <strong>Thế mạnh:</strong> Khóa học Sparta cấp tốc, Tiếng Anh thương mại Business</p>
+              <p>• <strong>Chi phí trọn gói:</strong> 1,150 - 1,550 USD/4 tuần</p>
+              <p>• <strong>Hình thức:</strong> Quản lý kỷ luật, tăng phản xạ giao tiếp tối đa</p>
+            </div>
+          </div>
+          <button onclick="openConsultModal('BCEBU Academy', 'Tư vấn khóa Sparta tại B'CEBU')" class="w-full mt-4 py-2 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-xs transition-colors shadow">
+            Tư Vấn Hồ Sơ Trường Này
           </button>
         </div>
       </div>
+    </section>
 
-    </div>
+  </main>
 
-  </section>
-
-  <!-- Footer -->
+    <!-- FOOTER SẮP XẾP QUY MÔ TỪ LỚN ĐẾN NHỎ (TRỤ SỞ CHÍNH -> CHI NHÁNH LÂM ĐỒNG -> CHI NHÁNH TÂY NINH) -->
   <footer class="bg-brand-navyDark text-slate-300 pt-14 pb-8 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       
@@ -476,7 +823,7 @@
               <p class="text-white font-semibold pt-1">Tel: (028) 38 48 48 48</p>
             </div>
 
-            <!-- 2. Chi nhánh Lâm Đồng (Đổi theo đúng chỉ đạo chị Hằng) -->
+            <!-- 2. Chi nhánh Lâm Đồng (Đổi từ Văn phòng Đà Lạt theo chỉ đạo chị Hằng) -->
             <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
               <div class="font-bold text-amber-400 flex items-center gap-1">
                 <span>🌲</span> 2. CHI NHÁNH LÂM ĐỒNG
@@ -514,9 +861,9 @@
             <li><a href="/truong-hoc" class="hover:text-amber-400 transition-colors">&rarr; 500+ Trường đại học đối tác</a></li>
             <li><a href="/hoc-bong" class="hover:text-amber-400 transition-colors">&rarr; Săn học bổng 50% - 100%</a></li>
             <li><a href="/hoi-thao" class="hover:text-amber-400 transition-colors">&rarr; Lịch hội thảo theo nước</a></li>
+            <li><a href="/tin-du-hoc" class="hover:text-amber-400 transition-colors">&rarr; Cẩm nang & Tin tức du học</a></li>
             <li><a href="/tim-khoa-hoc" class="hover:text-amber-400 transition-colors">&rarr; Cổng tìm kiếm khóa học</a></li>
-            <li><a href="/gioi-thieu" class="hover:text-amber-400 transition-colors">&rarr; Cơ hội nghề nghiệp & Tuyển dụng</a></li>
-            <li><a href="/lien-he" class="hover:text-amber-400 transition-colors">&rarr; Đặt lịch hẹn tư vấn</a></li>
+            <li><a href="/gioi-thieu#tuyen-dung" class="hover:text-amber-400 transition-colors">&rarr; Cơ hội nghề nghiệp & Tuyển dụng</a></li>
           </ul>
         </div>
 
@@ -528,7 +875,7 @@
         <div class="flex gap-4">
           <a href="/gioi-thieu" class="hover:text-slate-400">Về chúng tôi</a>
           <span>•</span>
-          <a href="/lien-he" class="hover:text-slate-400">Liên hệ & Hỗ trợ ngoài giờ</a>
+          <a href="/tin-du-hoc" class="hover:text-slate-400">Tin tức & Cẩm nang</a>
           <span>•</span>
           <a href="/gioi-thieu#tuyen-dung" class="hover:text-slate-400 text-amber-500 font-bold">Tuyển dụng</a>
         </div>
@@ -537,6 +884,17 @@
     </div>
   </footer>
 
+  <!-- FLOATING ACTION BUTTONS -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+    <a href="tel:0908558959" title="Gọi Hotline 24/7" class="fab-btn w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-xl hover:bg-emerald-700">
+      <svg class="w-6 h-6 animate-bounce" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+    </a>
+    <button onclick="openConsultModal('Tư vấn nhanh', '', true)" title="Đặt lịch hẹn ngoài giờ 17h - 21h" class="fab-btn w-12 h-12 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center shadow-xl hover:bg-amber-600 font-bold text-sm">
+      🌙
+    </button>
+  </div>
+
+    <!-- CONSULTATION POPUP MODAL (CÓ CHỌN KHUNG GIỜ NGOÀI GIỜ) -->
   <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
       <div class="p-5 bg-brand-navy text-white flex justify-between items-center">
@@ -544,7 +902,7 @@
           <h3 class="font-bold text-lg font-heading">Đăng Ký Đặt Lịch Hẹn Tư Vấn</h3>
           <p class="text-xs text-amber-400 mt-0.5">Hỗ trợ cả giờ hành chính & ngoài giờ (17h00 - 21h00)</p>
         </div>
-        <button class="modal-close p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-white/10">&times;</button>
+        <button class="modal-close p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-white/10 text-xl leading-none">&times;</button>
       </div>
 
       <form class="lead-form p-6 space-y-4">
@@ -572,25 +930,74 @@
           </div>
         </div>
 
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Chi nhánh hỗ trợ *</label>
+            <select name="branch" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+              <option value="Trụ sở TP.HCM">Trụ sở chính TP.HCM</option>
+              <option value="Chi nhánh Lâm Đồng">Chi nhánh Lâm Đồng</option>
+              <option value="Chi nhánh Tây Ninh">Chi nhánh Tây Ninh</option>
+              <option value="Tư vấn Online">Tư vấn qua Zoom</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Khung giờ hẹn *</label>
+            <select name="time_slot" id="consult-time-slot" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+              <option value="09:00 - 11:30">Sáng (09:00 - 11:30)</option>
+              <option value="14:00 - 17:00">Chiều (14:00 - 17:00)</option>
+              <option value="17:30 - 19:00">🌙 Ngoài giờ (17:30 - 19:00)</option>
+              <option value="19:00 - 21:00">🌙 Ngoài giờ (19:00 - 21:00)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Ghi chú hoặc nguyện vọng</label>
+          <input type="text" name="note" id="consult-note" placeholder="Ví dụ: Xin học bổng ngành Y Dược..." class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-colors shadow">
+          Xác Nhận Đặt Lịch Hẹn
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU DRAWER (KHÔNG CÓ TRANG CHỦ & KHÔNG CÓ LIÊN HỆ THEO YÊU CẦU) -->
+  <div id="mobile-drawer-backdrop" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm lg:hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-72 h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between p-6 overflow-y-auto">
+    <div class="space-y-6">
+      <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+        <span class="font-bold text-brand-navy font-heading">Menu Du Học</span>
+        <button id="mobile-drawer-close" class="p-1 text-slate-400 hover:text-slate-700 text-2xl leading-none">&times;</button>
+      </div>
+      <nav class="space-y-3 text-sm font-semibold text-slate-700">
+        <a href="/quoc-gia" class="block py-1.5 hover:text-amber-600">🌍 Quốc Gia Du Học</a>
+        <a href="/truong-hoc" class="block py-1.5 hover:text-amber-600">🏫 Trường Học Đối Tác</a>
+        <a href="/hoc-bong" class="block py-1.5 hover:text-amber-600">🎁 Học Bổng Du Học</a>
+        <a href="/hoi-thao" class="block py-1.5 hover:text-amber-600">🎤 Hội Thảo Trực Tiếp</a>
+        <a href="/tin-du-hoc" class="block py-1.5 hover:text-amber-600">📰 Tin Du Học (SEO)</a>
+        <a href="/tim-khoa-hoc" class="block py-1.5 text-blue-700 font-bold">🔍 Tìm Khóa Học</a>
+        <a href="/gioi-thieu" class="block py-1.5 hover:text-amber-600">🏆 Về Hằng Lương 20 Năm</a>
+        <a href="/gioi-thieu#tuyen-dung" class="block py-1.5 text-emerald-600 font-bold">💼 Cơ Hội Tuyển Dụng</a>
+      </nav>
+    </div>
+
+    <div class="space-y-3 pt-6 border-t border-slate-100">
+      <a href="tel:0908558959" class="w-full py-2.5 bg-slate-100 text-slate-800 font-bold rounded-lg text-center block text-xs">
+        📞 Gọi: 0908 558 959
+      </a>
+      <button onclick="openConsultModal('Tư vấn nhanh mobile', '', true)" class="w-full py-2.5 bg-amber-500 text-slate-950 font-bold rounded-lg text-center block text-xs shadow">
+        Đặt Lịch Hẹn Ngoài Giờ
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER & SCRIPTS -->
   <div id="toast-container"></div>
   <script src="/assets/js/main.js"></script>
-  <script>
-    function filterSchools(country) {
-      document.querySelectorAll('.school-filter-btn').forEach(btn => {
-        btn.classList.remove('bg-brand-navy', 'text-white');
-        btn.classList.add('bg-white', 'text-slate-700');
-      });
-      event.target.classList.add('bg-brand-navy', 'text-white');
-      event.target.classList.remove('bg-white', 'text-slate-700');
 
-      document.querySelectorAll('.school-card').forEach(card => {
-        if (country === 'all' || card.classList.contains(country)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
+  <div id="toast-container"></div>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

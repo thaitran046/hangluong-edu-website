@@ -20,8 +20,30 @@
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased">
 
-  <!-- Canonical Header (Bỏ nút Trang Chủ) -->
-      <!-- ==================== HEADER (Phong cách Dual-Tier cao cấp chuẩn INEC nhưng mang bản sắc Hằng Lương) ==================== -->
+  <!-- TOP NOTIFICATION BAR -->
+  <div class="bg-brand-navyDark text-slate-300 text-xs py-2 px-4 border-b border-slate-700/50 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-amber-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          Tin nóng:
+        </span>
+        <span>Học bổng toàn phần 100% Úc, Singapore & Malaysia tuyển sinh 2026 - 2027</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <button onclick="openConsultModal('Tư vấn ngoài giờ', '', true)" class="text-amber-300 hover:text-amber-200 font-semibold flex items-center gap-1 transition-colors">
+          <span>🌙</span> Đặt lịch tư vấn ngoài giờ (17h00 - 21h00)
+        </button>
+        <span class="text-slate-600">|</span>
+        <a href="tel:0908558959" class="hover:text-amber-400 transition-colors flex items-center gap-1 font-semibold text-white">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          Hotline: 0908 558 959
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER (Phong cách Dual-Tier cao cấp chuẩn INEC nhưng mang bản sắc Hằng Lương) ==================== -->
   <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 shadow-sm">
     
     <!-- TẦNG 1: TOP UTILITY BAR (Thanh tiện ích trên cùng) -->
@@ -56,21 +78,21 @@
             </button>
           </form>
 
-          <!-- Social Icons hình tròn giống INEC nhưng tinh tế -->
+          <!-- Social Icons hình tròn -->
           <div class="hidden sm:flex items-center gap-1.5 text-slate-500">
-            <a href="https://facebook.com/duhochangluong" target="_blank" title="Facebook Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://facebook.com/duhochangluong" target="_blank" rel="noopener noreferrer" title="Facebook Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[10px] font-bold">f</span>
             </a>
-            <a href="https://tiktok.com/@duhochangluong" target="_blank" title="TikTok Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://tiktok.com/@duhochangluong" target="_blank" rel="noopener noreferrer" title="TikTok Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-black hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">tk</span>
             </a>
-            <a href="https://zalo.me/0908558959" target="_blank" title="Zalo Official Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-500 hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://zalo.me/0908558959" target="_blank" rel="noopener noreferrer" title="Zalo Official Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-blue-500 hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">z</span>
             </a>
             <a href="mailto:info@duhochangluong.edu.vn" title="Email liên hệ" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-amber-500 hover:text-slate-950 flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">✉</span>
             </a>
-            <a href="https://youtube.com/@duhochangluong" target="_blank" title="YouTube Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors">
+            <a href="https://youtube.com/@duhochangluong" target="_blank" rel="noopener noreferrer" title="YouTube Hằng Lương" class="w-6 h-6 rounded-full bg-slate-200 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors">
               <span class="text-[9px] font-bold">▶</span>
             </a>
           </div>
@@ -84,9 +106,9 @@
     <div class="bg-white/95 backdrop-blur-md py-3 px-4 sm:px-6">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         
-        <!-- Logo Hằng Lương + Huy hiệu 20 Năm Đồng Hành (Lấy cảm hứng từ INEC 20 Years nhưng sang trọng bản sắc riêng) -->
-        <a href="/" title="Về Trang Chủ Du Học Hằng Lương" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-brand-navy flex items-center justify-center text-amber-400 shadow-md group-hover:scale-105 transition-transform">
+        <!-- Brand Identity / Logo + 20 Years Gold Emblem -->
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brand-navy flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
             </svg>
@@ -116,12 +138,12 @@
           </div>
         </a>
 
-        <!-- Desktop Menu Items -->
+        <!-- Desktop Menu Items (4 Dropdown theo quốc gia, Tin Du Học SEO, Giới Thiệu, KHÔNG CÓ LIÊN HỆ) -->
         <nav class="hidden xl:flex items-center gap-5 text-sm font-semibold text-slate-700">
           
-          <!-- Dropdown Quốc Gia -->
+          <!-- Dropdown 1: Quốc Gia -->
           <div class="relative group py-2">
-            <a href="/quoc-gia" class=" hover:text-brand-navy flex items-center gap-1 transition-colors">
+            <a href="/quoc-gia" class="hover:text-brand-navy flex items-center gap-1 transition-colors">
               Quốc Gia
               <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </a>
@@ -136,23 +158,67 @@
             </div>
           </div>
 
-          <a href="/truong-hoc" class=" hover:text-brand-navy transition-colors">Trường Học</a>
+          <!-- Dropdown 2: Trường Học (Liệt kê theo quốc gia) -->
+          <div class="relative group py-2">
+            <a href="/truong-hoc" class="hover:text-brand-navy flex items-center gap-1 transition-colors">
+              Trường Học
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2.5 z-50">
+              <a href="/truong-hoc#uc" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇦🇺 Trường tại Úc</a>
+              <a href="/truong-hoc#my" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇺🇸 Trường tại Mỹ</a>
+              <a href="/truong-hoc#anh" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇬🇧 Trường tại Anh Quốc</a>
+              <a href="/truong-hoc#canada" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇨🇦 Trường tại Canada</a>
+              <a href="/truong-hoc#singapore" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇸🇬 Trường tại Singapore</a>
+              <a href="/truong-hoc#malaysia" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇲🇾 Trường tại Malaysia</a>
+              <a href="/truong-hoc#philip" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇵🇭 Trường tại Philippines</a>
+            </div>
+          </div>
           
-          <a href="/hoi-thao" class=" hover:text-brand-navy transition-colors">Hội Thảo</a>
+          <!-- Dropdown 3: Hội Thảo (Liệt kê theo quốc gia) -->
+          <div class="relative group py-2">
+            <a href="/hoi-thao" class="hover:text-brand-navy flex items-center gap-1 transition-colors">
+              Hội Thảo
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2.5 z-50">
+              <a href="/hoi-thao#uc" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇦🇺 Hội thảo du học Úc</a>
+              <a href="/hoi-thao#my" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇺🇸 Hội thảo du học Mỹ</a>
+              <a href="/hoi-thao#anh" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇬🇧 Hội thảo du học Anh</a>
+              <a href="/hoi-thao#canada" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇨🇦 Hội thảo du học Canada</a>
+              <a href="/hoi-thao#singapore" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇸🇬 Hội thảo Singapore</a>
+              <a href="/hoi-thao#malaysia" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇲🇾 Hội thảo Malaysia</a>
+              <a href="/hoi-thao#philip" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇵🇭 Hội thảo Philippines</a>
+            </div>
+          </div>
 
-          <a href="/hoc-bong" class=" hover:text-brand-navy transition-colors flex items-center gap-1">
-            Học Bổng
-            <span class="text-[9px] bg-red-100 text-red-600 px-1.5 py-0.2 rounded-full font-extrabold uppercase">Hot</span>
-          </a>
+          <!-- Dropdown 4: Học Bổng (XOÁ CHỮ HOT THEO YÊU CẦU NGƯỜI DÙNG) -->
+          <div class="relative group py-2">
+            <a href="/hoc-bong" class="hover:text-brand-navy flex items-center gap-1 transition-colors">
+              Học Bổng
+              <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2.5 z-50">
+              <a href="/hoc-bong#uc" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇦🇺 Học bổng Úc</a>
+              <a href="/hoc-bong#my" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇺🇸 Học bổng Mỹ</a>
+              <a href="/hoc-bong#anh" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇬🇧 Học bổng Anh Quốc</a>
+              <a href="/hoc-bong#canada" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇨🇦 Học bổng Canada</a>
+              <a href="/hoc-bong#singapore" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇸🇬 Học bổng Singapore</a>
+              <a href="/hoc-bong#malaysia" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇲🇾 Học bổng Malaysia</a>
+              <a href="/hoc-bong#philip" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇵🇭 Học bổng Philippines</a>
+            </div>
+          </div>
 
-          <a href="/su-kien" class=" hover:text-brand-navy transition-colors">Tin Du Học & Sự Kiện</a>
+          <!-- Tin Du Học: Dạng bài viết SEO, không sự kiện -->
+          <a href="/tin-du-hoc" class="hover:text-brand-navy hover:text-brand-navy transition-colors">Tin Du Học</a>
           
-          <a href="/gioi-thieu" class=" hover:text-brand-navy transition-colors">Giới Thiệu</a>
+          <!-- Giới Thiệu -->
+          <a href="/gioi-thieu" class="hover:text-brand-navy hover:text-brand-navy transition-colors">Giới Thiệu</a>
           
-          <a href="/lien-he" class="text-amber-600 font-bold hover:text-brand-navy transition-colors">Liên Hệ</a>
+          <!-- KHÔNG CÓ MỤC LIÊN HỆ THEO YÊU CẦU NGƯỜI DÙNG -->
         </nav>
 
-        <!-- Action CTA bên phải: Nút Tìm Kiếm Khóa Học Pill Button (Chuẩn phong cách INEC nhưng mang nhận diện Hằng Lương) -->
+        <!-- Action CTA bên phải: Nút Tìm Kiếm Khóa Học Pill Button -->
         <div class="hidden md:flex items-center">
           <a href="/tim-khoa-hoc" class="px-5 py-2 rounded-full border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold text-xs transition-all shadow-sm flex items-center gap-1.5">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
@@ -173,7 +239,7 @@
       </div>
     </div>
 
-    <!-- DẢI VIỀN MÀU NHẬN DIỆN THƯƠNG HIỆU (Thay vì 4 màu INEC, Hằng Lương dùng Navy - Gold - Ruby đẳng cấp) -->
+    <!-- DẢI VIỀN MÀU NHẬN DIỆN THƯƠNG HIỆU (Navy 50% - Gold 30% - Red 20%) -->
     <div class="w-full h-[3.5px] flex">
       <div class="w-[50%] bg-brand-navy"></div>
       <div class="w-[30%] bg-amber-500"></div>
@@ -485,6 +551,36 @@
 
     </div>
   </footer>
+
+    <!-- MOBILE MENU DRAWER (KHÔNG CÓ TRANG CHỦ & KHÔNG CÓ LIÊN HỆ THEO YÊU CẦU) -->
+  <div id="mobile-drawer-backdrop" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm lg:hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-72 h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between p-6 overflow-y-auto">
+    <div class="space-y-6">
+      <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+        <span class="font-bold text-brand-navy font-heading">Menu Du Học</span>
+        <button id="mobile-drawer-close" class="p-1 text-slate-400 hover:text-slate-700 text-2xl leading-none">&times;</button>
+      </div>
+      <nav class="space-y-3 text-sm font-semibold text-slate-700">
+        <a href="/quoc-gia" class="block py-1.5 hover:text-amber-600">🌍 Quốc Gia Du Học</a>
+        <a href="/truong-hoc" class="block py-1.5 hover:text-amber-600">🏫 Trường Học Đối Tác</a>
+        <a href="/hoc-bong" class="block py-1.5 hover:text-amber-600">🎁 Học Bổng Du Học</a>
+        <a href="/hoi-thao" class="block py-1.5 hover:text-amber-600">🎤 Hội Thảo Trực Tiếp</a>
+        <a href="/tin-du-hoc" class="block py-1.5 hover:text-amber-600">📰 Tin Du Học (SEO)</a>
+        <a href="/tim-khoa-hoc" class="block py-1.5 text-blue-700 font-bold">🔍 Tìm Khóa Học</a>
+        <a href="/gioi-thieu" class="block py-1.5 hover:text-amber-600">🏆 Về Hằng Lương 20 Năm</a>
+        <a href="/gioi-thieu#tuyen-dung" class="block py-1.5 text-emerald-600 font-bold">💼 Cơ Hội Tuyển Dụng</a>
+      </nav>
+    </div>
+
+    <div class="space-y-3 pt-6 border-t border-slate-100">
+      <a href="tel:0908558959" class="w-full py-2.5 bg-slate-100 text-slate-800 font-bold rounded-lg text-center block text-xs">
+        📞 Gọi: 0908 558 959
+      </a>
+      <button onclick="openConsultModal('Tư vấn nhanh mobile', '', true)" class="w-full py-2.5 bg-amber-500 text-slate-950 font-bold rounded-lg text-center block text-xs shadow">
+        Đặt Lịch Hẹn Ngoài Giờ
+      </button>
+    </div>
+  </div>
 
   <div id="toast-container"></div>
   <script src="/assets/js/main.js"></script>
