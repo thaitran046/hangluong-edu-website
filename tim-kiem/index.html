@@ -535,10 +535,15 @@
       const resultsContainer = document.getElementById('main-results-container');
 
       // 1. Cập nhật chỉ mục ngành học (CHỈ HIỆN KHI TÌM KIẾM VÀ TÌM THẤY NGÀNH KHỚP)
-      if (cleanQ) {
+      if (cleanQ && cleanQ.length >= 2) {
         const matchedTaxonomies = majorTaxonomies.filter(item => {
           const matchName = removeVietnameseTones(item.name).includes(cleanQ);
-          const matchKeywords = item.keywords.some(k => cleanQ.includes(k) || k.includes(cleanQ));
+          const matchKeywords = item.keywords.some(k => {
+            if (cleanQ.length === 2) {
+              return k === cleanQ || cleanQ.includes(k);
+            }
+            return cleanQ.includes(k) || k.includes(cleanQ);
+          });
           return matchName || matchKeywords;
         });
 
@@ -913,5 +918,6 @@
 
   <!-- Scripts -->
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search-modal.js"></script>
 </body>
 </html>
