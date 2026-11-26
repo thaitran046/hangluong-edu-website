@@ -444,7 +444,287 @@
     </div>
   </section>
 
-  <!-- TRẮC NGHIỆM HƯỚNG NGHIỆP HOLLAND (RIASEC) -> KẾT NỐI TRỰC TIẾP TÌM KHÓA HỌC -->
+  
+  <!-- ==================== HỌC BỔNG QUỐC TẾ & HỖ TRỢ TÀI CHÍNH (BIẾN TẤU ĐỘC ĐÁO CHUẨN HẰNG LƯƠNG) ==================== -->
+  <section class="py-14 sm:py-20 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <!-- Khối Box Navy Hoàng Gia với hiệu ứng viền sáng và ánh kim -->
+      <div class="bg-gradient-to-br from-brand-navyDark via-brand-navy to-slate-900 rounded-3xl p-6 sm:p-10 text-white relative overflow-hidden shadow-2xl border border-white/10">
+        
+        <!-- Background radial glow -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+          
+          <!-- CỘT TRÁI (4 CỘT): TIÊU ĐỀ, MÔ TẢ & CTA ĐÁNH GIÁ HỌC BỔNG -->
+          <div class="lg:col-span-4 space-y-5 lg:sticky lg:top-28">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+              Quỹ Học Bổng Toàn Cầu 2026 - 2027
+            </div>
+            
+            <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white leading-tight">
+              Học Bổng Quốc Tế & Hỗ Trợ Tài Chính
+            </h2>
+            
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Giúp hành trình du học của bạn thuận lợi và tối ưu giá trị đầu tư hơn. Học bổng và gói hỗ trợ tài chính không chỉ dành cho sinh viên xuất sắc mà còn dựa trên nhiều tiêu chí đa dạng như bài luận cá nhân, chứng chỉ ngoại ngữ và phỏng vấn 1:1.
+            </p>
+
+            <div class="pt-2 space-y-3">
+              <button onclick="openConsultModal('Thử apply học bổng', 'Học bổng Hằng Lương', false)" class="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-extrabold rounded-2xl text-xs sm:text-sm shadow-xl hover:shadow-amber-500/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2 group cursor-pointer">
+                <span>🎯 Thử Apply Học Bổng Ngay</span>
+                <span class="group-hover:translate-x-1 transition-transform font-bold">&rarr;</span>
+              </button>
+              
+              <div class="flex items-center gap-4 text-[11px] text-slate-400 pt-1">
+                <span class="flex items-center gap-1">
+                  <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  500+ Suất học bổng
+                </span>
+                <span class="flex items-center gap-1">
+                  <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  Trị giá từ 20% đến 100%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CỘT PHẢI (8 CỘT): 3 CỘT DANH MỤC HỌC BỔNG THEO THIẾT KẾ BIẾN TẤU -->
+          <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+            
+            <!-- CỘT 1: HỌC BỔNG MỚI NHẤT -->
+            <div class="bg-white/5 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/40 transition-all flex flex-col justify-between space-y-4">
+              <div>
+                <div class="flex items-center gap-2 pb-3 border-b border-white/10 text-white font-bold text-sm sm:text-base font-heading">
+                  <span class="text-xl">🎓</span>
+                  <span>Học Bổng Mới Nhất</span>
+                </div>
+                
+                <div class="space-y-3.5 pt-3">
+                  <!-- Item 1 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Học bổng', 'BHMS Thụy Sĩ 2027')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-amber-400">BHMS Thụy Sĩ 2027</span>
+                      <span class="bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">20.000 CHF</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-amber-300 transition-colors">
+                      Top 12 thế giới, học Hospitality tại Lucerne và Zurich kèm thực tập hưởng lương.
+                    </p>
+                  </div>
+
+                  <!-- Item 2 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Học bổng', 'CATS Cambridge 70%')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-blue-300">CATS Cambridge (Anh)</span>
+                      <span class="bg-blue-400/20 text-blue-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Học bổng 70%</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-blue-300 transition-colors">
+                      Chạm tay vào giấc mơ Oxford, Cambridge với học bổng lên đến 70% học phí.
+                    </p>
+                  </div>
+
+                  <!-- Item 3 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Học bổng', 'University of Dundee')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-emerald-300">University of Dundee</span>
+                      <span class="bg-emerald-400/20 text-emerald-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">£5,000 / Năm</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-emerald-300 transition-colors">
+                      Cơ hội du học Anh tại Dundee với học phí năm đầu ưu đãi chỉ từ 10.000 GBP.
+                    </p>
+                  </div>
+
+                  <!-- Item 4 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Học bổng', 'Deakin & Curtin Úc')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-amber-300">Deakin & Curtin Úc</span>
+                      <span class="bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">25% - 50%</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-amber-300 transition-colors">
+                      Học bổng xuất sắc nhóm ngành Công nghệ, Kỹ thuật và Kinh doanh tại bang Victoria & Tây Úc.
+                    </p>
+                  </div>
+
+                  <!-- Item 5 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Học bổng', 'Murdoch Singapore 120 Triệu')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-rose-300">Murdoch Singapore</span>
+                      <span class="bg-rose-400/20 text-rose-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">120 Triệu VNĐ</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-rose-300 transition-colors">
+                      Nhận bằng Cử nhân Úc tại Singapore với mức học phí thấp nhất chưa từng có.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="/hoc-bong" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 pt-2 border-t border-white/10">
+                <span>Xem thêm học bổng</span> &rarr;
+              </a>
+            </div>
+
+            <!-- CỘT 2: ƯU ĐÃI ĐỘC QUYỀN HẰNG LƯƠNG -->
+            <div class="bg-white/5 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/40 transition-all flex flex-col justify-between space-y-4">
+              <div>
+                <div class="flex items-center gap-2 pb-3 border-b border-white/10 text-white font-bold text-sm sm:text-base font-heading">
+                  <span class="text-xl">🪷</span>
+                  <span>Ưu Đãi Độc Quyền HL</span>
+                </div>
+                
+                <div class="space-y-3.5 pt-3">
+                  <!-- Item 1 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Ưu đãi', 'PSB Academy Singapore 40%')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-amber-400">PSB Academy Singapore</span>
+                      <span class="bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Độc quyền 40%</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-amber-300 transition-colors">
+                      Suất học bổng tuyển sinh 40% năm 2027 dành riêng cho hồ sơ nộp qua Hằng Lương.
+                    </p>
+                  </div>
+
+                  <!-- Item 2 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Ưu đãi', 'James Cook University')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-emerald-300">ĐH James Cook Úc (JCU)</span>
+                      <span class="bg-emerald-400/20 text-emerald-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">100% Học Phí</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-emerald-300 transition-colors">
+                      Thi tài năng học bổng 100% học phí trực tiếp tại Singapore Campus kèm hỗ trợ hồ sơ.
+                    </p>
+                  </div>
+
+                  <!-- Item 3 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Ưu đãi', 'Sunway & Taylors Malaysia')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-blue-300">Sunway & Taylor's</span>
+                      <span class="bg-blue-400/20 text-blue-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Free Ghi Danh</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-blue-300 transition-colors">
+                      Miễn 100% phí nộp đơn ghi danh và xét học bổng tự động 25% - 50% theo điểm GPA.
+                    </p>
+                  </div>
+
+                  <!-- Item 4 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Ưu đãi', 'Visa AL2 Úc Không Chứng Minh')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-amber-300">Chính Sách Visa AL2 Úc</span>
+                      <span class="bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Ưu Tiên AL2</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-amber-300 transition-colors">
+                      Nộp hồ sơ danh sách trường Level 1, miễn chứng minh tài chính rườm rà tại Lãnh sự.
+                    </p>
+                  </div>
+
+                  <!-- Item 5 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Ưu đãi', 'Luyện Phỏng Vấn 1:1')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-purple-300">Luyện Phỏng Vấn 1:1</span>
+                      <span class="bg-purple-400/20 text-purple-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Miễn Phí 100%</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-purple-300 transition-colors">
+                      Huấn luyện kỹ năng trả lời phỏng vấn học bổng và visa độc quyền cùng cựu Giám đốc tuyển sinh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="/hoc-bong" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 pt-2 border-t border-white/10">
+                <span>Xem ưu đãi chi tiết</span> &rarr;
+              </a>
+            </div>
+
+            <!-- CỘT 3: HỖ TRỢ TÀI CHÍNH & XUẤT CẢNH -->
+            <div class="bg-white/5 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/40 transition-all flex flex-col justify-between space-y-4">
+              <div>
+                <div class="flex items-center gap-2 pb-3 border-b border-white/10 text-white font-bold text-sm sm:text-base font-heading">
+                  <span class="text-xl">💸</span>
+                  <span>Hỗ Trợ Tài Chính Khác</span>
+                </div>
+                
+                <div class="space-y-3.5 pt-3">
+                  <!-- Item 1 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Hỗ trợ tài chính', 'Tặng Vé Máy Bay & Vali 5 Tr')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-emerald-400">Gói Quà Tặng Xuất Cảnh</span>
+                      <span class="bg-emerald-400/20 text-emerald-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Trị giá 5 Triệu</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-emerald-300 transition-colors">
+                      Tặng vé máy bay du học sinh hoặc vali du học cao cấp trị giá 5.000.000 VNĐ khi nhận visa.
+                    </p>
+                  </div>
+
+                  <!-- Item 2 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Hỗ trợ tài chính', 'Học Bổng Kép 500 Triệu JCU')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-amber-300">Học Bổng Kép JCU & SIM</span>
+                      <span class="bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Đến 500 Triệu</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-amber-300 transition-colors">
+                      Gói hỗ trợ tài chính cộng dồn đặc biệt kết hợp học bổng trường và quỹ khuyến học Hằng Lương.
+                    </p>
+                  </div>
+
+                  <!-- Item 3 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Hỗ trợ tài chính', 'Gói Quà Tặng Kaplan 80 Triệu')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-blue-300">Gói Hỗ Trợ Kaplan</span>
+                      <span class="bg-blue-400/20 text-blue-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Đến 80 Triệu VNĐ</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-blue-300 transition-colors">
+                      Nhận ngay gói học bổng đến 50% + hỗ trợ nhà ở ký túc xá cho sinh viên nộp đơn sớm.
+                    </p>
+                  </div>
+
+                  <!-- Item 4 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Hỗ trợ tài chính', 'Miễn 100% Phí Dịch Vụ')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-purple-300">Miễn Phí Dịch Vụ 100%</span>
+                      <span class="bg-purple-400/20 text-purple-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Tiết Kiệm 20 Tr</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-purple-300 transition-colors">
+                      Áp dụng cho học sinh làm hồ sơ Singapore, Malaysia, Philippines và các trường đối tác Úc AL1.
+                    </p>
+                  </div>
+
+                  <!-- Item 5 -->
+                  <div class="group cursor-pointer" onclick="openConsultModal('Hỗ trợ tài chính', 'Visa Thăm Thân Phụ Huynh')">
+                    <div class="flex items-center justify-between text-[11px] mb-1">
+                      <span class="font-bold text-amber-400">Visa Thăm Thân Cha Mẹ</span>
+                      <span class="bg-amber-400/20 text-amber-300 px-1.5 py-0.5 rounded text-[9.5px] font-bold">Hỗ Trợ 100%</span>
+                    </div>
+                    <p class="text-[11.5px] text-slate-300 leading-snug group-hover:text-amber-300 transition-colors">
+                      Hỗ trợ toàn bộ thủ tục xin visa cho phụ huynh đi cùng học sinh dự lễ tốt nghiệp hoặc thăm con.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="/hoc-bong" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 pt-2 border-t border-white/10">
+                <span>Xem chính sách hỗ trợ</span> &rarr;
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- DẢI XEM THÊM DƯỚI CÙNG -->
+        <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-xs text-slate-400 text-center sm:text-left">
+            💡 <em>Lưu ý: Các suất học bổng có số lượng giới hạn theo từng kỳ nhập học. Hằng Lương ưu tiên thẩm định hồ sơ nộp sớm.</em>
+          </div>
+          <a href="/hoc-bong" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-amber-400 hover:text-slate-950 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all shadow hover:shadow-amber-500/20 hover:scale-105">
+            <span>Xem Danh Sách 500+ Học Bổng Đang Mở Tuyển Sinh</span>
+            <span class="font-bold">&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+<!-- TRẮC NGHIỆM HƯỚNG NGHIỆP HOLLAND (RIASEC) -> KẾT NỐI TRỰC TIẾP TÌM KHÓA HỌC -->
   <section id="test-holland" class="py-16 bg-gradient-to-r from-blue-900 via-brand-navy to-slate-900 text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       
@@ -532,206 +812,459 @@
     </div>
   </section>
 
-  <!-- SOCIAL PROOF: 3 BẮT BUỘC THEO ĐÚNG CHỈ ĐẠO CỦA CHỊ SẾP -->
-  <section class="py-16 bg-slate-50 border-b border-slate-200/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+  
+  <!-- ==================== HỆ THỐNG ĐỐI TÁC CHIẾN LƯỢC HẰNG LƯƠNG ==================== -->
+  <section class="py-14 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-10">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Bảo chứng niềm tin 20 năm</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-1">
-          Học Sinh & Đối Tác Nói Gì Về Hằng Lương?
-        </h2>
-        <p class="text-sm text-slate-500 mt-1">Hồ sơ thật, câu chuyện thật và sự ghi nhận danh giá từ các trường đại học quốc tế.</p>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            Mạng Lưới Giáo Dục Toàn Cầu
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-navy font-heading mt-2">
+            Hệ Thống Đối Tác Chiến Lược 500+ Viện & Trường Đại Học
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
+            Hằng Lương tự hào là đại diện tuyển sinh chính thức được ủy quyền trực tiếp tại Việt Nam bởi các trường đại học danh tiếng, tập đoàn giáo dục hàng đầu thế giới.
+          </p>
+        </div>
+        <a href="/truong-hoc" class="text-xs sm:text-sm font-bold text-brand-navy hover:text-amber-600 flex items-center gap-1.5 transition-colors whitespace-nowrap">
+          Tra cứu 500+ trường đối tác &rarr;
+        </a>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Partner Cards Grid phân theo cụm trường nổi bật -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4">
         
-        <!-- KHỐI 1: KHÁCH HÀNG & HỌC SINH NÓI GÌ (VIDEO REVIEW) -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center font-bold">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 font-heading">Học Sinh Nói Gì Về Hằng Lương</h3>
-              <p class="text-xs text-slate-500">Video phỏng vấn chân thực từ học sinh</p>
-            </div>
-          </div>
-
-          <div class="space-y-4">
-            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex gap-3.5 items-center">
-              <div class="w-20 h-14 rounded-lg bg-slate-800 flex items-center justify-center text-white relative overflow-hidden flex-shrink-0 cursor-pointer" onclick="openConsultModal('Video Chia Sẻ', 'Bé Lan Hương - RMIT Úc')">
-                <span class="text-xl">👩‍🎓</span>
-                <span class="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
-                </span>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold text-slate-900">Bé Lan Hương (RMIT Úc)</h4>
-                <p class="text-[11px] text-slate-500 leading-snug mt-0.5">"Được định hướng lộ trình học bổng 100% rất nhiệt tình và nhận visa chỉ trong 2 tuần."</p>
-              </div>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex gap-3.5 items-center">
-              <div class="w-20 h-14 rounded-lg bg-slate-800 flex items-center justify-center text-white relative overflow-hidden flex-shrink-0 cursor-pointer" onclick="openConsultModal('Video Sự Kiện', 'Bé Lan - THPT Ngô Quyền')">
-                <span class="text-xl">🏫</span>
-                <span class="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
-                </span>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold text-slate-900">Bé Lan (Lớp 12 THPT Ngô Quyền)</h4>
-                <p class="text-[11px] text-slate-500 leading-snug mt-0.5">"Đến Ngày hội Hằng Lương em được gặp trực tiếp đại diện trường và chốt được mục tiêu rõ ràng."</p>
-              </div>
-            </div>
-          </div>
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇦🇺</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">Monash University</div>
+          <span class="text-[10px] text-blue-700 font-semibold bg-blue-50 px-2 py-0.5 rounded mt-1">Top 50 Thế Giới (Go8)</span>
         </div>
 
-        <!-- KHỐI 2: CÂU CHUYỆN THÀNH CÔNG (SUCCESS STORIES) -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 font-heading">Câu Chuyện Thành Công</h3>
-              <p class="text-xs text-slate-500">Gương mặt học sinh săn học bổng & visa</p>
-            </div>
-          </div>
-
-          <div class="space-y-4">
-            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex gap-3 items-center">
-              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl flex-shrink-0">👨‍🎓</div>
-              <div class="flex-1">
-                <div class="flex items-center justify-between">
-                  <h4 class="text-xs font-bold text-slate-900">Trần Minh Nhật</h4>
-                  <span class="text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">Học bổng 100%</span>
-                </div>
-                <p class="text-[11px] text-slate-600 mt-0.5">Học bổng Toàn phần Monash University Úc - Khoa học Máy tính</p>
-              </div>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex gap-3 items-center">
-              <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-xl flex-shrink-0">👩‍🎓</div>
-              <div class="flex-1">
-                <div class="flex items-center justify-between">
-                  <h4 class="text-xs font-bold text-slate-900">Nguyễn Phương Thảo</h4>
-                  <span class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Visa Mỹ 1 Tháng</span>
-                </div>
-                <p class="text-[11px] text-slate-600 mt-0.5">Đậu Visa F1 Arizona State University (ASU) sau 1 lần phỏng vấn</p>
-              </div>
-            </div>
-          </div>
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇦🇺</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">Deakin University</div>
+          <span class="text-[10px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded mt-1">Top 1% Đại Học Thế Giới</span>
         </div>
 
-        <!-- KHỐI 3: BẰNG KHEN & GIẢI THƯỞNG 20 NĂM CỦA HẰNG LƯƠNG -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center font-bold">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-900 font-heading">Bằng Khen & Kỷ Niệm Chương</h3>
-              <p class="text-xs text-slate-500">Ghi nhận từ các tổ chức giáo dục quốc tế</p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-3">
-            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
-              <div class="text-2xl mb-1">🏆</div>
-              <div class="text-xs font-bold text-slate-900">ICEF Accredited</div>
-              <div class="text-[10px] text-slate-500">Đại diện Tuyển sinh Toàn cầu</div>
-            </div>
-            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
-              <div class="text-2xl mb-1">🎖️</div>
-              <div class="text-xs font-bold text-slate-900">Curtin University</div>
-              <div class="text-[10px] text-slate-500">Top Strategic Partner</div>
-            </div>
-            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
-              <div class="text-2xl mb-1">🌟</div>
-              <div class="text-xs font-bold text-slate-900">Navitas Group</div>
-              <div class="text-[10px] text-slate-500">Top Performing Agent</div>
-            </div>
-            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80 text-center">
-              <div class="text-2xl mb-1">📜</div>
-              <div class="text-xs font-bold text-slate-900">Sở GD&ĐT TP.HCM</div>
-              <div class="text-[10px] text-slate-500">Giấy phép hoạt động 20+ Năm</div>
-            </div>
-          </div>
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇲🇾</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">Sunway University</div>
+          <span class="text-[10px] text-amber-700 font-semibold bg-amber-50 px-2 py-0.5 rounded mt-1">Đối tác Lancaster UK</span>
         </div>
 
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇲🇾</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">Taylor's University</div>
+          <span class="text-[10px] text-purple-700 font-semibold bg-purple-50 px-2 py-0.5 rounded mt-1">Số 1 Tư Thục Đông Nam Á</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇸🇬</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">SIM Singapore</div>
+          <span class="text-[10px] text-rose-700 font-semibold bg-rose-50 px-2 py-0.5 rounded mt-1">Học Viện Quản Lý Số 1</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇸🇬</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">James Cook Úc (JCU)</div>
+          <span class="text-[10px] text-blue-700 font-semibold bg-blue-50 px-2 py-0.5 rounded mt-1">ĐH Công Lập Úc tại SG</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇲🇾</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">APU University</div>
+          <span class="text-[10px] text-cyan-700 font-semibold bg-cyan-50 px-2 py-0.5 rounded mt-1">Đỉnh Cao Công Nghệ & AI</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇦🇺</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">Curtin University</div>
+          <span class="text-[10px] text-slate-600 font-semibold bg-slate-100 px-2 py-0.5 rounded mt-1">Perth & Singapore</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇬🇧</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">Univ. of Dundee</div>
+          <span class="text-[10px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded mt-1">Top ĐH Nghiên Cứu UK</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇨🇭</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">BHMS Thụy Sĩ</div>
+          <span class="text-[10px] text-amber-700 font-semibold bg-amber-50 px-2 py-0.5 rounded mt-1">Top 12 Hospitality Thế Giới</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇺🇸</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">Arizona State (ASU)</div>
+          <span class="text-[10px] text-rose-700 font-semibold bg-rose-50 px-2 py-0.5 rounded mt-1">#1 Đổi Mới Sáng Tạo Mỹ</span>
+        </div>
+
+        <div class="p-4 bg-slate-50 hover:bg-white rounded-2xl border border-slate-200 hover:border-amber-400 hover:shadow-md transition-all text-center flex flex-col justify-center items-center h-32 group">
+          <span class="text-2xl mb-1 group-hover:scale-110 transition-transform">🇵🇭</span>
+          <div class="font-bold text-xs sm:text-sm text-slate-900 font-heading">CIA English Academy</div>
+          <span class="text-[10px] text-blue-700 font-semibold bg-blue-50 px-2 py-0.5 rounded mt-1">Học Viện Sparta Philippines</span>
+        </div>
+
+      </div>
+
+      <!-- Partner Guarantee Bar -->
+      <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-wrap items-center justify-around gap-4 text-xs text-slate-700 font-semibold">
+        <div class="flex items-center gap-2">
+          <span class="text-emerald-600 text-base">✔</span>
+          <span>Đại diện tuyển sinh chính thức được ủy quyền</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-emerald-600 text-base">✔</span>
+          <span>Miễn 100% phí dịch vụ nộp hồ sơ ghi danh</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-emerald-600 text-base">✔</span>
+          <span>Học bổng cấp trực tiếp từ Quỹ trường đối tác</span>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- MỤC GỘP CHUNG: HẰNG LƯƠNG ĐỒNG HÀNH CÙNG HỌC SINH, SINH VIÊN & SỰ KIỆN NỔI BẬT (ĐÚNG YÊU CẦU CHỊ SẾP) -->
-  <section class="py-16 bg-white border-b border-slate-200/80">
+  <!-- ==================== HỌC SINH & ĐỐI TÁC NÓI GÌ VỀ HẰNG LƯƠNG? (CHIA LÀM 2 PHẦN RÕ RỆT) ==================== -->
+  <section class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-16">
+      
+      <!-- PHẦN 1: HỌC SINH & PHỤ HUYNH NÓI GÌ VỀ HẰNG LƯƠNG -->
+      <div class="space-y-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            Tiếng Nói Người Thật Việc Thật
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-2">
+            Học Sinh & Phụ Huynh Nói Gì Về Hằng Lương?
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Những chia sẻ chân thực từ các bạn học sinh đã xuất cảnh thành công và niềm tin từ các bậc phụ huynh trên cả nước.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- CỘT 1: VIDEO CHIA SẺ TRỰC TIẾP CỦA HỌC SINH TẠI SỰ KIỆN -->
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
+                <div class="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center font-bold">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 font-heading text-base">Video Phỏng Vấn Học Sinh Thực Tế</h3>
+                  <p class="text-xs text-slate-500">Cảm nhận của học sinh tại Ngày hội du học & sau xuất cảnh</p>
+                </div>
+              </div>
+
+              <div class="space-y-3.5 pt-4">
+                <!-- Video 1 -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 hover:border-amber-300 transition-all flex gap-3.5 items-center">
+                  <div class="w-20 h-16 rounded-xl bg-slate-800 flex items-center justify-center text-white relative overflow-hidden flex-shrink-0 cursor-pointer group" onclick="openConsultModal('Video Chia Sẻ', 'Bé Lan Hương - RMIT Úc')">
+                    <span class="text-xl">👩‍🎓</span>
+                    <span class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <svg class="w-7 h-7 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900">Bé Lan Hương (Tân Sinh Viên RMIT Úc)</h4>
+                    <p class="text-[11px] text-slate-500 leading-snug mt-0.5">"Được anh chị Hằng Lương định hướng lộ trình học bổng 100% rất nhiệt tình và nhận visa chỉ trong 2 tuần."</p>
+                    <span class="text-[10px] text-amber-600 font-semibold">Xem video phỏng vấn 1 phút &rarr;</span>
+                  </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 hover:border-amber-300 transition-all flex gap-3.5 items-center">
+                  <div class="w-20 h-16 rounded-xl bg-slate-800 flex items-center justify-center text-white relative overflow-hidden flex-shrink-0 cursor-pointer group" onclick="openConsultModal('Video Sự Kiện', 'Bé Lan - THPT Ngô Quyền')">
+                    <span class="text-xl">🏫</span>
+                    <span class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <svg class="w-7 h-7 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900">Bé Lan (Học Sinh Lớp 12 THPT Ngô Quyền)</h4>
+                    <p class="text-[11px] text-slate-500 leading-snug mt-0.5">"Đến Ngày hội Hằng Lương em được gặp trực tiếp đại diện trường Thụy Sĩ & Úc, chọn được mục tiêu rõ ràng."</p>
+                    <span class="text-[10px] text-amber-600 font-semibold">Xem phỏng vấn tại sự kiện &rarr;</span>
+                  </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 hover:border-amber-300 transition-all flex gap-3.5 items-center">
+                  <div class="w-20 h-16 rounded-xl bg-slate-800 flex items-center justify-center text-white relative overflow-hidden flex-shrink-0 cursor-pointer group" onclick="openConsultModal('Video Chia Sẻ', 'Hoàng Nam - Deakin Úc')">
+                    <span class="text-xl">👨‍🎓</span>
+                    <span class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <svg class="w-7 h-7 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900">Hoàng Nam (Cựu Sinh Viên Deakin University Úc)</h4>
+                    <p class="text-[11px] text-slate-500 leading-snug mt-0.5">"Từ ngày làm hồ sơ đến khi sang Melbourne và đi làm thêm hợp pháp, Hằng Lương luôn đồng hành sát cánh."</p>
+                    <span class="text-[10px] text-amber-600 font-semibold">Xem chia sẻ kinh nghiệm sống &rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button onclick="openConsultModal('Tư vấn học bổng cùng cựu học sinh', '', false)" class="w-full py-2.5 rounded-xl border border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold text-xs transition-colors text-center cursor-pointer">
+              Đăng Ký Trò Chuyện Cùng Hội Cựu Du Học Sinh &rarr;
+            </button>
+          </div>
+
+          <!-- CỘT 2: CÂU CHUYỆN THÀNH CÔNG & PHỤ HUYNH GỬI GẮM -->
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 font-heading text-base">Câu Chuyện Học Bổng & Niềm Tin Phụ Huynh</h3>
+                  <p class="text-xs text-slate-500">Gương mặt học sinh săn học bổng danh giá & feedback phụ huynh</p>
+                </div>
+              </div>
+
+              <div class="space-y-3.5 pt-4">
+                <!-- Case 1 -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 flex gap-3.5 items-center">
+                  <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center text-xl flex-shrink-0">👨‍🎓</div>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <h4 class="text-xs font-bold text-slate-900">Trần Minh Nhật</h4>
+                      <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Học bổng 100%</span>
+                    </div>
+                    <p class="text-[11px] text-slate-600 mt-1">Học bổng Toàn phần Monash University Úc (Nhóm Go8) chuyên ngành Khoa học Máy tính & AI.</p>
+                  </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 flex gap-3.5 items-center">
+                  <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-xl flex-shrink-0">👩‍🎓</div>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <h4 class="text-xs font-bold text-slate-900">Nguyễn Phương Thảo</h4>
+                      <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Visa F1 Mỹ Đậu Lần 1</span>
+                    </div>
+                    <p class="text-[11px] text-slate-600 mt-1">Đậu Visa F1 Arizona State University (ASU) chỉ sau 2 buổi luyện phỏng vấn 1:1 độc quyền.</p>
+                  </div>
+                </div>
+
+                <!-- Case 3: Phụ huynh -->
+                <div class="p-3.5 rounded-2xl bg-amber-50/60 border border-amber-200/70 flex gap-3.5 items-start">
+                  <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl flex-shrink-0">👨‍💼</div>
+                  <div class="flex-1">
+                    <div class="flex items-center justify-between">
+                      <h4 class="text-xs font-bold text-slate-900">Bác Nguyễn Văn Hùng</h4>
+                      <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full">Phụ Huynh (Đà Lạt)</span>
+                    </div>
+                    <p class="text-[11px] text-slate-600 mt-1 italic">"Gia đình ở xa ban đầu rất lo lắng. Nhờ các anh chị Hằng Lương tận tâm từ việc giải trình tài chính đến ngày đón cháu tại sân bay Melbourne, nay con tôi đã tốt nghiệp và có việc làm ổn định."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2 text-center text-xs text-slate-500">
+              ⭐ Đánh giá <strong>4.9/5 sao</strong> trên Google Business với hơn 1.000+ lượt phản hồi tích cực.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PHẦN 2: ĐỐI TÁC QUỐC TẾ NÓI GÌ VỀ HẰNG LƯƠNG -->
+      <div class="space-y-8 pt-6 border-t border-slate-200">
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+            Chứng Thực Quốc Tế
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-2">
+            Đại Diện Các Trường Đại Học Quốc Tế Nói Gì Về Hằng Lương?
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Sự tín nhiệm cao và đánh giá chuyên nghiệp từ các Giám đốc tuyển sinh của các trường đại học hàng đầu thế giới.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:border-amber-400 hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-blue-800 bg-blue-50 px-2 py-0.5 rounded">Monash University</span>
+                <span class="text-xl">🇦🇺</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Hằng Lương là một trong những đối tác chiến lược uy tín và lâu năm nhất của Monash tại Việt Nam. Hồ sơ học sinh Hằng Lương luôn được thẩm định rất kỹ lưỡng và chuẩn chỉ."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-xs font-bold text-slate-900">Mr. Andrew Harrison</div>
+              <div class="text-[10.5px] text-slate-500">Director of International Recruitment (Monash Go8)</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:border-amber-400 hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded">Sunway University</span>
+                <span class="text-xl">🇲🇾</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Chúng tôi đồng hành cùng Hằng Lương hơn 15 năm qua. Tinh thần trách nhiệm, đạo đức tư vấn và sự tận tụy chăm sóc học sinh của ban giám đốc cùng đội ngũ là điều chúng tôi đánh giá cao nhất."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-xs font-bold text-slate-900">Ms. Sophia Lim</div>
+              <div class="text-[10.5px] text-slate-500">Head of International Office (Sunway Malaysia)</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:border-amber-400 hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2 py-0.5 rounded">SIM Singapore</span>
+                <span class="text-xl">🇸🇬</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Hằng Lương là đại diện tuyển sinh xuất sắc, liên tục nằm trong Top Agent tại Việt Nam. Sinh viên Hằng Lương sang SIM luôn đạt thành tích học tập tốt và hòa nhập nhanh chóng."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-xs font-bold text-slate-900">Mr. Gerald Tan</div>
+              <div class="text-[10.5px] text-slate-500">Regional Development Manager (SIM Singapore)</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:border-amber-400 hover:shadow-md transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Deakin University</span>
+                <span class="text-xl">🇦🇺</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed italic">
+                "Sự am hiểu sâu sắc về hệ thống giáo dục Úc và tỷ lệ visa vượt trội khiến chúng tôi luôn tin tưởng tuyệt đối khi hợp tác cùng Hằng Lương Edu qua từng kỳ tuyển sinh."
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100">
+              <div class="text-xs font-bold text-slate-900">Ms. Linh Nguyen</div>
+              <div class="text-[10.5px] text-slate-500">Country Manager Vietnam (Deakin University)</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== KHỐI 1: SỰ KIỆN & HỘI THẢO DU HỌC SẮP DIỄN RA ==================== -->
+  <section class="py-14 sm:py-20 bg-white border-b border-slate-200/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Hoạt động gắn kết & lan tỏa</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-1">
-            Hằng Lương Đồng Hành Cùng Học Sinh, Sinh Viên & Sự Kiện Nổi Bật
+          <span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-3 py-1 rounded-full border border-rose-200 inline-flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
+            Đang Mở Cổng Đăng Ký Giữ Chỗ
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-2">
+            Sự Kiện & Hội Thảo Du Học Sắp Diễn Ra
           </h2>
-          <p class="text-sm text-slate-500 mt-1">Các ngày hội du học, chương trình học bổng khuyến học và hoạt động kết nối sinh viên quốc tế.</p>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Gặp gỡ trực tiếp đại diện tuyển sinh quốc tế, nộp hồ sơ xét duyệt học bổng tại chỗ và cập nhật chính sách visa mới nhất.</p>
         </div>
-        <a href="/su-kien" class="mt-4 md:mt-0 text-sm font-bold text-brand-navy hover:text-amber-600 flex items-center gap-1.5 transition-colors">
-          Xem bản tin sự kiện &rarr;
+        <a href="/hoi-thao" class="text-xs sm:text-sm font-bold text-brand-navy hover:text-amber-600 flex items-center gap-1.5 transition-colors whitespace-nowrap">
+          Xem toàn bộ lịch hội thảo &rarr;
         </a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <!-- Activity 1 -->
-        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col">
-          <div class="bg-brand-navy p-5 text-white">
-            <span class="text-[11px] font-bold uppercase tracking-wider bg-amber-500 text-slate-950 px-2.5 py-0.5 rounded-full inline-block mb-2">Trụ sở chính TP.HCM</span>
-            <h3 class="text-lg font-bold font-heading">Ngày Hội Du Học Quốc Tế 2027: Khai Xuân Chọn Hướng</h3>
-            <p class="text-xs text-slate-300 mt-1">08:30 - 12:00 | Khách Sạn Rex TP.HCM</p>
+        <!-- Sự kiện 1 -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="bg-gradient-to-r from-brand-navy to-slate-900 p-5 text-white">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-rose-500 text-white px-2.5 py-0.5 rounded-full inline-block mb-2">Hội Thảo Lớn Nhất Năm</span>
+            <h3 class="text-base sm:text-lg font-bold font-heading group-hover:text-amber-300 transition-colors">Ngày Hội Học Bổng Toàn Cầu 2026</h3>
+            <p class="text-xs text-slate-300 mt-1">Gặp trực tiếp 50+ Đại học Úc, Mỹ, Anh, Singapore & Canada</p>
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-            <div>
-              <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 text-center">Thời gian mở cổng còn lại:</div>
-              <div class="grid grid-cols-4 gap-2 text-center font-heading">
-                <div class="countdown-box"><div class="text-lg font-bold cd-days">05</div><div class="text-[9px] uppercase font-normal">Ngày</div></div>
-                <div class="countdown-box"><div class="text-lg font-bold cd-hours">12</div><div class="text-[9px] uppercase font-normal">Giờ</div></div>
-                <div class="countdown-box"><div class="text-lg font-bold cd-minutes">34</div><div class="text-[9px] uppercase font-normal">Phút</div></div>
-                <div class="countdown-box"><div class="text-lg font-bold cd-seconds">56</div><div class="text-[9px] uppercase font-normal">Giây</div></div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4 text-xs text-slate-600">
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 text-slate-700">
+                <span>⏰</span> <strong>Thời gian:</strong> 08:30 - 12:00 | Thứ Bảy, 18/04/2026
+              </div>
+              <div class="flex items-center gap-2 text-slate-700">
+                <span>📍</span> <strong>Địa điểm:</strong> Khách sạn Rex Hotel, 141 Nguyễn Huệ, Quận 1, TP.HCM
+              </div>
+              <div class="flex items-center gap-2 text-emerald-700 font-semibold">
+                <span>🎁</span> <strong>Ưu đãi:</strong> Xét duyệt học bổng 50% - 100% tại chỗ + Tặng vé máy bay
               </div>
             </div>
-            <button onclick="openConsultModal('Ngày Hội Du Học Quốc Tế TP.HCM')" class="w-full py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-sm transition-colors shadow">
-              Đăng Ký Giữ Chỗ Miễn Phí
-            </button>
+            
+            <div class="pt-2 border-t border-slate-200">
+              <button onclick="openConsultModal('Ngày Hội Du Học Quốc Tế TP.HCM')" class="w-full py-2.5 bg-brand-navy hover:bg-amber-500 hover:text-slate-950 text-white font-bold rounded-xl text-xs sm:text-sm transition-all shadow cursor-pointer">
+                Đăng Ký Giữ Chỗ Miễn Phí
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- Activity 2: Tài trợ & Hướng nghiệp trường THPT -->
-        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col">
-          <div class="bg-brand-navy p-5 text-white">
-            <span class="text-[11px] font-bold uppercase tracking-wider bg-emerald-500 text-white px-2.5 py-0.5 rounded-full inline-block mb-2">Tài Trợ & Khuyến Học</span>
-            <h3 class="text-lg font-bold font-heading">Trao Quỹ Học Bổng 'Ươm Mầm Tri Thức' Tại THPT Ngô Quyền</h3>
-            <p class="text-xs text-slate-300 mt-1">Chuỗi hoạt động định hướng nghề nghiệp cho học sinh lớp 12</p>
+        <!-- Sự kiện 2 -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="bg-gradient-to-r from-brand-navy to-slate-900 p-5 text-white">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-blue-500 text-white px-2.5 py-0.5 rounded-full inline-block mb-2">Tọa Đàm Chuyên Sâu</span>
+            <h3 class="text-base sm:text-lg font-bold font-heading group-hover:text-amber-300 transition-colors">Chiến Lược Visa Úc & Việc Làm Định Cư</h3>
+            <p class="text-xs text-slate-300 mt-1">Dành riêng cho khối ngành STEM, Kỹ thuật & Y Dược</p>
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between space-y-3 text-xs text-slate-600">
-            <p>Hằng Lương vinh dự đồng hành trao tặng 20 suất học bổng khuyến học và tổ chức bài test định hướng nghề nghiệp miễn phí cho các bạn học sinh.</p>
-            <a href="/su-kien" class="text-amber-600 font-bold hover:underline block pt-2">Đọc bài phóng sự sự kiện &rarr;</a>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4 text-xs text-slate-600">
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 text-slate-700">
+                <span>⏰</span> <strong>Thời gian:</strong> 14:00 - 17:00 | Chủ Nhật, 26/04/2026
+              </div>
+              <div class="flex items-center gap-2 text-slate-700">
+                <span>📍</span> <strong>Địa điểm:</strong> Trụ sở Hằng Lương (1086 Đường 3/2, Q.11, TP.HCM) & Zoom
+              </div>
+              <div class="flex items-center gap-2 text-emerald-700 font-semibold">
+                <span>🎁</span> <strong>Ưu đãi:</strong> Thẩm định hồ sơ Visa AL2 miễn chứng minh tài chính
+              </div>
+            </div>
+            
+            <div class="pt-2 border-t border-slate-200">
+              <button onclick="openConsultModal('Tọa Đàm Visa Úc Khối STEM')" class="w-full py-2.5 bg-brand-navy hover:bg-amber-500 hover:text-slate-950 text-white font-bold rounded-xl text-xs sm:text-sm transition-all shadow cursor-pointer">
+                Đăng Ký Nhận Link Zoom & Giữ Chỗ
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- Activity 3: Chi nhánh Lâm Đồng -->
-        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col">
-          <div class="bg-brand-navy p-5 text-white">
-            <span class="text-[11px] font-bold uppercase tracking-wider bg-purple-500 text-white px-2.5 py-0.5 rounded-full inline-block mb-2">Chi nhánh Lâm Đồng</span>
-            <h3 class="text-lg font-bold font-heading">Tọa Đàm Du Học Singapore & Malaysia Tiết Kiệm 70%</h3>
-            <p class="text-xs text-slate-300 mt-1">23 Thông Thiên Học, P.2, TP. Đà Lạt, Tỉnh Lâm Đồng</p>
+        <!-- Sự kiện 3 -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="bg-gradient-to-r from-brand-navy to-slate-900 p-5 text-white">
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-purple-500 text-white px-2.5 py-0.5 rounded-full inline-block mb-2">Chi Nhánh Lâm Đồng</span>
+            <h3 class="text-base sm:text-lg font-bold font-heading group-hover:text-amber-300 transition-colors">Du Học Singapore & Malaysia Tiết Kiệm 70%</h3>
+            <p class="text-xs text-slate-300 mt-1">Phỏng vấn học bổng trực tiếp cùng ĐH Sunway & APU</p>
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between space-y-3 text-xs text-slate-600">
-            <p>Phỏng vấn trực tiếp cùng đại diện Đại học Sunway & APU Malaysia dành riêng cho phụ huynh và học sinh khu vực Tây Nguyên.</p>
-            <button onclick="openConsultModal('Tọa Đàm Du Học Chi Nhánh Lâm Đồng')" class="w-full py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-xl text-sm transition-colors shadow">
-              Đăng Ký Tham Gia Miễn Phí
-            </button>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4 text-xs text-slate-600">
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 text-slate-700">
+                <span>⏰</span> <strong>Thời gian:</strong> 09:00 - 11:30 | Thứ Bảy, 09/05/2026
+              </div>
+              <div class="flex items-center gap-2 text-slate-700">
+                <span>📍</span> <strong>Địa điểm:</strong> Chi nhánh Lâm Đồng: 23 Thông Thiên Học, P.2, TP. Đà Lạt
+              </div>
+              <div class="flex items-center gap-2 text-emerald-700 font-semibold">
+                <span>🎁</span> <strong>Ưu đãi:</strong> Miễn 100% phí dịch vụ nộp hồ sơ tại Lâm Đồng
+              </div>
+            </div>
+            
+            <div class="pt-2 border-t border-slate-200">
+              <button onclick="openConsultModal('Tọa Đàm Du Học Chi Nhánh Lâm Đồng')" class="w-full py-2.5 bg-brand-navy hover:bg-amber-500 hover:text-slate-950 text-white font-bold rounded-xl text-xs sm:text-sm transition-all shadow cursor-pointer">
+                Đăng Ký Tham Gia Tại Đà Lạt
+              </button>
+            </div>
           </div>
         </div>
 
@@ -740,7 +1273,190 @@
     </div>
   </section>
 
-  <!-- HIGH-CONVERTING CONSULTATION FORM (CÓ CHỨC NĂNG ĐẶT HẸN NGOÀI GIỜ 17H00 - 21H00) -->
+  <!-- ==================== KHỐI 2: ĐỒNG HÀNH CÙNG HỌC SINH & HOẠT ĐỘNG VỚI CÁC TRƯỜNG THPT / ĐẠI HỌC ==================== -->
+  <section class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+            Trách Nhiệm Xã Hội & Kết Nối Giáo Dục
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-2">
+            Đồng Hành Cùng Học Sinh & Hoạt Động Hợp Tác Với Các Trường
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Chuỗi hoạt động định hướng nghề nghiệp, trao tặng học bổng khuyến học và hỗ trợ học sinh tại các trường THPT, Đại học.</p>
+        </div>
+        <a href="/tin-du-hoc" class="text-xs sm:text-sm font-bold text-brand-navy hover:text-amber-600 flex items-center gap-1.5 transition-colors whitespace-nowrap">
+          Đọc tin tức hoạt động &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Hoạt động 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="aspect-video relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&auto=format&fit=crop&q=80" alt="Trao học bổng Ươm Mầm Tri Thức tại trường THPT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">Tài Trợ Khuyến Học</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-semibold text-slate-400">THPT Ngô Quyền & THPT Marie Curie</span>
+              <h3 class="text-base font-bold font-heading text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">
+                Chương Trình 'Ươm Mầm Tri Thức': Trao 20 Suất Học Bổng Khuyến Học
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-2">
+                Hằng Lương vinh dự phối hợp cùng Ban Giám Hiệu tổ chức ngày hội hướng nghiệp sớm cho học sinh lớp 12, hỗ trợ bài test tính cách Holland và trao học bổng cho học sinh vượt khó học giỏi.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+              <span>✓ Hoạt động thường niên hàng năm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hoạt động 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="aspect-video relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&auto=format&fit=crop&q=80" alt="Tiếp sức mùa thi và hướng nghiệp Tỉnh Đoàn" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">Tiếp Sức Mùa Thi</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-semibold text-slate-400">TP.HCM • Tỉnh Đoàn Lâm Đồng</span>
+              <h3 class="text-base font-bold font-heading text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">
+                Đồng Hành Cùng Sĩ Tử Trong Chiến Dịch Tiếp Sức Mùa Thi Quốc Gia
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-2">
+                Bố trí các trạm tiếp sức phát cẩm nang tuyển sinh, nước uống miễn phí và tư vấn giải tỏa tâm lý phòng thi cho hàng ngàn học sinh cùng phụ huynh tại các điểm thi tốt nghiệp.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-700">
+              <span>✓ Gắn kết cộng đồng học đường</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hoạt động 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="aspect-video relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop&q=80" alt="Tọa đàm chuyển tiếp quốc tế tại Đại học" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">Hợp Tác Đại Học</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-semibold text-slate-400">ĐH Kinh Tế TP.HCM (UEH) • ĐH Văn Lang</span>
+              <h3 class="text-base font-bold font-heading text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">
+                Tọa Đàm Chuyển Tiếp Quốc Tế '2+2' Tiết Kiệm Đến 70% Chi Phí Du Học
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-2">
+                Chuyên đề giới thiệu giải pháp học 1 - 2 năm tại Việt Nam rồi chuyển tiếp sang Đại học Monash, Deakin (Úc) hoặc Sunway (Malaysia) nhận bằng Cử nhân chuẩn Anh - Úc.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-700">
+              <span>✓ Tối ưu lộ trình học tập & tài chính</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== KHỐI 3: DẤU ẤN & SỰ KIỆN ĐÃ DIỄN RA ==================== -->
+  <section class="py-14 sm:py-20 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-600 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
+            Ký Ức & Cột Mốc
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-2">
+            Dấu Ấn Sự Kiện Đã Diễn Ra
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Những cột mốc thành công, quy mô tham dự ấn tượng và các chuyến công tác thực tế của Hằng Lương cùng đối tác.</p>
+        </div>
+        <a href="/gioi-thieu" class="text-xs sm:text-sm font-bold text-brand-navy hover:text-amber-600 flex items-center gap-1.5 transition-colors whitespace-nowrap">
+          Xem hồ sơ năng lực 20 năm &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Milestone 1 -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="aspect-video relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&auto=format&fit=crop&q=80" alt="Ngày Hội Du Học Mùa Thu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">1.200+ Người Tham Dự</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-semibold text-slate-400">TP.HCM • Mùa Thu 2025</span>
+              <h3 class="text-base font-bold font-heading text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">
+                Tổng Kết Ngày Hội Du Học & Học Bổng Toàn Cầu
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-2">
+                Hơn 40 đại diện trường trực tiếp phỏng vấn và trao hơn 150+ suất học bổng danh giá ngay tại sự kiện cho các bạn học sinh nộp hồ sơ sớm.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs font-bold text-emerald-700">
+              ✓ 150+ Suất học bổng trao tay thành công
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="aspect-video relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&auto=format&fit=crop&q=80" alt="Chuyến Fam-Trip khảo sát trường tại Úc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-3 left-3 bg-brand-navy text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">Fam-Trip Thực Tế</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-semibold text-slate-400">Melbourne & Sydney (Australia)</span>
+              <h3 class="text-base font-bold font-heading text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">
+                Khảo Sát Thực Tế Hệ Thống Đại Học Victoria & New South Wales
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-2">
+                Ban Giám Đốc Hằng Lương trực tiếp kiểm tra ký túc xá, cơ sở vật chất tại Monash, Deakin, UTS và thăm hỏi đời sống của cộng đồng du học sinh Hằng Lương.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs font-bold text-blue-700">
+              ✓ Trải nghiệm thật - Tư vấn chân thực
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="aspect-video relative overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&auto=format&fit=crop&q=80" alt="Lễ dặn dò trước khi bay cho tân sinh viên" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow">Pre-Departure</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <span class="text-[11px] font-semibold text-slate-400">Trụ sở chính TP.HCM</span>
+              <h3 class="text-base font-bold font-heading text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">
+                Lễ Vinh Danh & Dặn Dò Trước Khi Bay (Pre-Departure)
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mt-2">
+                Trang bị cẩm nang an toàn, hướng dẫn thủ tục mở tài khoản ngân hàng, quy định hành lý hàng không và tặng vali du học cao cấp cho các tân du học sinh.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs font-bold text-amber-700">
+              ✓ Đồng hành tận tâm trước giờ cất cánh
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+<!-- HIGH-CONVERTING CONSULTATION FORM (CÓ CHỨC NĂNG ĐẶT HẸN NGOÀI GIỜ 17H00 - 21H00) -->
   <section id="dang-ky" class="py-16 bg-gradient-to-br from-brand-navyDark via-brand-navy to-slate-900 text-white relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
       
