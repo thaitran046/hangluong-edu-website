@@ -111,10 +111,10 @@
 
   // Current State
   const filterState = {
-    budget: "<300",
-    level: "thac_si",
-    major: "am_thuc",
-    priority: "dinh_cu"
+    budget: null,
+    level: null,
+    major: null,
+    priority: null
   };
 
   const labelMap = {
@@ -149,29 +149,28 @@
   // 2. Matching Logic
   function getMatchedDestinations() {
     return DESTINATION_DATABASE.map(item => {
-      let score = 0;
-      let isPrimary = false;
+      let score = 50;
 
       // Budget match
-      if (item.budgetLevels.includes(filterState.budget)) {
+      if (filterState.budget && item.budgetLevels.includes(filterState.budget)) {
         score += 40;
         if (item.budgetLevels[0] === filterState.budget) score += 10;
       }
 
       // Priority match
-      if (item.priorities.includes(filterState.priority)) {
+      if (filterState.priority && item.priorities.includes(filterState.priority)) {
         score += 30;
         if (item.priorities[0] === filterState.priority) score += 10;
       }
 
       // Major match
-      if (item.majors.includes(filterState.major)) {
+      if (filterState.major && item.majors.includes(filterState.major)) {
         score += 20;
         if (item.majors[0] === filterState.major) score += 10;
       }
 
       // Level match
-      if (item.levels.includes(filterState.level)) {
+      if (filterState.level && item.levels.includes(filterState.level)) {
         score += 15;
       }
 
@@ -222,12 +221,25 @@
 
     // Update summary text
     if (summaryText) {
-      const bText = labelMap.budget[filterState.budget] || filterState.budget;
-      const lText = labelMap.level[filterState.level] || filterState.level;
-      const mText = labelMap.major[filterState.major] || filterState.major;
-      const pText = labelMap.priority[filterState.priority] || filterState.priority;
+      const parts = [];
+      if (filterState.budget && labelMap.budget[filterState.budget]) {
+        parts.push(`ngân sách <strong>${labelMap.budget[filterState.budget]}</strong>`);
+      }
+      if (filterState.level && labelMap.level[filterState.level]) {
+        parts.push(`bậc <strong>${labelMap.level[filterState.level]}</strong>`);
+      }
+      if (filterState.major && labelMap.major[filterState.major]) {
+        parts.push(`ngành <strong>${labelMap.major[filterState.major]}</strong>`);
+      }
+      if (filterState.priority && labelMap.priority[filterState.priority]) {
+        parts.push(`ưu tiên <strong>${labelMap.priority[filterState.priority]}</strong>`);
+      }
 
-      summaryText.innerHTML = `Dựa trên ngân sách <strong>${bText}</strong>, bậc <strong>${lText}</strong>, ngành <strong>${mText}</strong> và ưu tiên <strong>${pText}</strong>.`;
+      if (parts.length > 0) {
+        summaryText.innerHTML = `Dựa trên ` + parts.join(", ") + `.`;
+      } else {
+        summaryText.innerHTML = `Danh sách các quốc gia du học hàng đầu được đề xuất bởi Du học Hằng Lương.`;
+      }
     }
 
     // Render cards
@@ -275,7 +287,7 @@
               <input type="checkbox" name="compare_country" value="${item.id}" class="rounded border-slate-300 text-red-600 focus:ring-red-500 cursor-pointer">
               <span>So sánh</span>
             </label>
-            <button type="button" onclick="openConsultModal('Tư vấn du học ${item.name}', 'Ngành ${labelMap.major[filterState.major]}')" class="text-red-600 hover:text-red-700 font-bold flex items-center gap-0.5 text-xs group-hover:translate-x-0.5 transition-transform cursor-pointer">
+            <button type="button" onclick="openConsultModal('Tư vấn du học ${item.name}', 'Ngành ${filterState.major && labelMap.major[filterState.major] ? labelMap.major[filterState.major] : 'Tất cả ngành'}')" class="text-red-600 hover:text-red-700 font-bold flex items-center gap-0.5 text-xs group-hover:translate-x-0.5 transition-transform cursor-pointer">
               <span>Chi tiết</span>
               <span>&rarr;</span>
             </button>
@@ -295,31 +307,49 @@
 
       container.querySelectorAll(".dest-pill-btn").forEach(btn => {
         btn.addEventListener("click", function () {
-          // Remove active from peers
-          container.querySelectorAll(".dest-pill-btn").forEach(b => {
-            b.classList.remove("border-red-500", "bg-red-50/50", "text-red-700", "font-bold", "ring-1", "ring-red-500");
-            b.classList.add("border-slate-200", "bg-white", "text-slate-700");
-            const dot = b.querySelector(".pill-dot");
+          const val = this.getAttribute("data-val");
+          const isCurrentlyActive = this.classList.contains("border-red-500");
+
+          if (isCurrentlyActive) {
+            // Deselect on click again
+            this.classList.remove("border-red-500", "bg-red-50/50", "text-red-700", "font-bold", "ring-1", "ring-red-500");
+            this.classList.add("border-slate-200", "bg-white", "text-slate-700");
+            const dot = this.querySelector(".pill-dot");
             if (dot) {
               dot.classList.remove("bg-red-500");
               dot.classList.add("bg-slate-300");
             }
-          });
+            filterState[cat] = null;
+          } else {
+            // Remove active from peers in the same column
+            container.querySelectorAll(".dest-pill-btn").forEach(b => {
+              b.classList.remove("border-red-500", "bg-red-50/50", "text-red-700", "font-bold", "ring-1", "ring-red-500");
+              b.classList.add("border-slate-200", "bg-white", "text-slate-700");
+              const dot = b.querySelector(".pill-dot");
+              if (dot) {
+                dot.classList.remove("bg-red-500");
+                dot.classList.add("bg-slate-300");
+              }
+            });
 
-          // Mark current active
-          this.classList.remove("border-slate-200", "bg-white", "text-slate-700");
-          this.classList.add("border-red-500", "bg-red-50/50", "text-red-700", "font-bold", "ring-1", "ring-red-500");
-          const activeDot = this.querySelector(".pill-dot");
-          if (activeDot) {
-            activeDot.classList.remove("bg-slate-300");
-            activeDot.classList.add("bg-red-500");
+            // Mark clicked button active (red)
+            this.classList.remove("border-slate-200", "bg-white", "text-slate-700");
+            this.classList.add("border-red-500", "bg-red-50/50", "text-red-700", "font-bold", "ring-1", "ring-red-500");
+            const activeDot = this.querySelector(".pill-dot");
+            if (activeDot) {
+              activeDot.classList.remove("bg-slate-300");
+              activeDot.classList.add("bg-red-500");
+            }
+
+            // Update state
+            filterState[cat] = val;
           }
 
-          // Update state
-          filterState[cat] = this.getAttribute("data-val");
-
-          // Auto-render live
-          renderDestinationResults();
+          // If the results section is ALREADY open, update live; otherwise do NOT reveal yet
+          const resultsEl = document.getElementById("destination-results-section");
+          if (resultsEl && !resultsEl.classList.contains("hidden")) {
+            renderDestinationResults();
+          }
         });
       });
     });
@@ -328,9 +358,17 @@
     const submitBtn = document.getElementById("btn-match-destinations");
     if (submitBtn) {
       submitBtn.addEventListener("click", function () {
-        renderDestinationResults();
+        // If user hasn't selected any criteria at all, prompt them
+        const hasSelection = filterState.budget || filterState.level || filterState.major || filterState.priority;
+        if (!hasSelection) {
+          alert("Vui lòng chọn ít nhất ngân sách hoặc ngành học mong muốn trước khi xem gợi ý!");
+          return;
+        }
+
         const resultsEl = document.getElementById("destination-results-section");
         if (resultsEl) {
+          resultsEl.classList.remove("hidden");
+          renderDestinationResults();
           resultsEl.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       });
@@ -348,15 +386,16 @@
           return;
         }
 
-        const bText = labelMap.budget[filterState.budget];
-        const mText = labelMap.major[filterState.major];
-        const pText = labelMap.priority[filterState.priority];
+        const bText = filterState.budget && labelMap.budget[filterState.budget] ? labelMap.budget[filterState.budget] : "Chưa chọn";
+        const mText = filterState.major && labelMap.major[filterState.major] ? labelMap.major[filterState.major] : "Chưa chọn";
+        const pText = filterState.priority && labelMap.priority[filterState.priority] ? labelMap.priority[filterState.priority] : "Chưa chọn";
+        const lText = filterState.level && labelMap.level[filterState.level] ? labelMap.level[filterState.level] : "Chưa chọn";
 
         if (typeof window.openConsultModal === "function") {
           window.openConsultModal("Gợi ý điểm đến du học theo ngân sách", `Ngân sách: ${bText} | Ngành: ${mText} | Ưu tiên: ${pText}`);
           const noteInput = document.getElementById("consult-note");
           if (noteInput) {
-            noteInput.value = `[Form Gợi Ý Điểm Đến] SĐT: ${phone} | Ngân sách: ${bText} | Bậc: ${labelMap.level[filterState.level]} | Ngành: ${mText} | Ưu tiên: ${pText}`;
+            noteInput.value = `[Form Gợi Ý Điểm Đến] SĐT: ${phone} | Ngân sách: ${bText} | Bậc: ${lText} | Ngành: ${mText} | Ưu tiên: ${pText}`;
           }
         } else {
           alert(`Cảm ơn bạn! Chuyên gia Hằng Lương đã tiếp nhận yêu cầu tư vấn quốc gia phù hợp với ngân sách ${bText} và ngành ${mText}. Chúng tôi sẽ gọi lại qua số ${phone} trong 15 phút!`);
@@ -369,7 +408,7 @@
   // 5. Initialize on Load
   function init() {
     initPillControls();
-    renderDestinationResults();
+    // Do NOT render results on page load: results section remains hidden until user clicks "XEM QUỐC GIA PHÙ HỢP"
   }
 
   if (document.readyState === "loading") {
