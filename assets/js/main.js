@@ -482,3 +482,19 @@ window.openConsultModal = function(school, course, isAfterHours = false) {
   openConsultationModal(school, course, isAfterHours);
 };
 window.resetHollandQuiz = resetHollandQuiz;
+
+window.switchStudentProofTab = function(tabId) {
+  var tabs = ['video', 'visa', 'parent'];
+  tabs.forEach(function(t) {
+    var btn = document.getElementById('btn-proof-' + t);
+    var content = document.getElementById('proof-tab-' + t);
+    if (!btn || !content) return;
+    if (t === tabId) {
+      btn.className = 'proof-tab-btn flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-full text-xs sm:text-sm font-bold transition-all duration-200 whitespace-nowrap bg-brand-navy text-white shadow-lg shadow-brand-navy/25 cursor-pointer transform scale-[1.02]';
+      content.classList.remove('hidden');
+    } else {
+      btn.className = 'proof-tab-btn flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-full text-xs sm:text-sm font-bold transition-all duration-200 whitespace-nowrap text-slate-600 hover:text-brand-navy hover:bg-white/80 cursor-pointer';
+      content.classList.add('hidden');
+    }
+  });
+};
