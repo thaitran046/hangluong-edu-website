@@ -234,8 +234,12 @@
           
           <!-- Giới Thiệu -->
           <a href="/gioi-thieu" class="hover:text-brand-navy hover:text-brand-navy transition-colors">Giới Thiệu</a>
-          
-          <!-- KHÔNG CÓ MỤC LIÊN HỆ THEO YÊU CẦU NGƯỜI DÙNG -->
+
+          <!-- LIÊN KẾT NỔI BẬT: TEST HƯỚNG NGHIỆP (108 CÂU) THEO CHỈ ĐẠO ANH THÁI -->
+          <a href="/trac-nghiem-holland" target="_blank" class="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-500/15 to-amber-600/10 hover:from-amber-500 hover:to-amber-600 text-amber-800 hover:text-slate-950 border border-amber-400/80 font-bold text-xs transition-all flex items-center gap-1.5 shadow-xs whitespace-nowrap">
+            <span>🎯</span>
+            <span>Test Hướng Nghiệp (108 Câu)</span>
+          </a>
         </nav>
 
         <!-- Action CTA bên phải: Nút Tìm Kiếm Khóa Học Pill Button -->
@@ -724,89 +728,130 @@
 
     </div>
   </section>
-<!-- TRẮC NGHIỆM HƯỚNG NGHIỆP HOLLAND (RIASEC) -> KẾT NỐI TRỰC TIẾP TÌM KHÓA HỌC -->
-  <section id="test-holland" class="py-16 bg-gradient-to-r from-blue-900 via-brand-navy to-slate-900 text-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+  <!-- ==================== BANNER ĐẲNG CẤP: TRẮC NGHIỆM HƯỚNG NGHIỆP HOLLAND (RIASEC) ==================== -->
+  <section id="test-holland" class="py-16 sm:py-20 bg-gradient-to-b from-brand-navyDark via-brand-navy to-slate-900 text-white relative overflow-hidden scroll-mt-20">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C58A19_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 space-y-10">
       
-      <div class="text-center space-y-2 mb-8">
-        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Công cụ độc quyền Hằng Lương</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold font-heading">
-          Trắc Nghiệm Hướng Nghiệp Holland (RIASEC) 1 Phút
+      <!-- HEADER TIÊU ĐỀ -->
+      <div class="text-center space-y-3 max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold uppercase tracking-wider">
+          <span>🏆</span> CÔNG CỤ ĐỊNH HƯỚNG NGHỀ NGHIỆP DU HỌC ĐỘC QUYỀN HẰNG LƯƠNG
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black font-heading tracking-tight text-white leading-tight">
+          Bạn Phù Hợp Với Ngành Nghề Nào Trong 100+ Ngành Du Học?
         </h2>
-        <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
-          Khám phá nhóm tính cách nghề nghiệp vượt trội và nhận ngay gợi ý danh sách ngành học, trường đại học quốc tế phù hợp nhất.
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl mx-auto">
+          Ứng dụng mô hình trắc nghiệm tâm lý học John Holland (RIASEC) giúp bạn khám phá thế mạnh tiềm ẩn, định hướng chọn đúng ngành - đúng trường và săn học bổng cao nhất tại Úc, Thụy Sĩ, Singapore, Canada, Mỹ.
         </p>
       </div>
 
-      <div class="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/20 shadow-2xl">
+      <!-- 2 LỰA CHỌN RÕ RÀNG (SIDE-BY-SIDE CARDS) THEO ĐÚNG CHỈ ĐẠO ANH THÁI -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         
-        <!-- Quiz Form -->
-        <form id="holland-quiz-form" class="space-y-6">
-          <div>
-            <label class="block text-sm font-bold text-amber-300 mb-2">Câu 1: Khi có thời gian rảnh hoặc làm dự án, bạn thích hoạt động nào nhất?</label>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-200">
-              <label class="flex items-center gap-2 p-3 bg-white/5 hover:bg-white/15 rounded-lg border border-white/10 cursor-pointer">
-                <input type="radio" name="holland_q1" value="R" checked class="text-amber-500">
-                <span>Thao tác máy móc, lập trình phần mềm, chế tạo kỹ thuật</span>
-              </label>
-              <label class="flex items-center gap-2 p-3 bg-white/5 hover:bg-white/15 rounded-lg border border-white/10 cursor-pointer">
-                <input type="radio" name="holland_q1" value="E" class="text-amber-500">
-                <span>Lập kế hoạch kinh doanh, đàm phán, quản lý và bán hàng</span>
-              </label>
-              <label class="flex items-center gap-2 p-3 bg-white/5 hover:bg-white/15 rounded-lg border border-white/10 cursor-pointer">
-                <input type="radio" name="holland_q1" value="S" class="text-amber-500">
-                <span>Tư vấn, chăm sóc sức khỏe, đào tạo và giúp đỡ người khác</span>
-              </label>
-              <label class="flex items-center gap-2 p-3 bg-white/5 hover:bg-white/15 rounded-lg border border-white/10 cursor-pointer">
-                <input type="radio" name="holland_q1" value="A" class="text-amber-500">
-                <span>Thiết kế đồ họa, sáng tạo nội dung, nghệ thuật tự do</span>
-              </label>
+        <!-- CARD 1: DÀNH CHO NGƯỜI BẬN RỘN (BẢN NHANH 60 GIÂY) -->
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/20 hover:border-amber-400 hover:bg-white/15 transition-all flex flex-col justify-between space-y-6 group shadow-2xl relative overflow-hidden">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl font-black border border-amber-400/30">
+                ⚡
+              </span>
+              <span class="text-[11px] font-bold text-amber-300 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-400/40 uppercase tracking-wider">
+                Bản Nhanh 60 Giây
+              </span>
             </div>
-          </div>
-
-          <div>
-            <label class="block text-sm font-bold text-amber-300 mb-2">Câu 2: Bạn mong muốn môi trường làm việc tương lai như thế nào?</label>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-200">
-              <label class="flex items-center gap-2 p-3 bg-white/5 hover:bg-white/15 rounded-lg border border-white/10 cursor-pointer">
-                <input type="radio" name="holland_q2" value="R" checked class="text-amber-500">
-                <span>Phòng Lab công nghệ cao, xưởng kỹ thuật hiện đại, trung tâm dữ liệu</span>
-              </label>
-              <label class="flex items-center gap-2 p-3 bg-white/5 hover:bg-white/15 rounded-lg border border-white/10 cursor-pointer">
-                <input type="radio" name="holland_q2" value="E" class="text-amber-500">
-                <span>Tập đoàn đa quốc gia năng động, khách sạn 5 sao quốc tế</span>
-              </label>
+            
+            <div>
+              <h3 class="text-xl sm:text-2xl font-black font-heading text-white group-hover:text-amber-300 transition-colors">
+                Trắc Nghiệm Nhanh 60s
+              </h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                6 câu hỏi cốt lõi đo lường nhanh 6 trục RIASEC (Thực hành, Nghiên cứu, Sáng tạo, Xã hội, Quản lý, Quy củ). Nhận ngay biểu đồ tính cách và Top 3 ngành học tiềm năng nhất.
+              </p>
             </div>
+
+            <ul class="space-y-2 text-xs text-slate-200 pt-2 border-t border-white/10">
+              <li class="flex items-center gap-2">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>Thực hiện siêu tốc chỉ trong 1 phút</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>Biểu đồ tỷ lệ 6 nhóm tính cách trực quan</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>Gợi ý trường & học bổng 2026 tức thì</span>
+              </li>
+            </ul>
           </div>
 
-          <div class="text-center pt-2">
-            <button type="submit" class="px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold rounded-xl text-sm shadow-lg transition-all">
-              Xem Kết Quả & Gợi Ý Khóa Học Phù Hợp &rarr;
-            </button>
-          </div>
-        </form>
-
-        <!-- Result Card (Hidden by default, shown by JS) -->
-        <div id="holland-result-card" class="hidden text-center space-y-4 py-4 animate-fadeIn">
-          <div class="w-14 h-14 rounded-full bg-amber-400 text-slate-950 flex items-center justify-center text-2xl mx-auto font-bold">
-            🎯
-          </div>
-          <h3 id="holland-result-title" class="text-xl sm:text-2xl font-bold font-heading text-white">
-            Nhóm Kỹ Thuật & Công Nghệ (Realistic - R)
-          </h3>
-          <p id="holland-result-desc" class="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto">
-            Bạn có tư duy logic, thế mạnh về công nghệ, thiết bị và giải quyết vấn đề thực tế. Các ngành học lý tưởng: Khoa học máy tính, Trí tuệ nhân tạo (AI), Kỹ thuật Cơ điện tử, An ninh mạng.
-          </p>
-          <div class="pt-2 flex flex-col sm:flex-row justify-center items-center gap-3">
-            <!-- NÚT CHUYỂN THẲNG SANG TRANG TÌM KIẾM KHÓA HỌC ĐÃ LỌC SẴN -->
-            <a id="holland-course-link" href="/tim-khoa-hoc?major=Công nghệ thông tin" class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs sm:text-sm shadow-lg transition-all">
-              Xem Danh Sách Khóa Học & Trường Phù Hợp Cho Ngành Này &rarr;
-            </a>
-            <button onclick="resetHollandQuiz()" class="px-4 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs">
-              Làm Lại Trắc Nghiệm
-            </button>
-          </div>
+          <button type="button" onclick="openHollandQuizModal()" class="w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black rounded-2xl text-xs sm:text-sm shadow-xl hover:shadow-amber-500/30 transition-all flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02]">
+            <span>⚡ Làm Trắc Nghiệm Nhanh 60 Giây ⚡</span>
+            <span>&rarr;</span>
+          </button>
         </div>
 
+        <!-- CARD 2: DÀNH CHO CHỌN NGÀNH DU HỌC (BÀI TEST TOÀN DIỆN 108 CÂU) -->
+        <div class="bg-gradient-to-br from-amber-500/15 via-white/10 to-white/5 backdrop-blur-md rounded-3xl p-6 sm:p-8 border-2 border-amber-400/60 hover:border-amber-400 transition-all flex flex-col justify-between space-y-6 group shadow-2xl relative overflow-hidden">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center text-2xl font-black shadow-lg">
+                🏆
+              </span>
+              <span class="text-[11px] font-bold text-slate-950 bg-amber-400 px-3 py-1 rounded-full shadow font-heading uppercase tracking-wider">
+                1.850+ Học Sinh Đã Làm
+              </span>
+            </div>
+            
+            <div>
+              <h3 class="text-xl sm:text-2xl font-black font-heading text-white group-hover:text-amber-300 transition-colors">
+                Bài Test Toàn Diện 108 Câu
+              </h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                Hệ thống 108 mệnh đề chuyên sâu phân tích toàn diện xu hướng hành vi, sở thích và năng lực. Báo cáo phân tích chuyên sâu được chuyển tiếp đến chuyên viên tư vấn 1:1 Hằng Lương.
+              </p>
+            </div>
+
+            <ul class="space-y-2 text-xs text-slate-200 pt-2 border-t border-white/10">
+              <li class="flex items-center gap-2">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>108 Tiêu chí đánh giá chuẩn hóa quốc tế</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>Tự động lưu tiến độ, làm lại bất cứ lúc nào</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-amber-400 font-bold">✓</span>
+                <span>Gửi báo cáo phân tích chi tiết & lộ trình du học</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="/trac-nghiem-holland" target="_blank" class="w-full py-4 bg-white hover:bg-amber-400 hover:text-slate-950 text-brand-navy font-black rounded-2xl text-xs sm:text-sm border-2 border-amber-400 shadow-xl transition-all flex items-center justify-center gap-2 text-center hover:scale-[1.02]">
+            <span>🏆 Bài Test Toàn Diện 108 Câu (1.850+ Đã Làm) 🎯</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- 3 STATS PROOF MINH BẠCH DƯỚI CÙNG -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl mx-auto pt-4 text-center">
+        <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+          <div class="text-xl sm:text-2xl font-black text-amber-400 font-heading">1.850+</div>
+          <div class="text-xs text-slate-300 font-medium mt-0.5">Học sinh THPT đã hoàn thành</div>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+          <div class="text-xl sm:text-2xl font-black text-white font-heading">100+ Ngành</div>
+          <div class="text-xs text-slate-300 font-medium mt-0.5">Kết nối dữ liệu trường & học bổng</div>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+          <div class="text-xl sm:text-2xl font-black text-emerald-400 font-heading">100% Free</div>
+          <div class="text-xs text-slate-300 font-medium mt-0.5">Bảo mật thông tin & Hỗ trợ 1:1</div>
+        </div>
       </div>
 
     </div>
@@ -1744,6 +1789,7 @@
         <a href="/su-kien" class="block py-1.5 hover:text-amber-600">📰 Tin Tức Sự Kiện</a>
         <a href="/tim-khoa-hoc" class="block py-1.5 text-blue-700 font-bold">🔍 Tìm Khóa Học</a>
         <a href="/gioi-thieu" class="block py-1.5 hover:text-amber-600">🏆 Về Hằng Lương 20 Năm</a>
+        <a href="/trac-nghiem-holland" class="block py-1.5 text-amber-600 font-bold flex items-center gap-1.5">🎯 Test Hướng Nghiệp (108 Câu)</a>
         <a href="/gioi-thieu#tuyen-dung" class="block py-1.5 text-emerald-600 font-bold">💼 Cơ Hội Tuyển Dụng</a>
         <a href="/lien-he" class="block py-1.5 hover:text-amber-600">📍 Hệ Thống Chi Nhánh</a>
       </nav>
