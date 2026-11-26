@@ -549,13 +549,27 @@
 
         if (matchedTaxonomies.length > 0) {
           taxonomySection.classList.remove('hidden');
-          taxonomyChipsList.innerHTML = matchedTaxonomies.map(t => `
-            <a href="${t.url}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-amber-500 hover:text-slate-950 text-slate-800 border border-amber-300 font-semibold text-xs transition-all shadow-xs group">
-              <span>${t.icon}</span>
-              <span>${t.name}</span>
-              <span class="text-[11px] font-bold text-amber-700 group-hover:text-slate-950">${t.count} nội dung &rarr;</span>
-            </a>
-          `).join('');
+          taxonomyChipsList.innerHTML = matchedTaxonomies.map(t => {
+            let destUrl = t.url;
+            let labelExtra = '';
+            if (cleanQ.includes('uc') || cleanQ === 'uc') {
+              destUrl += '?country=uc';
+              labelExtra = ' tại Úc';
+            } else if (cleanQ.includes('thuy si') || cleanQ.includes('chf')) {
+              destUrl += '?country=thuy-si';
+              labelExtra = ' tại Thụy Sĩ';
+            } else if (cleanQ.includes('canada')) {
+              destUrl += '?country=canada';
+              labelExtra = ' tại Canada';
+            }
+            return `
+              <a href="${destUrl}" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-amber-500 hover:text-slate-950 text-slate-800 border border-amber-300 font-semibold text-xs transition-all shadow-xs group">
+                <span>${t.icon}</span>
+                <span>${t.name}${labelExtra}</span>
+                <span class="text-[11px] font-bold text-amber-700 group-hover:text-slate-950">${t.count} nội dung &rarr;</span>
+              </a>
+            `;
+          }).join('');
         } else {
           taxonomySection.classList.add('hidden');
         }

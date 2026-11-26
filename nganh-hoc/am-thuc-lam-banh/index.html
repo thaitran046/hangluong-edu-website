@@ -303,9 +303,9 @@
               <span>🎯 Nhận Lộ Trình Ngành Bếp 1:1</span>
               <span>&rarr;</span>
             </button>
-            <a href="/#test-holland" class="px-5 py-3.5 bg-white hover:bg-slate-100 text-brand-navy font-bold rounded-2xl text-xs sm:text-sm border border-slate-300 transition-all flex items-center gap-2">
+            <button type="button" onclick="openHollandQuizModal()" class="open-holland-quiz-btn px-5 py-3.5 bg-white hover:bg-slate-100 text-brand-navy font-bold rounded-2xl text-xs sm:text-sm border border-slate-300 transition-all flex items-center gap-2 cursor-pointer shadow-sm hover:shadow">
               <span>📋 Làm Test Holland Xem Bạn Có Hợp Ngành Này</span>
-            </a>
+            </button>
           </div>
         </div>
 
@@ -409,9 +409,9 @@
     </div>
   </section>
 
-  <!-- ==================== DANH SÁCH 8 TRƯỜNG ĐỐI TÁC ĐÀO TẠO NGÀNH NÀY ==================== -->
-  <section class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-10">
+  <!-- ==================== DANH SÁCH 8 TRƯỜNG ĐỐI TÁC ĐÀO TẠO NGÀNH NÀY (CÓ BỘ LỌC QUỐC GIA) ==================== -->
+  <section id="schools-network-section" class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200 scroll-mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-8">
       
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
@@ -425,39 +425,42 @@
             Khác với các bên chỉ có bài viết suông, Hằng Lương là đại diện tuyển sinh chính thức có hợp đồng ủy quyền và chỉ tiêu học bổng trực tiếp:
           </p>
         </div>
-        <button onclick="openConsultModal('Tư vấn chọn trường ngành Ẩm thực')" class="text-xs sm:text-sm font-bold text-brand-navy hover:text-amber-600 flex items-center gap-1.5">
+        <button onclick="openConsultModal('Tư vấn chọn trường ngành Ẩm thực')" class="text-xs sm:text-sm font-bold text-brand-navy hover:text-amber-600 flex items-center gap-1.5 cursor-pointer">
           Nhận bảng so sánh học phí 8 trường &rarr;
         </button>
       </div>
 
-      <!-- 8 Trường đào tạo -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Trường 1 -->
-        <div class="bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-2xl">🇨🇭</span>
-              <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Top 12 Thế Giới</span>
-            </div>
-            <h3 class="font-bold text-base text-slate-900 group-hover:text-blue-700 font-heading">
-              Học Viện BHMS Thụy Sĩ
-            </h3>
-            <p class="text-xs text-slate-600 leading-snug">
-              Tọa lạc tại Lucerne & Zurich. Vừa học vừa thực tập hưởng lương 2.359 CHF/tháng (~65 triệu VNĐ).
-            </p>
-            <div class="space-y-1 text-xs text-slate-700 pt-2 border-t border-slate-100">
-              <div>🎁 <strong>Học bổng:</strong> Đến 20.000 CHF</div>
-              <div>📍 <strong>Bằng cấp:</strong> Chuẩn Thụy Sĩ & Anh Quốc</div>
-            </div>
-          </div>
-          <button onclick="openConsultModal('Tư vấn BHMS Thụy Sĩ')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors">
-            Đăng Ký Tư Vấn 1:1
+      <!-- BỔ SUNG BỘ LỌC QUỐC GIA NGAY TẠI ĐÂY (GIẢI QUYẾT TRIỆT ĐỂ: TÌM ÚC CHỈ RA TRƯỜNG ÚC) -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-3 sm:p-4 rounded-2xl border border-slate-200 shadow-xs">
+        <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+          <span class="text-base">🌍</span>
+          <span>Chọn quốc gia du học bạn quan tâm:</span>
+        </div>
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar" id="school-country-filters">
+          <button type="button" onclick="filterSchoolsByCountry('all')" data-country-btn="all" class="school-tab-btn is-active px-4 py-2 rounded-xl bg-brand-navy text-white font-bold text-xs shadow-sm transition-all flex items-center gap-1.5 whitespace-nowrap cursor-pointer">
+            <span>Tất cả quốc gia</span>
+            <span class="bg-white/20 px-1.5 py-0.2 rounded-full text-[10.5px]" id="count-school-all">8</span>
+          </button>
+          <button type="button" onclick="filterSchoolsByCountry('uc')" data-country-btn="uc" class="school-tab-btn px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all flex items-center gap-1.5 whitespace-nowrap cursor-pointer">
+            <span>🇦🇺 Úc (Australia)</span>
+            <span class="bg-slate-200 px-1.5 py-0.2 rounded-full text-[10.5px] text-slate-700 font-bold" id="count-school-uc">4</span>
+          </button>
+          <button type="button" onclick="filterSchoolsByCountry('thuy-si')" data-country-btn="thuy-si" class="school-tab-btn px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all flex items-center gap-1.5 whitespace-nowrap cursor-pointer">
+            <span>🇨🇭 Thụy Sĩ</span>
+            <span class="bg-slate-200 px-1.5 py-0.2 rounded-full text-[10.5px] text-slate-700 font-bold" id="count-school-thuysi">2</span>
+          </button>
+          <button type="button" onclick="filterSchoolsByCountry('canada')" data-country-btn="canada" class="school-tab-btn px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all flex items-center gap-1.5 whitespace-nowrap cursor-pointer">
+            <span>🇨🇦 Canada</span>
+            <span class="bg-slate-200 px-1.5 py-0.2 rounded-full text-[10.5px] text-slate-700 font-bold" id="count-school-canada">2</span>
           </button>
         </div>
+      </div>
 
-        <!-- Trường 2 -->
-        <div class="bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+      <!-- 8 Trường đào tạo có gắn data-country -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="schools-card-grid">
+        
+        <!-- TRƯỜNG 1: ÚC - LE CORDON BLEU (ĐẶT LÊN ĐẦU CHO NGƯỜI TÌM ÚC) -->
+        <div data-school-country="uc" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <span class="text-2xl">🇦🇺</span>
@@ -474,13 +477,13 @@
               <div>📍 <strong>Định cư:</strong> Thuộc danh sách MLTSSL Úc</div>
             </div>
           </div>
-          <button onclick="openConsultModal('Tư vấn Le Cordon Bleu')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors">
+          <button onclick="openConsultModal('Tư vấn Le Cordon Bleu')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
             Đăng Ký Tư Vấn 1:1
           </button>
         </div>
 
-        <!-- Trường 3 -->
-        <div class="bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+        <!-- TRƯỜNG 2: ÚC - WILLIAM ANGLISS INSTITUTE MELBOURNE -->
+        <div data-school-country="uc" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <span class="text-2xl">🇦🇺</span>
@@ -497,13 +500,13 @@
               <div>📍 <strong>Học phí:</strong> ~16.000 AUD/năm</div>
             </div>
           </div>
-          <button onclick="openConsultModal('Tư vấn William Angliss')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors">
+          <button onclick="openConsultModal('Tư vấn William Angliss')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
             Đăng Ký Tư Vấn 1:1
           </button>
         </div>
 
-        <!-- Trường 4 -->
-        <div class="bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+        <!-- TRƯỜNG 3: ÚC - TAFE NEW SOUTH WALES (SYDNEY) -->
+        <div data-school-country="uc" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <span class="text-2xl">🇦🇺</span>
@@ -520,7 +523,122 @@
               <div>📍 <strong>Visa:</strong> Ưu tiên tay nghề cao</div>
             </div>
           </div>
-          <button onclick="openConsultModal('Tư vấn TAFE NSW')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors">
+          <button onclick="openConsultModal('Tư vấn TAFE NSW')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
+            Đăng Ký Tư Vấn 1:1
+          </button>
+        </div>
+
+        <!-- TRƯỜNG 4: ÚC - CROWN INSTITUTE & EVOLUTION HOSPITALITY SYDNEY -->
+        <div data-school-country="uc" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🇦🇺</span>
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Lộ Trình Tay Nghề PR</span>
+            </div>
+            <h3 class="font-bold text-base text-slate-900 group-hover:text-blue-700 font-heading">
+              Evolution Hospitality Sydney
+            </h3>
+            <p class="text-xs text-slate-600 leading-snug">
+              Học viện chuyên sâu đào tạo bếp trưởng và quản trị bánh ngọt tại trung tâm Sydney. Hỗ trợ 100% nơi thực tập tại khách sạn 5 sao.
+            </p>
+            <div class="space-y-1 text-xs text-slate-700 pt-2 border-t border-slate-100">
+              <div>🎁 <strong>Học phí:</strong> Rất linh hoạt theo kỳ</div>
+              <div>📍 <strong>Thực tập:</strong> Hưởng lương tại Sydney</div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Tư vấn Evolution Hospitality')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
+            Đăng Ký Tư Vấn 1:1
+          </button>
+        </div>
+
+        <!-- TRƯỜNG 5: THỤY SĨ - HỌC VIỆN BHMS THỤY SĨ -->
+        <div data-school-country="thuy-si" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🇨🇭</span>
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Top 12 Thế Giới</span>
+            </div>
+            <h3 class="font-bold text-base text-slate-900 group-hover:text-blue-700 font-heading">
+              Học Viện BHMS Thụy Sĩ
+            </h3>
+            <p class="text-xs text-slate-600 leading-snug">
+              Tọa lạc tại Lucerne & Zurich. Vừa học vừa thực tập hưởng lương 2.359 CHF/tháng (~65 triệu VNĐ).
+            </p>
+            <div class="space-y-1 text-xs text-slate-700 pt-2 border-t border-slate-100">
+              <div>🎁 <strong>Học bổng:</strong> Đến 20.000 CHF</div>
+              <div>📍 <strong>Bằng cấp:</strong> Chuẩn Thụy Sĩ & Anh Quốc</div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Tư vấn BHMS Thụy Sĩ')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
+            Đăng Ký Tư Vấn 1:1
+          </button>
+        </div>
+
+        <!-- TRƯỜNG 6: THỤY SĨ - CULINARY ARTS ACADEMY SWITZERLAND (CAA) -->
+        <div data-school-country="thuy-si" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🇨🇭</span>
+              <span class="text-[10px] font-bold text-rose-700 bg-rose-50 px-2 py-0.5 rounded border border-rose-200">Top 7 Thế Giới</span>
+            </div>
+            <h3 class="font-bold text-base text-slate-900 group-hover:text-blue-700 font-heading">
+              Culinary Arts Academy (CAA)
+            </h3>
+            <p class="text-xs text-slate-600 leading-snug">
+              Cơ sở tại Le Bouveret & Lucerne. Học viện ẩm thực danh giá bậc nhất Châu Âu thuộc tập đoàn Swiss Education Group (SEG).
+            </p>
+            <div class="space-y-1 text-xs text-slate-700 pt-2 border-t border-slate-100">
+              <div>🎁 <strong>Học bổng:</strong> 10% - 25% học phí</div>
+              <div>📍 <strong>Đẳng cấp:</strong> Bếp Michelin 3 sao</div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Tư vấn CAA Thụy Sĩ')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
+            Đăng Ký Tư Vấn 1:1
+          </button>
+        </div>
+
+        <!-- TRƯỜNG 7: CANADA - GEORGE BROWN COLLEGE TORONTO -->
+        <div data-school-country="canada" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🇨🇦</span>
+              <span class="text-[10px] font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded border border-red-200">Top 1 Ẩm Thực Canada</span>
+            </div>
+            <h3 class="font-bold text-base text-slate-900 group-hover:text-blue-700 font-heading">
+              George Brown College
+            </h3>
+            <p class="text-xs text-slate-600 leading-snug">
+              Tọa lạc tại trung tâm Toronto. Sở hữu phân khoa "The Chef School" nổi tiếng nhất Canada với tỷ lệ việc làm 92% sau tốt nghiệp.
+            </p>
+            <div class="space-y-1 text-xs text-slate-700 pt-2 border-t border-slate-100">
+              <div>🎁 <strong>PGWP:</strong> Ở lại làm việc đến 3 năm</div>
+              <div>📍 <strong>Định cư:</strong> Nhóm ngành ưu tiên Express Entry</div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Tư vấn George Brown College')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
+            Đăng Ký Tư Vấn 1:1
+          </button>
+        </div>
+
+        <!-- TRƯỜNG 8: CANADA - CENTENNIAL COLLEGE TORONTO -->
+        <div data-school-country="canada" class="school-card bg-white rounded-3xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-2xl">🇨🇦</span>
+              <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Trường Công Lập Toronto</span>
+            </div>
+            <h3 class="font-bold text-base text-slate-900 group-hover:text-blue-700 font-heading">
+              Centennial College
+            </h3>
+            <p class="text-xs text-slate-600 leading-snug">
+              Chuyên ngành Baking & Pastry Arts tại Toronto. Cơ sở vật chất phòng lab bánh hiện đại, hỗ trợ kỳ thực tập Co-op hưởng lương.
+            </p>
+            <div class="space-y-1 text-xs text-slate-700 pt-2 border-t border-slate-100">
+              <div>🎁 <strong>Học phí:</strong> ~17.500 CAD/năm</div>
+              <div>📍 <strong>Bằng cấp:</strong> Ontario College Diploma</div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Tư vấn Centennial College')" class="mt-4 w-full py-2 bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold text-xs rounded-xl transition-colors cursor-pointer">
             Đăng Ký Tư Vấn 1:1
           </button>
         </div>
@@ -529,6 +647,47 @@
 
     </div>
   </section>
+
+  <!-- JAVASCRIPT BỘ LỌC QUỐC GIA CHO TRANG NGÀNH HỌC -->
+  <script>
+    function filterSchoolsByCountry(countryCode) {
+      // 1. Cập nhật trạng thái active của nút Tab
+      document.querySelectorAll('.school-tab-btn').forEach(btn => {
+        if (btn.getAttribute('data-country-btn') === countryCode) {
+          btn.classList.add('is-active', 'bg-brand-navy', 'text-white');
+          btn.classList.remove('bg-slate-100', 'text-slate-700');
+        } else {
+          btn.classList.remove('is-active', 'bg-brand-navy', 'text-white');
+          btn.classList.add('bg-slate-100', 'text-slate-700');
+        }
+      });
+
+      // 2. Ẩn/hiện thẻ trường tương ứng
+      const cards = document.querySelectorAll('.school-card');
+      cards.forEach(card => {
+        const c = card.getAttribute('data-school-country');
+        if (countryCode === 'all' || c === countryCode) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Tự động kiểm tra URL khi tải trang: Nếu có ?country=uc hoặc nếu đến từ tìm kiếm Úc thì kích hoạt tab Úc ngay lập tức!
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const countryParam = (params.get('country') || params.get('c') || params.get('s') || '').toLowerCase();
+
+      if (countryParam.includes('uc') || countryParam.includes('úc') || countryParam.includes('australia')) {
+        filterSchoolsByCountry('uc');
+      } else if (countryParam.includes('thuy-si') || countryParam.includes('thụy sĩ') || countryParam.includes('chf')) {
+        filterSchoolsByCountry('thuy-si');
+      } else if (countryParam.includes('canada')) {
+        filterSchoolsByCountry('canada');
+      }
+    });
+  </script>
 
   <!-- ==================== BÀI VIẾT & CẨM NANG NGÀNH ẨM THỰC ==================== -->
   <section class="py-14 sm:py-20 bg-white border-b border-slate-200">
@@ -822,5 +981,6 @@
   <!-- Scripts -->
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/search-modal.js"></script>
+  <script src="/assets/js/holland-quiz.js"></script>
 </body>
 </html>

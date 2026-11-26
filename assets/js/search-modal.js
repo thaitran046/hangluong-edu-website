@@ -255,13 +255,27 @@
 
       if (matchedTax.length > 0) {
         taxSection.classList.remove('hidden');
-        taxChips.innerHTML = matchedTax.map(t => `
-          <a href="${t.url}" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white hover:bg-amber-500 hover:text-slate-950 text-slate-800 border border-amber-300 font-semibold text-xs transition-all shadow-xs group">
-            <span>${t.icon}</span>
-            <span>${t.name}</span>
-            <span class="text-[10.5px] font-bold text-amber-700 group-hover:text-slate-950">${t.count} nội dung &rarr;</span>
-          </a>
-        `).join('');
+        taxChips.innerHTML = matchedTax.map(t => {
+          let destUrl = t.url;
+          let labelExtra = '';
+          if (cleanQ.includes('uc') || cleanQ === 'uc') {
+            destUrl += '?country=uc';
+            labelExtra = ' tại Úc';
+          } else if (cleanQ.includes('thuy si') || cleanQ.includes('chf')) {
+            destUrl += '?country=thuy-si';
+            labelExtra = ' tại Thụy Sĩ';
+          } else if (cleanQ.includes('canada')) {
+            destUrl += '?country=canada';
+            labelExtra = ' tại Canada';
+          }
+          return `
+            <a href="${destUrl}" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white hover:bg-amber-500 hover:text-slate-950 text-slate-800 border border-amber-300 font-semibold text-xs transition-all shadow-xs group">
+              <span>${t.icon}</span>
+              <span>${t.name}${labelExtra}</span>
+              <span class="text-[10.5px] font-bold text-amber-700 group-hover:text-slate-950">${t.count} nội dung &rarr;</span>
+            </a>
+          `;
+        }).join('');
       } else {
         taxSection.classList.add('hidden');
       }
