@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Công Cụ Tính Chi Phí Du Học Thông Minh 2026 | Bảng Dự Toán Tài Chính Cá Nhân Hóa</title>
+  <meta name="description" content="Tự động tính toán tổng chi phí du học Úc, Canada, Mỹ, Thụy Sĩ, Malaysia, Singapore, Anh Quốc 2026. Bao gồm học phí, sinh hoạt phí, lệ phí visa, bảo hiểm OSHC và học bổng thực tế.">
+  <meta name="keywords" content="tính chi phí du học, dự toán chi phí du học úc, chi phí du học canada, chi phí du học thụy sĩ, học phí du học mỹ, du học hằng lương">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: '#1B365D', navyDark: '#0F1E36', navyLight: '#2A4B7C', gold: '#C58A19', goldLight: '#EAB308', goldDark: '#9A6B0F', slate: '#F8FAFC' }
+          },
+          fontFamily: { sans: ['"Be Vietnam Pro"', 'sans-serif'], heading: ['"Outfit"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-navyDark text-slate-300 text-xs py-2 px-4 border-b border-slate-700/50 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          Dự toán tài chính tự động 2026:
+        </span>
+        <span>Cập nhật biểu phí chuẩn Bộ Di Trú & Lãnh sự các nước</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="tel:0908558959" class="hover:text-amber-400 transition-colors flex items-center gap-1 font-semibold text-white">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          Hotline: 0908 558 959
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-brand-navy flex items-center justify-center text-brand-gold shadow-md">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/></svg>
+        </div>
+        <div>
+          <div class="text-base font-black text-brand-navy tracking-tight font-heading leading-tight">HẰNG LƯƠNG EDU</div>
+          <div class="text-[9.5px] uppercase font-bold text-emerald-700 tracking-wider">SMART COST CALCULATOR 2026</div>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-3">
+        <a href="/#test-holland" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-colors hidden sm:inline-flex items-center gap-1.5">
+          <span>🎯</span> Test Hướng Nghiệp (Holland)
+        </a>
+        <a href="/" class="px-4 py-2 rounded-xl bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-xs transition-colors shadow">
+          &larr; Về Trang Chủ
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="py-10 sm:py-14 bg-gradient-to-br from-brand-navyDark via-brand-navy to-slate-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C58A19_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+        <span>💰</span> CÔNG CỤ DỰ TOÁN KINH PHÍ DU HỌC THÔNG MINH
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black font-heading tracking-tight leading-tight">
+        Gia Đình Bạn Cần Chuẩn Bị Bao Nhiêu Để Du Học?
+      </h1>
+      <p class="text-xs sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Chọn ngay Quốc gia, Trường học, Bậc học và Ngành học. Hệ thống tự động bóc tách từng khoản chi phí minh bạch kèm phương án săn học bổng tiết kiệm tối đa.
+      </p>
+    </div>
+  </section>
+
+  <!-- CALCULATOR SECTION -->
+  <main class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-10">
+      
+      <!-- CALCULATOR WRAPPER -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- CỘT TRÁI (5 CỘT): CHỌN THÔNG SỐ -->
+        <div class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm space-y-5">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+            <h2 class="font-extrabold text-slate-900 text-base font-heading flex items-center gap-2">
+              <span>⚙️</span> Thiết Lập Nguyện Vọng
+            </h2>
+            <span id="calc-exchange-rate-badge" class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200">
+              Tỷ giá: 1 AUD = 16.500 VNĐ
+            </span>
+          </div>
+
+          <!-- 1. Chọn Quốc Gia -->
+          <div class="space-y-1.5">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+              1. Quốc gia du học mục tiêu <span class="text-red-500">*</span>
+            </label>
+            <select id="calc-country" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white cursor-pointer transition-all">
+              <option value="uc" selected>🇦🇺 Úc (Australia) - Làm thêm 48h/2 tuần, định cư mở rộng</option>
+              <option value="canada">🇨🇦 Canada - Co-op có lương, PGWP 3 năm</option>
+              <option value="my">🇺🇸 Mỹ (USA) - Top giáo dục thế giới, OPT STEM 3 năm</option>
+              <option value="thuy_si">🇨🇭 Thụy Sĩ (Switzerland) - Khách sạn số 1, Co-op 65tr/tháng</option>
+              <option value="malaysia">🇲🇾 Malaysia - Bằng kép Anh/Úc, chi phí siêu tiết kiệm</option>
+              <option value="singapore">🇸🇬 Singapore - Hub tài chính châu Á, bằng ĐH Anh/Mỹ</option>
+              <option value="anh">🇬🇧 Anh Quốc (UK) - Thạc sĩ 1 năm, Visa ở lại 2 năm</option>
+            </select>
+          </div>
+
+          <!-- 2. Chọn Bậc Học -->
+          <div class="space-y-1.5">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+              2. Bậc học dự kiến <span class="text-red-500">*</span>
+            </label>
+            <select id="calc-level" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white cursor-pointer transition-all">
+              <!-- Dynamically populated -->
+            </select>
+          </div>
+
+          <!-- 3. Chọn Ngành Học -->
+          <div class="space-y-1.5">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+              3. Nhóm ngành học quan tâm <span class="text-red-500">*</span>
+            </label>
+            <select id="calc-major" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white cursor-pointer transition-all">
+              <!-- Dynamically populated -->
+            </select>
+          </div>
+
+          <!-- 4. Chọn Trường Học -->
+          <div class="space-y-1.5">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+              4. Trường đối tác Hằng Lương <span class="text-red-500">*</span>
+            </label>
+            <select id="calc-school" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white cursor-pointer transition-all">
+              <!-- Dynamically populated -->
+            </select>
+          </div>
+
+          <!-- 5. Mục Tiêu Học Bổng -->
+          <div class="space-y-2 pt-2 border-t border-slate-100">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-bold text-slate-700 uppercase tracking-wider">
+                5. Học bổng dự kiến muốn săn
+              </label>
+              <span id="calc-scholarship-val" class="text-sm font-black text-amber-600 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
+                0%
+              </span>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-2">
+              <button type="button" data-scholarship-val="0" class="calc-scholarship-btn py-1.5 rounded-lg text-xs font-bold border border-brand-navy bg-brand-navy text-white transition-all cursor-pointer">
+                0% (Tự túc)
+              </button>
+              <button type="button" data-scholarship-val="25" class="calc-scholarship-btn py-1.5 rounded-lg text-xs font-bold border border-slate-300 bg-white text-slate-700 hover:border-amber-400 transition-all cursor-pointer">
+                25%
+              </button>
+              <button type="button" data-scholarship-val="50" class="calc-scholarship-btn py-1.5 rounded-lg text-xs font-bold border border-slate-300 bg-white text-slate-700 hover:border-amber-400 transition-all cursor-pointer">
+                50% (Bán phần)
+              </button>
+              <button type="button" data-scholarship-val="100" class="calc-scholarship-btn py-1.5 rounded-lg text-xs font-bold border border-slate-300 bg-white text-slate-700 hover:border-amber-400 transition-all cursor-pointer">
+                100% (Toàn phần)
+              </button>
+            </div>
+            <input type="range" id="calc-scholarship" min="0" max="100" step="5" value="0" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-amber-500 hidden">
+          </div>
+
+          <!-- 6. Toggle Tính Thu Nhập Làm Thêm -->
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between bg-emerald-50/70 p-3 rounded-2xl border border-emerald-200/80">
+            <div class="pr-2">
+              <label for="calc-parttime" class="text-xs font-bold text-emerald-950 block cursor-pointer">
+                💼 Khấu trừ thu nhập đi làm thêm / Co-op
+              </label>
+              <p class="text-[11px] text-emerald-700">Khấu trừ số tiền học sinh tự trang trải được theo luật đi làm thêm hợp pháp.</p>
+            </div>
+            <input type="checkbox" id="calc-parttime" checked class="w-5 h-5 text-emerald-600 rounded focus:ring-emerald-500 cursor-pointer accent-emerald-600">
+          </div>
+
+        </div>
+
+        <!-- CỘT PHẢI (7 CỘT): KẾT QUẢ DỰ TOÁN CHI TIẾT -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- HERO CARD KẾT QUẢ -->
+          <div class="bg-gradient-to-br from-brand-navyDark via-brand-navy to-slate-900 rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden shadow-xl border border-white/10">
+            <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-white/15">
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                  <span>📊</span> BẢN DỰ TOÁN KINH PHÍ CÁ NHÂN HÓA
+                </span>
+                <div id="calc-target-summary-pill" class="text-xs text-slate-300 font-semibold mt-1">
+                  🇦🇺 Úc • Monash University • Cử nhân
+                </div>
+              </div>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[11px] font-bold">
+                ✓ Dự toán chuẩn Năm 1
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-5 pb-2">
+              <!-- Khối 1: Cần chuẩn bị ban đầu -->
+              <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10">
+                <span class="text-[11px] text-slate-300 font-medium block">
+                  Số tiền gia đình cần chuẩn bị (Năm 1):
+                </span>
+                <div id="res-net-total-vnd" class="text-2xl sm:text-3xl font-black text-amber-400 font-heading mt-1">
+                  ~ 720 triệu VNĐ
+                </div>
+                <div id="res-net-total-original" class="text-xs text-slate-300 font-semibold mt-0.5">
+                  ~ 43.600 AUD
+                </div>
+              </div>
+
+              <!-- Khối 2: Thực chi sau khi đi làm -->
+              <div class="bg-emerald-500/15 backdrop-blur-md rounded-2xl p-4 border border-emerald-400/30">
+                <span class="text-[11px] text-emerald-300 font-medium block">
+                  Thực chi sau khi đi làm thêm / Co-op:
+                </span>
+                <div id="res-work-net-vnd" class="text-2xl sm:text-3xl font-black text-emerald-400 font-heading mt-1">
+                  ~ 414 triệu VNĐ
+                </div>
+                <div id="res-work-net-original" class="text-xs text-emerald-200 font-semibold mt-0.5">
+                  ~ 25.100 AUD
+                </div>
+              </div>
+            </div>
+
+            <!-- Ghi chú học bổng & thu nhập -->
+            <div class="space-y-1.5 pt-3 text-xs border-t border-white/10">
+              <div id="res-saving-note" class="text-amber-300">
+                💡 Chưa áp dụng học bổng.
+              </div>
+              <div id="res-work-income-note" class="text-slate-300 text-[11px]">
+                Đã trừ thu nhập làm thêm dự kiến: +18.500 AUD (~305 triệu VNĐ)/năm.
+              </div>
+            </div>
+
+            <!-- Thanh tiến trình phân bổ chi phí -->
+            <div class="pt-4 space-y-1.5">
+              <div class="flex justify-between text-[11px] text-slate-300 font-semibold">
+                <span id="txt-bar-tuition">Học phí (55%)</span>
+                <span id="txt-bar-living">Sinh hoạt phí (38%)</span>
+                <span id="txt-bar-initial">Thủ tục & Visa (7%)</span>
+              </div>
+              <div class="w-full h-2.5 bg-black/40 rounded-full overflow-hidden flex">
+                <div id="bar-tuition" style="width: 55%" class="bg-amber-400 transition-all duration-300"></div>
+                <div id="bar-living" style="width: 38%" class="bg-emerald-400 transition-all duration-300"></div>
+                <div id="bar-initial" style="width: 7%" class="bg-blue-400 transition-all duration-300"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- BẢNG CHI TIẾT TỪNG HẠNG MỤC -->
+          <div class="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-sm space-y-4">
+            <h3 class="font-extrabold text-slate-900 text-sm font-heading flex items-center justify-between">
+              <span>📋 Chi Tiết Từng Hạng Mục Kinh Phí (Năm Đầu Tiên)</span>
+              <span class="text-xs text-slate-400 font-normal">Đơn vị: Ngoại tệ & VNĐ</span>
+            </h3>
+
+            <div class="divide-y divide-slate-100 text-xs">
+              
+              <!-- 1. HỌC PHÍ DỰ KIẾN -->
+              <div class="py-3 space-y-1.5">
+                <div class="flex items-center justify-between font-bold text-slate-900">
+                  <span class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                    1. Học phí dự kiến / năm:
+                  </span>
+                  <div class="text-right">
+                    <span id="tbl-tuition-net" class="text-sm font-extrabold text-brand-navy">36.000 AUD</span>
+                    <span id="tbl-tuition-net-vnd" class="text-[11px] text-slate-500 block font-normal">~ 594 triệu VNĐ</span>
+                  </div>
+                </div>
+                <div class="text-[11px] text-slate-500 pl-3.5 flex justify-between">
+                  <span>Học phí niêm yết của trường:</span>
+                  <span id="tbl-tuition-gross" class="font-semibold text-slate-700">36.000 AUD</span>
+                </div>
+                <div class="text-[11px] text-amber-700 pl-3.5 flex justify-between hidden">
+                  <span>Học bổng được trừ:</span>
+                  <span id="tbl-tuition-scholarship" class="font-bold">- 0 AUD</span>
+                </div>
+              </div>
+
+              <!-- 2. SINH HOẠT PHÍ DỰ KIẾN -->
+              <div class="py-3 space-y-1.5">
+                <div class="flex items-center justify-between font-bold text-slate-900">
+                  <span class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    2. Sinh hoạt phí dự kiến (12 tháng):
+                  </span>
+                  <div class="text-right">
+                    <span id="tbl-living-total" class="text-sm font-extrabold text-brand-navy">29.710 AUD</span>
+                    <span id="tbl-living-vnd" class="text-[11px] text-slate-500 block font-normal">~ 490 triệu VNĐ</span>
+                  </div>
+                </div>
+                <div class="text-[11px] text-slate-500 pl-3.5 space-y-0.5">
+                  <div class="flex justify-between">
+                    <span>• Tiền thuê nhà / KTX:</span>
+                    <span id="tbl-living-housing" class="font-semibold text-slate-700">14.000 AUD</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>• Ăn uống & sinh hoạt:</span>
+                    <span id="tbl-living-food" class="font-semibold text-slate-700">8.500 AUD</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. CHI PHÍ THỦ TỤC BAN ĐẦU -->
+              <div class="py-3 space-y-1.5">
+                <div class="flex items-center justify-between font-bold text-slate-900">
+                  <span class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                    3. Chi phí hồ sơ, Visa & Thủ tục ban đầu (1 lần):
+                  </span>
+                  <div class="text-right">
+                    <span id="tbl-initial-total" class="text-sm font-extrabold text-brand-navy">3.100 AUD</span>
+                    <span id="tbl-initial-vnd" class="text-[11px] text-slate-500 block font-normal">~ 51 triệu VNĐ</span>
+                  </div>
+                </div>
+                <div class="text-[11px] text-slate-500 pl-3.5 grid grid-cols-2 gap-x-4 gap-y-0.5">
+                  <div class="flex justify-between">
+                    <span>• Lệ phí Visa Lãnh sự:</span>
+                    <span id="tbl-initial-visa" class="font-semibold text-slate-700">1.600 AUD</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>• Bảo hiểm du học OSHC:</span>
+                    <span id="tbl-initial-insurance" class="font-semibold text-slate-700">650 AUD</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>• Vé máy bay 1 chiều:</span>
+                    <span id="tbl-initial-flight" class="font-semibold text-slate-700">650 AUD</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>• Khám sức khỏe Lãnh sự:</span>
+                    <span id="tbl-initial-medical" class="font-semibold text-slate-700">200 AUD</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. TỔNG TIỀN GIA ĐÌNH CẦN CHUẨN BỊ NĂM 1 -->
+              <div class="py-3 bg-amber-50/70 -mx-5 px-5 rounded-xl border border-amber-200/80 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-black text-amber-950 uppercase tracking-wide block">
+                    🎯 TỔNG GIA ĐÌNH CẦN CHUẨN BỊ (NĂM 1):
+                  </span>
+                  <span class="text-[11px] text-amber-800">Chuẩn mực chứng minh tài chính Lãnh sự</span>
+                </div>
+                <div class="text-right">
+                  <span id="tbl-grand-total-orig" class="text-base font-black text-amber-900 block">68.810 AUD</span>
+                  <span id="tbl-grand-total-vnd" class="text-xs font-extrabold text-amber-700 block">~ 1,13 tỷ VNĐ</span>
+                </div>
+              </div>
+
+              <!-- 5. KHOẢN BÙ ĐẮP LÀM THÊM -->
+              <div class="py-2.5 flex items-center justify-between text-emerald-800">
+                <span class="text-xs font-semibold flex items-center gap-1.5">
+                  <span>💼</span> Khấu trừ thu nhập làm thêm/Co-op:
+                </span>
+                <div class="text-right">
+                  <span id="tbl-work-offset-orig" class="font-bold">- 18.500 AUD</span>
+                  <span id="tbl-work-offset-vnd" class="text-[11px] block text-emerald-600 font-medium">- 305 triệu VNĐ</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- BUTTONS CTA -->
+            <div class="pt-3 flex flex-col sm:flex-row gap-3">
+              <button type="button" onclick="openCostConsultModal()" class="flex-1 py-3 px-5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs sm:text-sm text-center shadow transition-all flex items-center justify-center gap-2 cursor-pointer">
+                <span>📥 Tải Bảng Dự Toán PDF & Lộ Trình Tiết Kiệm</span>
+              </button>
+              <button type="button" onclick="openCostConsultModal()" class="py-3 px-5 rounded-xl border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold text-xs sm:text-sm text-center transition-colors cursor-pointer">
+                <span>💬 Tư Vấn Tài Chính 1:1</span>
+              </button>
+            </div>
+            
+            <p class="text-[11px] text-slate-400 text-center italic">
+              * Dự toán mang tính chất tham khảo thực tế dựa trên biểu phí 2026. Hằng Lương hỗ trợ mở tài khoản ngân hàng & chứng minh tài chính miễn phí.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FAQ VỀ TÀI CHÍNH DU HỌC -->
+      <div class="pt-10 border-t border-slate-200 space-y-6">
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            Giải Đáp Thắc Mắc Phổ Biến
+          </span>
+          <h3 class="text-2xl font-extrabold text-brand-navy font-heading">
+            Câu Hỏi Thường Gặp Về Tài Chính & Sổ Tiết Kiệm Du Học
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <span class="text-amber-500 font-black">Q:</span> Sổ tiết kiệm du học cần mở trước bao lâu và bao nhiêu tiền?
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Tùy quốc gia: Với Úc và Canada SDS, học sinh không bắt buộc chứng minh tài chính rườm rà. Với Mỹ, Thụy Sĩ hoặc Anh, sổ tiết kiệm cần tối thiểu bằng tổng học phí + sinh hoạt phí năm đầu tiên (khoảng 600 - 900 triệu VNĐ) và nên gửi trước từ 1 - 3 tháng.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <span class="text-amber-500 font-black">Q:</span> Thu nhập đi làm thêm có đủ trang trải 100% học phí không?
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Theo quy định, thu nhập làm thêm (ví dụ Úc 48h/2 tuần với mức lương tối thiểu 24.1 AUD/h ~ 300 triệu/năm) đủ chi trả 80 - 100% sinh hoạt phí và tiền ăn ở. Riêng tại Thụy Sĩ, chương trình thực tập hưởng lương 2.500 CHF/tháng giúp sinh viên tiết kiệm được hơn 400 triệu VNĐ.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <span class="text-amber-500 font-black">Q:</span> Hằng Lương có thu phí dịch vụ làm hồ sơ chứng minh tài chính không?
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Hằng Lương miễn 100% phí dịch vụ tư vấn và hướng dẫn chứng minh tài chính đối với hầu hết các trường đối tác trực tiếp tại Úc, Thụy Sĩ, Singapore, Malaysia và Canada.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <span class="text-amber-500 font-black">Q:</span> Nếu chưa có tiếng Anh IELTS thì chi phí tăng bao nhiêu?
+            </h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Bạn có thể học khóa tiếng Anh tăng cường tại trường (từ 10 đến 20 tuần) với chi phí khoảng 3.000 - 8.000 AUD/USD trước khi vào khóa chính, hoặc tham gia lớp luyện thi cấp tốc tại Hằng Lương để tiết kiệm chi phí học tiếng ở nước ngoài.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER TỐI GIẢN -->
+  <footer class="bg-brand-navyDark text-slate-400 py-10 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="text-white font-bold text-sm">CÔNG TY DU HỌC QUỐC TẾ HẰNG LƯƠNG</p>
+        <p class="mt-1">Trụ sở: 1086 đường 3/2, P.12, Q.11, TP.HCM | Chi nhánh: Lâm Đồng, Tây Ninh</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:0908558959" class="text-amber-400 font-bold hover:underline">Hotline: 0908 558 959</a>
+        <span>•</span>
+        <a href="/" class="hover:text-white">duhochangluong.edu.vn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONSULTATION MODAL -->
+  <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
+      <div class="p-6 bg-brand-navy text-white flex justify-between items-center">
+        <div>
+          <h3 id="consult-modal-title" class="font-extrabold text-lg font-heading">Nhận Bản Dự Toán Chi Phí Chi Tiết</h3>
+          <p id="consult-modal-subtitle" class="text-xs text-amber-400 mt-0.5">Chuyên gia Hằng Lương hỗ trợ phương án tài chính tối ưu</p>
+        </div>
+        <button class="modal-close p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-white/10 text-xl font-bold">&times;</button>
+      </div>
+
+      <form id="consult-form" class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên học sinh / phụ huynh <span class="text-red-500">*</span></label>
+          <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Số điện thoại / Zalo <span class="text-red-500">*</span></label>
+            <input type="tel" name="phone" required placeholder="0908xxxxxx" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Email nhận bảng dự toán</label>
+            <input type="email" name="email" placeholder="email@gmail.com" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Thông tin dự toán tài chính</label>
+          <textarea name="note" id="consult-note" rows="3" class="w-full border border-slate-300 px-3.5 py-2 rounded-lg text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-colors shadow">
+          Gửi Yêu Cầu Nhận Bản Dự Toán & Tư Vấn Miễn Phí
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/cost-calculator.js"></script>
+</body>
+</html>
