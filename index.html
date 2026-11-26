@@ -89,14 +89,14 @@
 
         <!-- Bên phải: Ô Tìm kiếm nhanh + Mạng xã hội -->
         <div class="flex items-center gap-3">
-          <!-- Form Tìm Kiếm Nhanh Mini -->
-          <form action="/tim-khoa-hoc" method="GET" class="flex items-center">
-            <input type="text" name="search" placeholder="Nhập thông tin bạn cần tìm..." class="bg-white border border-slate-300 border-r-0 rounded-l-md px-2.5 py-1 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-amber-500 w-44 sm:w-56">
-            <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-1 rounded-r-md text-xs transition-colors flex items-center gap-1">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-              <span>Tìm kiếm</span>
-            </button>
-          </form>
+          <!-- Form Tìm Kiếm Nhanh Mini (Instant Search Launcher) -->
+          <button type="button" onclick="openSearchModal()" class="flex items-center bg-white hover:bg-amber-50 border border-slate-300 hover:border-amber-400 rounded-full px-3 py-1 text-xs text-slate-600 transition-all shadow-sm group cursor-pointer w-44 sm:w-56 justify-between">
+            <div class="flex items-center gap-1.5 truncate">
+              <svg class="w-3.5 h-3.5 text-amber-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <span class="truncate text-slate-500 group-hover:text-slate-800">Tìm kiếm nhanh...</span>
+            </div>
+            <kbd class="hidden sm:inline-block px-1.5 py-0.2 rounded bg-slate-100 border border-slate-200 text-[10px] font-semibold text-slate-500 shadow-xs">⌘K</kbd>
+          </button>
 
           <!-- Social Icons hình tròn -->
           <div class="hidden sm:flex items-center gap-1.5 text-slate-500">
@@ -248,9 +248,9 @@
 
         <!-- Mobile Controls (Hamburger + Quick Search) -->
         <div class="flex items-center gap-2 xl:hidden">
-          <a href="/tim-khoa-hoc" class="p-2 text-brand-navy hover:bg-slate-100 rounded-lg" title="Tìm khóa học">
+          <button onclick="openSearchModal()" class="p-2 text-brand-navy hover:bg-slate-100 rounded-lg cursor-pointer" title="Tìm kiếm nhanh">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          </a>
+          </button>
           <button id="mobile-menu-btn" aria-label="Mở Menu" class="p-2 rounded-lg text-slate-700 hover:bg-slate-100">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
@@ -1764,5 +1764,6 @@
 
   <!-- Scripts -->
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/instant-search.js"></script>
 </body>
 </html>
