@@ -1,5 +1,53 @@
 [
   {
+    "id": "qg-ph",
+    "type": "quocgia",
+    "typeName": "Quốc Gia",
+    "title": "Cẩm Nang Du Học Philippines 2026: Khóa Luyện Thi IELTS Cấp Tốc Sparta 1:1 Tăng 1.5 - 2.0 Band",
+    "country": "Philippines",
+    "major": "Tiếng Anh học thuật IELTS, ESL, Tiếng Anh thương mại, Du học Y Khoa",
+    "badge": "IELTS Cấp Tốc 1:1",
+    "snippet": "Mô hình học 1 kèm 1 kèm cặp 8-10h/ngày, trọn gói ăn ở ký túc xá chỉ từ 25 - 35 triệu/tháng. Miễn visa 30 ngày.",
+    "meta": "Trọn gói ăn ở: 1.200 - 1.800 USD/tháng",
+    "url": "/quoc-gia/philippines"
+  },
+  {
+    "id": "qg-au",
+    "type": "quocgia",
+    "typeName": "Quốc Gia",
+    "title": "Cẩm Nang Du Học Úc (Australia) 2026 - 2027: Học Bổng Đến 100%, Định Cư Tay Nghề, Visa 500",
+    "country": "Úc",
+    "major": "Tất cả các ngành (Điều dưỡng, Giáo dục, CNTT, Kỹ thuật, Kinh doanh)",
+    "badge": "Đại Học Go8 & ATN",
+    "snippet": "Tuyển sinh Đại học Monash, Deakin, UTS, RMIT, Western Sydney. Học bổng 20% - 100%, quyền ở lại làm việc 2 - 4 năm Subclass 485.",
+    "meta": "Học phí: 28.000 - 45.000 AUD/năm",
+    "url": "/quoc-gia/uc"
+  },
+  {
+    "id": "qg-sg",
+    "type": "quocgia",
+    "typeName": "Quốc Gia",
+    "title": "Cẩm Nang Du Học Singapore 2026 - 2027: Lộ Trình Rút Ngắn 2 - 2.5 Năm Lấy Bằng Cử Nhân Anh/Úc",
+    "country": "Singapore",
+    "major": "Tất cả các ngành (Tài chính, Kinh doanh, Quản trị Khách sạn, CNTT)",
+    "badge": "Rút Ngắn 2 Năm",
+    "snippet": "Tốt nghiệp đại học tuổi 20 với bằng cấp danh giá từ Anh và Úc (PSB, Kaplan, JCU, Curtin, SIM). 0 đồng chứng minh tài chính, visa ICA 99.8%.",
+    "meta": "Học phí: 320 - 550 triệu VNĐ/năm",
+    "url": "/quoc-gia/singapore"
+  },
+  {
+    "id": "qg-my",
+    "type": "quocgia",
+    "typeName": "Quốc Gia",
+    "title": "Cẩm Nang Du Học Malaysia 2026 - 2027: Bằng Anh/Úc, Tiết Kiệm 70%, Visa Graduate Pass 1 Năm",
+    "country": "Malaysia",
+    "major": "Tất cả các ngành (Kinh doanh, CNTT, Khách sạn & Ẩm thực)",
+    "badge": "Thế Mạnh Số 1 Hằng Lương",
+    "snippet": "Học tại Malaysia nhận bằng gốc ĐH Lancaster (Anh), ĐH Monash (Úc), Le Cordon Bleu (Pháp). Miễn chứng minh tài chính, cấp visa ở lại làm việc 1 năm.",
+    "meta": "Học phí + ăn ở: 180 - 320 triệu VNĐ/năm",
+    "url": "/quoc-gia/malaysia"
+  },
+  {
     "id": "th-1",
     "type": "truonghoc",
     "typeName": "Trường Học",

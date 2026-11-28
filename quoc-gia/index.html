@@ -142,20 +142,73 @@
         <!-- Desktop Menu Items (4 Dropdown theo quốc gia, Tin Du Học SEO, Giới Thiệu, KHÔNG CÓ LIÊN HỆ) -->
         <nav class="hidden xl:flex items-center gap-5 text-sm font-semibold text-slate-700">
           
-          <!-- Dropdown 1: Quốc Gia -->
+          <!-- Dropdown 1: Quốc Gia (Mega Menu Chuẩn 4 Châu Lục) -->
           <div class="relative group py-2">
             <a href="/quoc-gia" class="text-brand-navy font-bold flex items-center gap-1 transition-colors">
               Quốc Gia
               <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </a>
-            <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2.5 z-50">
-              <a href="/quoc-gia#uc" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇦🇺 Du học Úc (Australia)</a>
-              <a href="/quoc-gia#my" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇺🇸 Du học Mỹ (USA)</a>
-              <a href="/quoc-gia#anh" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇬🇧 Du học Anh Quốc</a>
-              <a href="/quoc-gia#canada" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇨🇦 Du học Canada</a>
-              <a href="/quoc-gia#singapore" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇸🇬 Du học Singapore</a>
-              <a href="/quoc-gia#malaysia" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇲🇾 Du học Malaysia</a>
-              <a href="/quoc-gia#philip" class="flex items-center gap-2.5 px-4 py-2 hover:bg-slate-50 text-slate-700 hover:text-brand-navy text-xs">🇵🇭 Du học Philippines</a>
+            <div class="absolute left-0 top-full hidden group-hover:block w-[820px] bg-white shadow-2xl rounded-2xl border border-slate-100 p-6 z-50 transform -translate-x-12 animate-in fade-in duration-200">
+              <div class="grid grid-cols-4 divide-x divide-slate-100 text-sm">
+                <!-- Cột 1: Châu Á -->
+                <div class="pr-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU Á</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/malaysia" class="flex items-center justify-between py-1 hover:text-amber-600 hover:translate-x-1 transition-all group/item"><span>Du học Malaysia</span><span class="text-[9px] bg-amber-100 text-amber-800 font-bold px-1.5 py-0.5 rounded group-hover/item:bg-amber-500 group-hover/item:text-white transition-colors">Top 1</span></a></li>
+                    <li><a href="/quoc-gia/singapore" class="flex items-center justify-between py-1 hover:text-amber-600 hover:translate-x-1 transition-all group/item"><span>Du học Singapore</span><span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded group-hover/item:bg-emerald-600 group-hover/item:text-white transition-colors">Hot</span></a></li>
+                    <li><a href="/quoc-gia/philippines" class="flex items-center justify-between py-1 hover:text-amber-600 hover:translate-x-1 transition-all group/item"><span>Du học Philippines</span><span class="text-[9px] bg-blue-100 text-blue-800 font-bold px-1.5 py-0.5 rounded">IELTS</span></a></li>
+                    <li><a href="/quoc-gia#chau-a" class="block py-1 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Nhật Bản</a></li>
+                    <li><a href="/quoc-gia#chau-a" class="block py-1 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Hàn Quốc</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 2: Châu Âu -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÂU</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                  </div>
+                  <ul class="space-y-1.5 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#anh" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all">Du học Anh Quốc</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Ba Lan</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Bỉ</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Đức</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Hà Lan</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Ireland</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Pháp</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Phần Lan</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học Thụy Sĩ</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 3: Châu Mỹ -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU MỸ</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#my" class="block py-1 hover:text-amber-600 hover:translate-x-1 transition-all">Du học Mỹ (USA)</a></li>
+                    <li><a href="/quoc-gia#canada" class="block py-1 hover:text-amber-600 hover:translate-x-1 transition-all">Du học Canada</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 4: Châu Úc -->
+                <div class="pl-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÚC</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/uc" class="flex items-center justify-between py-1 hover:text-amber-600 hover:translate-x-1 transition-all group/item"><span>Du học Úc</span><span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded group-hover/item:bg-red-500 group-hover/item:text-white transition-colors">Go8</span></a></li>
+                    <li><a href="/quoc-gia#new-zealand" class="block py-1 hover:text-amber-600 hover:translate-x-1 transition-all text-slate-400">Du học New Zealand</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="text-slate-500">⭐ Hằng Lương Edu - Đại diện tuyển sinh chính thức hơn 300+ trường quốc tế</span>
+                <a href="/quoc-gia" class="text-brand-navy font-bold hover:text-amber-600 transition-colors flex items-center gap-1">Xem tất cả quốc gia &rarr;</a>
+              </div>
             </div>
           </div>
 
@@ -293,8 +346,11 @@
         <div><strong>Trường tiêu biểu:</strong> Monash, Deakin, Curtin, UTS, La Trobe, Western Sydney</div>
       </div>
       <div class="flex flex-wrap gap-3">
-        <button onclick="openConsultModal('Du Học Úc', 'Tư vấn lộ trình visa & học bổng Úc')" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-          Tư Vấn Hồ Sơ Du Học Úc Miễn Phí
+        <a href="/quoc-gia/uc" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-amber-400 font-extrabold rounded-lg text-xs shadow flex items-center gap-1.5">
+          <span>Xem Cẩm Nang Du Học Úc 2026</span> &rarr;
+        </a>
+        <button onclick="openConsultModal('Du Học Úc', 'Tư vấn lộ trình visa & học bổng Úc')" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs shadow">
+          Tư Vấn Hồ Sơ Du Học Úc
         </button>
         <a href="/truong-hoc#uc" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-brand-navy font-bold rounded-lg text-xs">
           Xem Các Trường Tại Úc &rarr;
@@ -413,8 +469,11 @@
         <div><strong>Trường tiêu biểu:</strong> SIM, Curtin Singapore, Kaplan, James Cook Singapore, PSB</div>
       </div>
       <div class="flex flex-wrap gap-3">
-        <button onclick="openConsultModal('Du Học Singapore', 'Tư vấn học bổng & rút ngắn thời gian')" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-          Tư Vấn Du Học Singapore Nhanh
+        <a href="/quoc-gia/singapore" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-amber-400 font-extrabold rounded-lg text-xs shadow flex items-center gap-1.5">
+          <span>Xem Cẩm Nang Du Học Singapore</span> &rarr;
+        </a>
+        <button onclick="openConsultModal('Du Học Singapore', 'Tư vấn học bổng & rút ngắn thời gian')" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs shadow">
+          Tư Vấn Nhanh
         </button>
         <a href="/truong-hoc#singapore" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-brand-navy font-bold rounded-lg text-xs">
           Xem Các Trường Tại Singapore &rarr;
@@ -443,8 +502,11 @@
         <div><strong>Trường tiêu biểu:</strong> Taylor's University, APU, Sunway University, Monash Malaysia</div>
       </div>
       <div class="flex flex-wrap gap-3">
+        <a href="/quoc-gia/malaysia" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold rounded-lg text-xs shadow flex items-center gap-1.5">
+          <span>Xem Cẩm Nang Du Học Malaysia 2026</span> &rarr;
+        </a>
         <button onclick="openConsultModal('Du Học Malaysia', 'Tư vấn chương trình chuyển tiếp & bằng kép')" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-          Tư Vấn Du Học Malaysia Tiết Kiệm
+          Tư Vấn Tiết Kiệm
         </button>
         <a href="/truong-hoc#malaysia" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-brand-navy font-bold rounded-lg text-xs">
           Xem Các Trường Tại Malaysia &rarr;
@@ -473,8 +535,11 @@
         <div><strong>Trường tiêu biểu:</strong> SMEAG Global Education, EV Academy, HELP English, CIA</div>
       </div>
       <div class="flex flex-wrap gap-3">
-        <button onclick="openConsultModal('Du Học Philippines', 'Tư vấn khóa Sparta IELTS cấp tốc')" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-lg text-xs shadow">
-          Tư Vấn Khóa Tiếng Anh Cấp Tốc
+        <a href="/quoc-gia/philippines" class="px-5 py-2.5 bg-brand-navy hover:bg-brand-navyLight text-amber-400 font-extrabold rounded-lg text-xs shadow flex items-center gap-1.5">
+          <span>Xem Cẩm Nang Du Học Philippines</span> &rarr;
+        </a>
+        <button onclick="openConsultModal('Du Học Philippines', 'Tư vấn khóa Sparta IELTS cấp tốc')" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs shadow">
+          Tư Vấn IELTS 1:1
         </button>
         <a href="/truong-hoc#philip" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-brand-navy font-bold rounded-lg text-xs">
           Xem Các Trường Tại Philippines &rarr;

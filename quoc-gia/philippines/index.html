@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Du Học Philippines 2026 - 2027: Luyện Thi IELTS Sparta 1:1, Chi Phí Rẻ | Hằng Lương Edu</title>
+  <meta name="description" content="Cẩm nang du học Philippines 2026 - 2027: Mô hình Sparta 1:1 bứt phá 1.5 - 2.0 IELTS sau 8 tuần, chi phí trọn gói chỉ từ 25 triệu/tháng gồm ăn ở, miễn visa 30 ngày cùng Hằng Lương Edu - Đại diện chính thức SMEAG, CIA, EV Academy.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: '#1B365D', navyDark: '#0F1E36', navyLight: '#2A4B7C', gold: '#C58A19', goldLight: '#EAB308', goldDark: '#9A6B0F', slate: '#F8FAFC' }
+          },
+          fontFamily: { sans: ['"Be Vietnam Pro"', 'sans-serif'], heading: ['"Outfit"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans">
+
+  <!-- TOP NOTIFICATION BAR -->
+  <div class="bg-brand-navyDark text-slate-300 text-xs py-2 px-4 border-b border-slate-700/50 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-amber-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          Tuyển sinh tiếng Anh Philippines:
+        </span>
+        <span>Tặng đến 500 USD học bổng khóa IELTS Sparta tại Cebu & Baguio các khóa 2026!</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <button onclick="openConsultModal('Tư vấn du học Philippines ngoài giờ', 'Philippines', true)" class="text-amber-300 hover:text-amber-200 font-semibold flex items-center gap-1 transition-colors">
+          <span>🌙</span> Đặt lịch tư vấn ngoài giờ (17h00 - 21h00)
+        </button>
+        <span class="text-slate-600">|</span>
+        <a href="tel:0908558959" class="hover:text-amber-400 transition-colors flex items-center gap-1 font-semibold text-white">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          Hotline: 0908 558 959
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 shadow-sm bg-white">
+    <div class="bg-slate-100 border-b border-slate-200/80 text-[11px] sm:text-xs text-slate-600 py-1.5 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+        <div class="flex items-center flex-wrap gap-x-3 gap-y-1 justify-center sm:justify-start">
+          <span class="text-slate-500 hidden sm:inline">Bạn cần tư vấn học tiếng Anh tại Philippines?</span>
+          <a href="tel:0908558959" class="font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 transition-colors">
+            <svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            0908 558 959
+          </a>
+          <span class="text-slate-300">|</span>
+          <button onclick="openConsultModal('Đăng ký tư vấn du học Philippines', 'Philippines', false)" class="text-amber-600 hover:text-amber-700 font-bold hover:underline transition-colors flex items-center gap-1 cursor-pointer">
+            <span>Đăng Ký Tư Vấn</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <form action="/tim-kiem" method="GET" class="flex items-center">
+            <input type="text" name="s" required placeholder="Tìm trường tiếng Anh, IELTS..." class="bg-white border border-slate-300 border-r-0 rounded-l-full px-3.5 py-1 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-amber-500 w-44 sm:w-56">
+            <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-1 rounded-r-full text-xs transition-colors flex items-center gap-1 cursor-pointer">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <span>Tìm</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white/95 backdrop-blur-md py-3 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brand-navy flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
+            </svg>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div>
+              <div class="text-base sm:text-lg font-black text-brand-navy tracking-tight font-heading leading-tight group-hover:text-amber-600 transition-colors">
+                HẰNG LƯƠNG
+              </div>
+              <div class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-500 tracking-wider">
+                INTERNATIONAL EDU
+              </div>
+            </div>
+            <div class="h-8 w-[1.5px] bg-slate-200 mx-1 hidden sm:block"></div>
+            <div class="hidden sm:flex items-center gap-1.5 pl-0.5">
+              <div class="text-2xl font-black font-heading bg-gradient-to-r from-amber-600 to-amber-500 bg-clip-text text-transparent leading-none">20</div>
+              <div class="text-[8.5px] font-extrabold uppercase leading-tight text-amber-700 tracking-tighter">
+                YEARS<br><span class="text-slate-400 font-semibold text-[7.5px]">2004 - 2026</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu Items with Mega Menu -->
+        <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <div class="relative group py-2">
+            <a href="/quoc-gia" class="text-brand-navy font-bold flex items-center gap-1 transition-colors">
+              Quốc Gia
+              <svg class="w-3.5 h-3.5 text-brand-navy group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            
+            <div class="absolute left-0 top-full hidden group-hover:block w-[820px] bg-white shadow-2xl rounded-2xl border border-slate-100 p-6 z-50 transform -translate-x-16">
+              <div class="grid grid-cols-4 divide-x divide-slate-100 text-sm">
+                <!-- Cột 1: Châu Á -->
+                <div class="pr-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU Á</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/philippines" class="flex items-center justify-between py-1 text-amber-600 font-bold bg-amber-50 px-2 rounded -mx-2"><span>Du học Philippines</span><span class="text-[9px] bg-amber-500 text-white font-bold px-1.5 py-0.5 rounded">IELTS 1:1</span></a></li>
+                    <li><a href="/quoc-gia/malaysia" class="block py-1 hover:text-amber-600 transition-colors">Du học Malaysia</a></li>
+                    <li><a href="/quoc-gia/singapore" class="block py-1 hover:text-amber-600 transition-colors">Du học Singapore</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 2: Châu Âu -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÂU</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                  </div>
+                  <ul class="space-y-1.5 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#anh" class="block py-0.5 hover:text-amber-600 transition-colors">Du học Anh Quốc</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 transition-colors text-slate-400">Du học Hà Lan</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 3: Châu Mỹ -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU MỸ</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#my" class="block py-1 hover:text-amber-600 transition-colors">Du học Mỹ (USA)</a></li>
+                    <li><a href="/quoc-gia#canada" class="block py-1 hover:text-amber-600 transition-colors">Du học Canada</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 4: Châu Úc -->
+                <div class="pl-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÚC</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/uc" class="block py-1 hover:text-amber-600 transition-colors">Du học Úc</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="text-slate-500">⭐ Hằng Lương Edu - Đại diện ủy quyền chính thức các học viện Anh ngữ Philippines</span>
+                <a href="/quoc-gia" class="text-brand-navy font-bold hover:text-amber-600 transition-colors">Xem tất cả quốc gia &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="/truong-hoc" class="hover:text-brand-navy transition-colors">Trường Học</a>
+          <a href="/hoc-bong" class="hover:text-brand-navy transition-colors">Học Bổng</a>
+          <a href="/hoi-thao" class="hover:text-brand-navy transition-colors">Hội Thảo</a>
+          <a href="/tin-du-hoc" class="hover:text-brand-navy transition-colors">Tin Du Học</a>
+          <a href="/tim-khoa-hoc" class="text-blue-700 hover:text-blue-800 transition-colors">Tìm Khóa Học</a>
+          <a href="/gioi-thieu" class="hover:text-brand-navy transition-colors">Giới Thiệu</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openConsultModal('Tư vấn du học Philippines', 'Philippines', false)" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs px-4 py-2.5 rounded-full shadow-md transition-all cursor-pointer">
+            <span>Nhận Lộ Trình IELTS Cấp Tốc</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-slate-100 border-b border-slate-200 text-xs py-2.5 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-600">
+      <a href="/" class="hover:text-brand-navy">Trang chủ</a>
+      <span>/</span>
+      <a href="/quoc-gia" class="hover:text-brand-navy">Quốc gia du học</a>
+      <span>/</span>
+      <span class="text-amber-600 font-bold">Du học Philippines 2026</span>
+    </div>
+  </div>
+
+  <!-- HERO BANNER -->
+  <section class="relative bg-gradient-to-br from-brand-navy via-brand-navyDark to-slate-950 text-white py-14 lg:py-20 overflow-hidden">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold tracking-wide">
+            <span>🇵🇭 DU HỌC PHILIPPINES 2026</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>THIÊN ĐƯỜNG TIẾNG ANH SỐ 1 CHÂU Á</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading leading-tight tracking-tight text-white">
+            Du Học Philippines: <br class="hidden sm:block">
+            <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Tăng 1.5 - 2.0 Band IELTS</span> Sau 8 Tuần
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            Mô hình quân đội Sparta học 10–12 tiếng/ngày, 4–5 lớp học kèm 1:1 mỗi ngày. Trọn gói chỉ từ <strong>25 – 35 triệu VNĐ/tháng</strong> (bao gồm học phí, ký túc xá, ăn 3 bữa buffet và giặt dọn). Miễn visa 30 ngày!
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-amber-400 font-heading">25 - 35tr</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">VNĐ / Tháng trọn gói ăn ở</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-emerald-400 font-heading">1 KÈM 1</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Lớp Man-to-Man 4-5h/ngày</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-amber-300 font-heading">+1.5 - 2.0</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Band IELTS sau 8-12 tuần</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-blue-300 font-heading">MIỄN VISA</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Không cần xin visa trước</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#du-toan-chi-phi" class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-all shadow-lg hover:shadow-amber-500/25 flex items-center gap-2">
+              <span>Tính Chi Phí Theo Tuần Học</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <button onclick="openConsultModal('Nhận báo giá khóa tiếng Anh Philippines', 'Philippines')" class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl text-sm transition-all border border-white/20 backdrop-blur-md">
+              Nhận Báo Giá Từng Trường
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-900 rounded-2xl p-6 sm:p-7 shadow-2xl border border-slate-100">
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold">🇵🇭</div>
+              <div>
+                <h3 class="font-extrabold text-base text-brand-navy font-heading">Tư Vấn Khóa Tiếng Anh Cấp Tốc</h3>
+                <p class="text-xs text-slate-500">Đại diện chính thức SMEAG, CIA, EV, Pines</p>
+              </div>
+            </div>
+
+            <form class="lead-form space-y-3">
+              <input type="hidden" name="country" value="Philippines">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên học viên *</label>
+                <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Số điện thoại *</label>
+                  <input type="tel" name="phone" required placeholder="0908 xxx xxx" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Khóa học quan tâm</label>
+                  <select name="course_type" class="w-full border border-slate-300 px-3 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                    <option value="IELTS Sparta">Luyện thi IELTS Sparta 1:1</option>
+                    <option value="ESL Giao tiếp">ESL Tiếng Anh giao tiếp</option>
+                    <option value="Du học hè">Trại hè tiếng Anh (Junior Camp)</option>
+                    <option value="Y Nha Dược">Đại học Y Nha Dược (UV Gullas)</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Dự kiến học bao nhiêu tuần?</label>
+                <select name="duration" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                  <option value="4 tuần">4 tuần (1 tháng)</option>
+                  <option value="8 tuần" selected>8 tuần (2 tháng - Tăng 1.0 - 1.5 band)</option>
+                  <option value="12 tuần">12 tuần (3 tháng - Cam kết đầu ra)</option>
+                  <option value="16 - 24 tuần">16 - 24 tuần (Từ mất gốc lên 6.5)</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full py-3 bg-brand-navy hover:bg-brand-navyDark text-amber-400 font-extrabold rounded-xl text-sm transition-colors shadow flex items-center justify-center gap-2">
+                <span>Nhận Lộ Trình & Học Bổng 500 USD</span>
+                <span>&rarr;</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PHẦN 2: DỰ TOÁN CHI PHÍ PHILIPPINES -->
+  <section id="du-toan-chi-phi" class="py-16 bg-slate-100 scroll-mt-28">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Chi Phí Trọn Gói A-Z</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Dự Toán Chi Phí Khóa Học Tiếng Anh Philippines
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">Chi phí đã bao gồm trọn gói: Học phí, lớp 1:1, Ký túc xá, ngày ăn 3 bữa, giặt ủi và dọn phòng.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sm:p-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-8 border-b border-slate-100">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wide">1. Chọn thời gian học</label>
+            <select id="phil-weeks" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-800 bg-slate-50 focus:ring-2 focus:ring-amber-500 focus:outline-none cursor-pointer">
+              <option value="4">4 tuần (1 tháng) - Cải thiện phát âm, phản xạ</option>
+              <option value="8" selected>8 tuần (2 tháng) - Tăng 1.0 - 1.5 band IELTS</option>
+              <option value="12">12 tuần (3 tháng) - Khóa IELTS Guarantee cam kết điểm</option>
+              <option value="16">16 tuần (4 tháng) - Lộ trình nền tảng vững chắc</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wide">2. Loại phòng ký túc xá</label>
+            <select id="phil-room" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-800 bg-slate-50 focus:ring-2 focus:ring-amber-500 focus:outline-none cursor-pointer">
+              <option value="quad">Phòng 4 người (Tiết kiệm nhất, kết bạn quốc tế)</option>
+              <option value="triple" selected>Phòng 3 người (Rộng rãi, phổ biến nhất)</option>
+              <option value="double">Phòng 2 người (Yên tĩnh, thoải mái)</option>
+              <option value="single">Phòng đơn 1 người (Riêng tư tuyệt đối)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+            <span class="text-xs text-slate-500 font-semibold block mb-1">Chi phí ước tính theo USD</span>
+            <div id="phil-res-usd" class="text-2xl font-extrabold text-amber-600 font-heading">~ 3.100 USD</div>
+            <div class="text-xs text-slate-500 mt-1">Đã bao gồm học phí + KTX 3 người + ăn 3 bữa</div>
+          </div>
+
+          <div class="bg-gradient-to-br from-brand-navy to-brand-navyDark text-white rounded-xl p-5 shadow-lg border border-brand-navyLight">
+            <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Tổng chi phí quy đổi VNĐ</span>
+            <div id="phil-res-vnd" class="text-2xl sm:text-3xl font-black text-amber-300 font-heading">79.050.000 VNĐ</div>
+            <div class="text-[11px] text-slate-300 mt-1">Tiết kiệm 70% so với học tại Singapore / Úc</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navyDark text-slate-300 pt-14 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-amber-500 flex items-center justify-center text-slate-950 font-bold">HL</div>
+            <div>
+              <div class="font-extrabold text-white text-base font-heading">HẰNG LƯƠNG EDU</div>
+              <div class="text-[10px] text-amber-400 font-bold tracking-wider">PHILIPPINES ESL HUB</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Đại diện chính thức của hơn 30+ học viện Anh ngữ danh tiếng tại Cebu, Baguio, Clark, Iloilo.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Quốc Gia Trọng Điểm</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="/quoc-gia/philippines" class="text-amber-300 font-bold">&rarr; Du học Philippines (Tiếng Anh 1:1)</a></li>
+            <li><a href="/quoc-gia/malaysia" class="hover:text-amber-400 transition-colors">&rarr; Du học Malaysia</a></li>
+            <li><a href="/quoc-gia/singapore" class="hover:text-amber-400 transition-colors">&rarr; Du học Singapore</a></li>
+            <li><a href="/quoc-gia/uc" class="hover:text-amber-400 transition-colors">&rarr; Du học Úc</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Trường Tiêu Biểu</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li>• Học viện Anh ngữ SMEAG (Cebu)</li>
+            <li>• Học viện CIA (Cebu International Academy)</li>
+            <li>• Học viện EV Academy (Cebu)</li>
+            <li>• Học viện Pines Academy (Baguio)</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Liên Hệ</h4>
+          <div class="space-y-2 text-xs text-slate-400">
+            <p><strong>Hotline:</strong> 0908 558 959</p>
+            <p><strong>Trụ sở:</strong> 1086 đường 3/2, P.12, Q.11, TP.HCM</p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 flex justify-between items-center text-xs text-slate-500">
+        <p>© 2004 - 2026 Du Học Quốc Tế Hằng Lương. Bảo lưu mọi quyền.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="document.getElementById('consult-modal').classList.add('hidden'); document.body.style.overflow='auto';" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold cursor-pointer">&times;</button>
+      <div class="mb-5">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Tư Vấn Học Tiếng Anh Philippines</span>
+        <h3 id="consult-modal-title" class="text-xl font-black text-brand-navy font-heading mt-1">Đăng Ký Khóa Học Tiếng Anh Cấp Tốc</h3>
+      </div>
+      <form class="lead-form space-y-3.5">
+        <input type="hidden" name="country" value="Philippines">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên *</label>
+          <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Số điện thoại *</label>
+          <input type="tel" name="phone" required placeholder="0908 xxx xxx" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Ghi chú hoặc mục tiêu IELTS</label>
+          <input type="text" name="note" placeholder="Ví dụ: Mục tiêu IELTS 6.5 sau 8 tuần..." class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-colors shadow">
+          Xác Nhận Đăng Ký
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="/assets/js/main.js"></script>
+
+  <script>
+    const philWeeklyRates = {
+      quad: 720,
+      triple: 775,
+      double: 880,
+      single: 1050
+    };
+    const USD_RATE = 25500;
+
+    function updatePhilCalculator() {
+      const weeks = parseInt(document.getElementById('phil-weeks').value) || 8;
+      const room = document.getElementById('phil-room').value;
+      const weeklyRate = philWeeklyRates[room] || 775;
+      const totalUsd = Math.round(weeks * weeklyRate);
+      const totalVnd = totalUsd * USD_RATE;
+
+      document.getElementById('phil-res-usd').textContent = `~ ${totalUsd.toLocaleString()} USD`;
+      document.getElementById('phil-res-vnd').textContent = totalVnd.toLocaleString('vi-VN') + ' VNĐ';
+    }
+
+    document.getElementById('phil-weeks')?.addEventListener('change', updatePhilCalculator);
+    document.getElementById('phil-room')?.addEventListener('change', updatePhilCalculator);
+  </script>
+</body>
+</html>

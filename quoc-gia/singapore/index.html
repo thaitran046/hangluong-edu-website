@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Du Học Singapore 2026 - 2027: Lộ Trình Rút Ngắn 2 Năm, Bằng ĐH Anh/Úc | Hằng Lương Edu</title>
+  <meta name="description" content="Cẩm nang du học Singapore 2026 - 2027: Tốt nghiệp đại học ở tuổi 20, nhận bằng gốc từ ĐH Anh, Úc, Mỹ, học bổng đến 100%, không chứng minh tài chính cùng Hằng Lương Edu - Đại diện chính thức PSB, Kaplan, JCU, Curtin, SIM.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: '#1B365D', navyDark: '#0F1E36', navyLight: '#2A4B7C', gold: '#C58A19', goldLight: '#EAB308', goldDark: '#9A6B0F', slate: '#F8FAFC' }
+          },
+          fontFamily: { sans: ['"Be Vietnam Pro"', 'sans-serif'], heading: ['"Outfit"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans">
+
+  <!-- TOP NOTIFICATION BAR -->
+  <div class="bg-brand-navyDark text-slate-300 text-xs py-2 px-4 border-b border-slate-700/50 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-amber-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          Tuyển sinh Singapore 2026:
+        </span>
+        <span>Học bổng 100% Đại học James Cook & Học bổng lên tới 4.000 SGD từ Học viện PSB đang mở đơn!</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <button onclick="openConsultModal('Tư vấn du học Singapore ngoài giờ', 'Singapore', true)" class="text-amber-300 hover:text-amber-200 font-semibold flex items-center gap-1 transition-colors">
+          <span>🌙</span> Đặt lịch tư vấn ngoài giờ (17h00 - 21h00)
+        </button>
+        <span class="text-slate-600">|</span>
+        <a href="tel:0908558959" class="hover:text-amber-400 transition-colors flex items-center gap-1 font-semibold text-white">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          Hotline: 0908 558 959
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 shadow-sm bg-white">
+    <div class="bg-slate-100 border-b border-slate-200/80 text-[11px] sm:text-xs text-slate-600 py-1.5 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+        <div class="flex items-center flex-wrap gap-x-3 gap-y-1 justify-center sm:justify-start">
+          <span class="text-slate-500 hidden sm:inline">Bạn cần hỗ trợ tư vấn Singapore?</span>
+          <a href="tel:0908558959" class="font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 transition-colors">
+            <svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            0908 558 959
+          </a>
+          <span class="text-slate-300">|</span>
+          <button onclick="openConsultModal('Đăng ký tư vấn Singapore từ Top Bar', 'Singapore', false)" class="text-amber-600 hover:text-amber-700 font-bold hover:underline transition-colors flex items-center gap-1 cursor-pointer">
+            <span>Đăng Ký Tư Vấn</span>
+          </button>
+          <span class="text-slate-300 hidden lg:inline">|</span>
+          <span class="text-slate-500 hidden lg:inline flex items-center gap-1">
+            <span>📍</span> 3 Chi nhánh: TP.HCM • Lâm Đồng • Tây Ninh
+          </span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <form action="/tim-kiem" method="GET" class="flex items-center">
+            <input type="text" name="s" required placeholder="Tìm trường Singapore, học bổng..." class="bg-white border border-slate-300 border-r-0 rounded-l-full px-3.5 py-1 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-amber-500 w-44 sm:w-56">
+            <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-1 rounded-r-full text-xs transition-colors flex items-center gap-1 cursor-pointer">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <span>Tìm</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white/95 backdrop-blur-md py-3 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brand-navy flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
+            </svg>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div>
+              <div class="text-base sm:text-lg font-black text-brand-navy tracking-tight font-heading leading-tight group-hover:text-amber-600 transition-colors">
+                HẰNG LƯƠNG
+              </div>
+              <div class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-500 tracking-wider">
+                INTERNATIONAL EDU
+              </div>
+            </div>
+            <div class="h-8 w-[1.5px] bg-slate-200 mx-1 hidden sm:block"></div>
+            <div class="hidden sm:flex items-center gap-1.5 pl-0.5">
+              <div class="text-2xl font-black font-heading bg-gradient-to-r from-amber-600 to-amber-500 bg-clip-text text-transparent leading-none">20</div>
+              <div class="text-[8.5px] font-extrabold uppercase leading-tight text-amber-700 tracking-tighter">
+                YEARS<br><span class="text-slate-400 font-semibold text-[7.5px]">2004 - 2026</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu Items with Mega Menu -->
+        <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <div class="relative group py-2">
+            <a href="/quoc-gia" class="text-brand-navy font-bold flex items-center gap-1 transition-colors">
+              Quốc Gia
+              <svg class="w-3.5 h-3.5 text-brand-navy group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            
+            <div class="absolute left-0 top-full hidden group-hover:block w-[820px] bg-white shadow-2xl rounded-2xl border border-slate-100 p-6 z-50 transform -translate-x-16">
+              <div class="grid grid-cols-4 divide-x divide-slate-100 text-sm">
+                <!-- Cột 1: Châu Á -->
+                <div class="pr-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU Á</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/singapore" class="flex items-center justify-between py-1 text-amber-600 font-bold bg-amber-50 px-2 rounded -mx-2"><span>Du học Singapore</span><span class="text-[9px] bg-amber-500 text-white font-bold px-1.5 py-0.5 rounded">Rút ngắn</span></a></li>
+                    <li><a href="/quoc-gia/malaysia" class="flex items-center justify-between py-1 hover:text-amber-600 transition-colors"><span>Du học Malaysia</span><span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">Top 1</span></a></li>
+                    <li><a href="/quoc-gia/philippines" class="block py-1 hover:text-amber-600 transition-colors">Du học Philippines</a></li>
+                    <li><a href="/quoc-gia#chau-a" class="block py-1 hover:text-amber-600 transition-colors text-slate-400">Du học Nhật Bản</a></li>
+                    <li><a href="/quoc-gia#chau-a" class="block py-1 hover:text-amber-600 transition-colors text-slate-400">Du học Hàn Quốc</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 2: Châu Âu -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÂU</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                  </div>
+                  <ul class="space-y-1.5 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#anh" class="block py-0.5 hover:text-amber-600 transition-colors">Du học Anh Quốc</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 transition-colors text-slate-400">Du học Hà Lan</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 transition-colors text-slate-400">Du học Thụy Sĩ</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 transition-colors text-slate-400">Du học Đức</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 3: Châu Mỹ -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU MỸ</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#my" class="block py-1 hover:text-amber-600 transition-colors">Du học Mỹ (USA)</a></li>
+                    <li><a href="/quoc-gia#canada" class="block py-1 hover:text-amber-600 transition-colors">Du học Canada</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 4: Châu Úc -->
+                <div class="pl-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÚC</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/uc" class="flex items-center justify-between py-1 hover:text-amber-600 transition-colors"><span>Du học Úc</span><span class="text-[9px] bg-red-100 text-red-700 font-bold px-1.5 py-0.5 rounded">Go8</span></a></li>
+                    <li><a href="/quoc-gia#new-zealand" class="block py-1 hover:text-amber-600 transition-colors text-slate-400">Du học New Zealand</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="text-slate-500">⭐ Hằng Lương Edu - Đối tác tuyển sinh trực tiếp các trường ĐH Singapore</span>
+                <a href="/quoc-gia" class="text-brand-navy font-bold hover:text-amber-600 transition-colors">Xem tất cả quốc gia &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="/truong-hoc" class="hover:text-brand-navy transition-colors">Trường Học</a>
+          <a href="/hoc-bong" class="hover:text-brand-navy transition-colors flex items-center gap-1">
+            <span>Học Bổng</span>
+            <span class="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold">100%</span>
+          </a>
+          <a href="/hoi-thao" class="hover:text-brand-navy transition-colors">Hội Thảo</a>
+          <a href="/tin-du-hoc" class="hover:text-brand-navy transition-colors">Tin Du Học</a>
+          <a href="/tim-khoa-hoc" class="text-blue-700 hover:text-blue-800 transition-colors">Tìm Khóa Học</a>
+          <a href="/gioi-thieu" class="hover:text-brand-navy transition-colors">Giới Thiệu</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openConsultModal('Tư vấn du học Singapore 2026', 'Singapore', false)" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs px-4 py-2.5 rounded-full shadow-md transition-all cursor-pointer">
+            <span>Nhận Lộ Trình 2 Năm Tốt Nghiệp</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+          <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-700 hover:text-brand-navy">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== BREADCRUMB ==================== -->
+  <div class="bg-slate-100 border-b border-slate-200 text-xs py-2.5 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-600">
+      <a href="/" class="hover:text-brand-navy">Trang chủ</a>
+      <span>/</span>
+      <a href="/quoc-gia" class="hover:text-brand-navy">Quốc gia du học</a>
+      <span>/</span>
+      <span class="text-amber-600 font-bold">Du học Singapore 2026</span>
+    </div>
+  </div>
+
+  <!-- ==================== HERO BANNER ==================== -->
+  <section class="relative bg-gradient-to-br from-brand-navy via-brand-navyDark to-slate-950 text-white py-14 lg:py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C58A19_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/20 border border-red-400/40 text-red-300 text-xs font-bold tracking-wide">
+            <span>🇸🇬 DU HỌC SINGAPORE 2026 - 2027</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
+            <span>LỘ TRÌNH RÚT NGẮN TIẾT KIỆM 2 NĂM</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading leading-tight tracking-tight text-white">
+            Du Học Singapore: <br class="hidden sm:block">
+            <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Tốt Nghiệp ĐH Tuổi 20</span>, Bằng Cấp Anh - Úc
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            Điểm đến du học an toàn hàng đầu thế giới. Lộ trình học 3 học kỳ/năm giúp học sinh hoàn tất bằng Cử nhân Quốc tế chỉ trong <strong>2 - 2.5 năm</strong>. Không chứng minh tài chính, tỷ lệ Visa ICA đạt 99.8%!
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-amber-400 font-heading">2 - 2.5 NĂM</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Thời gian lấy bằng Cử nhân</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-emerald-400 font-heading">0 ĐỒNG</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Chứng minh tài chính</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-amber-300 font-heading">ĐẾN 100%</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Học bổng JCU & PSB</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-blue-300 font-heading">99.8%</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Tỷ lệ đậu Visa ICA Hằng Lương</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#du-toan-chi-phi" class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-all shadow-lg hover:shadow-amber-500/25 flex items-center gap-2">
+              <span>Tính Chi Phí Tự Động (SGD / VNĐ)</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <button onclick="openConsultModal('Nhận cẩm nang du học Singapore 2026', 'Singapore')" class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl text-sm transition-all border border-white/20 backdrop-blur-md">
+              Nhận Lộ Trình Từng Trường
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-900 rounded-2xl p-6 sm:p-7 shadow-2xl border border-slate-100">
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-8 h-8 rounded-lg bg-red-500/10 text-red-600 flex items-center justify-center font-bold">🇸🇬</div>
+              <div>
+                <h3 class="font-extrabold text-base text-brand-navy font-heading">Tư Vấn Lộ Trình Du Học Singapore</h3>
+                <p class="text-xs text-slate-500">Đại diện chính thức PSB, Kaplan, JCU, Curtin, SIM</p>
+              </div>
+            </div>
+
+            <form class="lead-form space-y-3">
+              <input type="hidden" name="country" value="Singapore">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên của bạn *</label>
+                <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Số điện thoại *</label>
+                  <input type="tel" name="phone" required placeholder="0908 xxx xxx" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Bậc học hiện tại</label>
+                  <select name="current_level" class="w-full border border-slate-300 px-3 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                    <option value="Lớp 9, 10">Học sinh Lớp 9, 10</option>
+                    <option value="Lớp 11, 12" selected>Học sinh Lớp 11, 12</option>
+                    <option value="Đại học">Đang học / Tốt nghiệp ĐH</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Trường Singapore bạn quan tâm</label>
+                <select name="school" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                  <option value="Chưa chọn">Chưa chọn (Cần tư vấn chọn trường)</option>
+                  <option value="PSB Academy">Học viện PSB (PSB Academy)</option>
+                  <option value="Kaplan Singapore">Học viện Kaplan Singapore</option>
+                  <option value="JCU Singapore">Đại học James Cook (JCU)</option>
+                  <option value="Curtin Singapore">Đại học Curtin Singapore</option>
+                  <option value="SIM Global">Học viện SIM Global Education</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full py-3 bg-brand-navy hover:bg-brand-navyDark text-amber-400 font-extrabold rounded-xl text-sm transition-colors shadow flex items-center justify-center gap-2">
+                <span>Nhận Lộ Trình 1:1 Miễn Phí</span>
+                <span>&rarr;</span>
+              </button>
+            </form>
+            <p class="text-[11px] text-slate-400 text-center mt-2.5">Hằng Lương miễn 100% phí làm hồ sơ & dịch thuật</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STICKY IN-PAGE SUB-NAVIGATION ==================== -->
+  <nav class="sticky top-[68px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm py-2 px-4 overflow-x-auto no-scrollbar">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-xs font-bold text-slate-700 whitespace-nowrap">
+      <a href="#chinh-sach-moi" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5">
+        <span>📜</span> Chính sách & Luật MOM
+      </a>
+      <a href="#du-toan-chi-phi" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5 text-amber-700 bg-amber-50">
+        <span>💰</span> Dự toán chi phí
+      </a>
+      <a href="#chon-truong" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5">
+        <span>🏫</span> Danh sách trường
+      </a>
+      <a href="#hoc-bong" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5">
+        <span>🎁</span> Học bổng & Ưu đãi
+      </a>
+      <a href="#lo-trinh-hoc" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5">
+        <span>📋</span> Lộ trình học nhanh
+      </a>
+      <a href="#kinh-nghiem" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5">
+        <span>💡</span> Hỏi đáp & Kinh nghiệm
+      </a>
+      <a href="#nganh-the-manh" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5">
+        <span>🚀</span> Ngành đào tạo
+      </a>
+      <a href="#visa" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5">
+        <span>🛂</span> Visa ICA & Thủ tục
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==================== PHẦN 1: CHÍNH SÁCH MỚI & LUẬT MOM ==================== -->
+  <section id="chinh-sach-moi" class="py-16 bg-white scroll-mt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-bold text-red-600 uppercase tracking-widest bg-red-50 px-3 py-1 rounded-full">Chính Sách & Quy Định 2026</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Những Điểm Cần Lưu Ý Về Du Học Singapore 2026 - 2027
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">Hiểu đúng về luật làm thêm của Bộ Nhân lực (MOM) và lợi thế độc tôn của lộ trình đào tạo cấp tốc.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-br from-red-50/80 to-white p-6 rounded-2xl border border-red-200/80 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow">⚖️</div>
+          <span class="text-[11px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded">LUẬT MOM SINGAPORE</span>
+          <h3 class="text-lg font-bold text-brand-navy mt-2 mb-2 font-heading">Quy Định Không Làm Thêm Ngoài</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Theo quy định của Bộ Nhân lực Singapore (MOM), sinh viên các trường ngoài công lập (Private Education Institutions) <strong>không được phép làm thêm tự do</strong> bên ngoài. Điều này giúp sinh viên tập trung 100% thời gian để tốt nghiệp sớm.
+          </p>
+          <div class="mt-4 pt-3 border-t border-red-200/60 text-xs text-red-900 font-semibold">
+            ✓ Tránh cám dỗ, học kỳ rút ngắn chỉ 2 - 2.5 năm ra trường.
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-emerald-50/80 to-white p-6 rounded-2xl border border-emerald-200/80 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow">💼</div>
+          <span class="text-[11px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">THỰC TẬP CÓ LƯƠNG (OJT)</span>
+          <h3 class="text-lg font-bold text-brand-navy mt-2 mb-2 font-heading">Hưởng Lương 800 - 1.200 SGD / Tháng</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Các ngành Quản trị Du lịch - Khách sạn, Nhà hàng & Logistics có kỳ <strong>thực tập hưởng lương bắt buộc 6 tháng</strong> tại các tập đoàn và khách sạn 5 sao quốc tế (Marina Bay Sands, Marriott, Changi Airport), thu nhập bù đắp sinh hoạt phí.
+          </p>
+          <div class="mt-4 pt-3 border-t border-emerald-200/60 text-xs text-emerald-900 font-semibold">
+            ✓ Tích lũy kinh nghiệm làm việc thực tế tại Singapore.
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-blue-50/80 to-white p-6 rounded-2xl border border-blue-200/80 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-brand-navy text-amber-400 flex items-center justify-center text-xl font-bold mb-4 shadow">⚡</div>
+          <span class="text-[11px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">LỢI THẾ FAST-TRACK</span>
+          <h3 class="text-lg font-bold text-brand-navy mt-2 mb-2 font-heading">Tiết Kiệm 2 Năm Tuổi Trẻ & Chi Phí</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Học 3 học kỳ/năm không có kỳ nghỉ hè dài, sinh viên <strong>tốt nghiệp Cử nhân ở tuổi 20</strong>, đi làm sớm hơn bạn bè cùng trang lứa 2 năm và tiết kiệm được ít nhất 500 - 800 triệu chi phí ăn ở phát sinh.
+          </p>
+          <div class="mt-4 pt-3 border-t border-blue-200/60 text-xs text-blue-900 font-semibold">
+            ✓ Đi làm sớm, hoàn vốn đầu tư du học nhanh nhất.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PHẦN 2: DỰ TOÁN CHI PHÍ ==================== -->
+  <section id="du-toan-chi-phi" class="py-16 bg-slate-100 scroll-mt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Bóc Tách Chi Phí Minh Bạch</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Dự Toán Chi Phí Du Học Singapore (SGD & VNĐ)
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">Tính toán học phí và mức chi tiêu sinh hoạt thực tế tại Đảo quốc Sư tử.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sm:p-10 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-8 border-b border-slate-100">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wide">1. Chọn bậc học tại Singapore</label>
+            <select id="sg-calc-level" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-800 bg-slate-50 focus:ring-2 focus:ring-amber-500 focus:outline-none cursor-pointer">
+              <option value="english">Khóa tiếng Anh học thuật (3 - 6 tháng)</option>
+              <option value="diploma">Cao đẳng chuyển tiếp Diploma (8 - 12 tháng)</option>
+              <option value="bachelor" selected>Cử nhân Đại học (Bachelor - 16 - 24 tháng)</option>
+              <option value="master">Thạc sĩ (Master - 12 - 16 tháng)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wide">2. Loại phòng ở</label>
+            <select id="sg-calc-living" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-800 bg-slate-50 focus:ring-2 focus:ring-amber-500 focus:outline-none cursor-pointer">
+              <option value="hdb" selected>Phòng chung cư chính phủ HDB (Phổ biến, tiết kiệm)</option>
+              <option value="dorm">Ký túc xá sinh viên quốc tế (MDIS, Evo House)</option>
+              <option value="condo">Chung cư cao cấp Condominium (Hồ bơi, gym)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+            <span class="text-xs text-slate-500 font-semibold block mb-1">Học phí trung bình / năm</span>
+            <div id="sg-res-tuition-vnd" class="text-xl font-extrabold text-brand-navy font-heading">380.000.000 VNĐ</div>
+            <div id="sg-res-tuition-sgd" class="text-xs text-amber-600 font-bold mt-1">~ 20.000 SGD / năm</div>
+          </div>
+
+          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+            <span class="text-xs text-slate-500 font-semibold block mb-1">Sinh hoạt phí (Ăn ở, MRT) / năm</span>
+            <div id="sg-res-living-vnd" class="text-xl font-extrabold text-brand-navy font-heading">265.000.000 VNĐ</div>
+            <div id="sg-res-living-sgd" class="text-xs text-slate-600 font-bold mt-1">~ 1.150 SGD / tháng (~22tr VNĐ)</div>
+          </div>
+
+          <div class="bg-gradient-to-br from-brand-navy to-brand-navyDark text-white rounded-xl p-5 shadow-lg border border-brand-navyLight">
+            <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Tổng chi phí 1 năm (Dự kiến)</span>
+            <div id="sg-res-total-vnd" class="text-2xl sm:text-3xl font-black text-amber-300 font-heading">645.000.000 VNĐ</div>
+            <div class="text-[11px] text-slate-300 mt-1">Học nhanh 2 năm = Tổng chi phí chỉ ~1.2 tỷ VNĐ</div>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-xl bg-amber-50/70 border border-amber-200">
+          <div class="text-xs text-amber-900">
+            💡 <strong>So sánh chi phí:</strong> Do thời gian học ngắn hơn 1.5 - 2 năm so với Úc/Mỹ, tổng ngân sách du học Singapore trọn khóa cử nhân <strong>tiết kiệm hơn 40% - 50%</strong>.
+          </div>
+          <button onclick="openConsultModal('Nhận bảng dự toán chi tiết từng kỳ Singapore', 'Singapore', false)" class="whitespace-nowrap px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs transition-colors shadow">
+            Tải Bảng Dự Toán (PDF/Zalo) &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PHẦN 3: DANH SÁCH TRƯỜNG ĐỐI TÁC ==================== -->
+  <section id="chon-truong" class="py-16 bg-white scroll-mt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full">Trường Đại Học & Học Viện Hàng Đầu</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Top Các Trường Đại Học Uy Tín Tại Singapore
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">Hằng Lương Edu là đại diện tuyển sinh chính thức, nộp hồ sơ xét duyệt học bổng trực tiếp.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- School 1: PSB Academy -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 uppercase">Học Viện Tương Lai</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Học Viện PSB (PSB Academy)</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Cơ sở Marina Square & Jackson Campus</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Một trong những học viện tư thục lớn và lâu đời nhất Singapore. Đối tác cấp bằng từ ĐH Newcastle (Top 173 Úc), ĐH Coventry (Top 15 Anh), ĐH La Trobe.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Bằng cấp:</span> <strong class="text-brand-navy">Newcastle (Úc) / Coventry (UK)</strong></div>
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">320 - 450 triệu VNĐ/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">Đến 4.000 SGD</strong></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 pt-2">
+            <button onclick="openConsultModal('Học viện PSB Singapore', 'Tư vấn PSB')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold rounded-xl text-xs transition-colors">Tư Vấn Hồ Sơ</button>
+            <a href="/truong-hoc#psb" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs">Chi tiết</a>
+          </div>
+        </div>
+
+        <!-- School 2: James Cook University -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-700 uppercase">EduTrust Star Cao Quý</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Đại Học James Cook (JCU)</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Sims Drive, Singapore</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Phân viện của trường ĐH công lập danh tiếng nước Úc. Đạt chứng nhận EduTrust Star cao nhất. Bằng đại học do James Cook Úc cấp chuẩn 100%.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Bằng cấp:</span> <strong class="text-brand-navy">James Cook University (Australia)</strong></div>
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">550 - 680 triệu VNĐ/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">25% - 100% qua kỳ thi học bổng</strong></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 pt-2">
+            <button onclick="openConsultModal('Đại học James Cook Singapore', 'Tư vấn thi học bổng JCU')" class="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition-colors">Thi Học Bổng 100%</button>
+            <a href="/truong-hoc#jcu" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs">Chi tiết</a>
+          </div>
+        </div>
+
+        <!-- School 3: Kaplan Singapore -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800 uppercase">Top 1 Học Viện Tư Thục Yêu Thích</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Học Viện Kaplan Singapore</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Dhoby Ghaut / Odeon Campus</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Tọa lạc trung tâm Singapore, đối tác của các trường đại học Top thế giới: ĐH Quốc gia Ireland (UCD), ĐH Murdoch Úc, ĐH Northumbria Anh.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Bằng cấp:</span> <strong class="text-brand-navy">Murdoch (Úc) / UCD (Ireland)</strong></div>
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">350 - 480 triệu VNĐ/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">Đến 10.000 SGD</strong></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 pt-2">
+            <button onclick="openConsultModal('Học viện Kaplan Singapore', 'Tư vấn Kaplan')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold rounded-xl text-xs transition-colors">Tư Vấn Hồ Sơ</button>
+            <a href="/truong-hoc#kaplan" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs">Chi tiết</a>
+          </div>
+        </div>
+
+        <!-- School 4: Curtin Singapore -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 uppercase">Top 1% Đại Học Thế Giới</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Đại Học Curtin Singapore</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Cơ sở Science Park 2, Singapore</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Cơ sở đào tạo của ĐH Curtin Úc. Chương trình học và bằng cấp hoàn toàn đồng nhất với cơ sở chính tại Perth, cho phép chuyển tiếp sang Úc bất cứ lúc nào.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Bằng cấp:</span> <strong class="text-brand-navy">Curtin University (Australia)</strong></div>
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">520 - 620 triệu VNĐ/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">25% học phí</strong></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 pt-2">
+            <button onclick="openConsultModal('Đại học Curtin Singapore', 'Tư vấn Curtin')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold rounded-xl text-xs transition-colors">Tư Vấn Hồ Sơ</button>
+            <a href="/truong-hoc#curtin-singapore" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs">Chi tiết</a>
+          </div>
+        </div>
+
+        <!-- School 5: SIM Global Education -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-800 uppercase">Quy Mô Lớn Nhất Singapore</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Học Viện SIM (SIM Global)</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Clementi Road, Singapore</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Khuôn viên đại học tư thục lớn nhất Singapore với hơn 16.000 sinh viên. Đối tác cấp bằng từ ĐH London (Anh), ĐH Birmingham, ĐH RMIT (Úc).
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Bằng cấp:</span> <strong class="text-brand-navy">University of London (UK) / RMIT</strong></div>
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">380 - 550 triệu VNĐ/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">100% học phí</strong></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 pt-2">
+            <button onclick="openConsultModal('Học viện SIM Global Education', 'Tư vấn SIM')" class="flex-1 py-2.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold rounded-xl text-xs transition-colors">Tư Vấn Hồ Sơ</button>
+            <a href="/truong-hoc#sim" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs">Chi tiết</a>
+          </div>
+        </div>
+
+        <!-- School 6: LSBF Singapore -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 uppercase">Thực Tập Hưởng Lương 100%</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Học Viện LSBF Singapore</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 GB Building, Robinson Road (CBD)</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Đào tạo Quản trị Khách sạn có 6 tháng thực tập hưởng lương 1.000 SGD/tháng và đào tạo chứng chỉ ACCA kế toán kiểm toán số 1 Châu Á.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Bằng cấp:</span> <strong class="text-brand-navy">University of Greenwich (UK)</strong></div>
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">220 - 320 triệu VNĐ/năm</strong></div>
+              <div class="flex justify-between"><span>Thực tập:</span> <strong class="text-emerald-600">Lương 800 - 1.200 SGD/tháng</strong></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 pt-2">
+            <button onclick="openConsultModal('Học viện LSBF Singapore', 'Tư vấn LSBF')" class="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition-colors">Nhận Lộ Trình Khách Sạn</button>
+            <a href="/truong-hoc#lsbf" class="px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs">Chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PHẦN 4: LỘ TRÌNH RÚT NGẮN ==================== -->
+  <section id="lo-trinh-hoc" class="py-16 bg-slate-100 scroll-mt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Chiến Lược Tốt Nghiệp Sớm</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          3 Lộ Trình Rút Ngắn Tiết Kiệm 2 Năm Tại Singapore
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">Dành cho học sinh từ hết lớp 9, lớp 11 cho đến hết lớp 12.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 font-black flex items-center justify-center text-sm mb-4">LỘ TRÌNH 1</div>
+          <h3 class="font-bold text-brand-navy text-lg mb-1 font-heading">Học Sinh Hết Lớp 9 (15 Tuổi)</h3>
+          <span class="text-xs text-amber-700 font-semibold block mb-3">Tốt nghiệp Cử nhân tuổi 18–19</span>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Học khóa Dự bị (Foundation 6 tháng) &rarr; Cao đẳng (Diploma 8 tháng) &rarr; Cử nhân Đại học (16 tháng). Nhận bằng Cử nhân quốc tế khi bạn bè cùng tuổi mới thi tốt nghiệp cấp 3!
+          </p>
+          <div class="p-3 rounded-lg bg-amber-50 text-[11px] text-amber-900 font-semibold">
+            ✓ Phù hợp học viện PSB, Kaplan, MDIS.
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-amber-300 shadow-sm relative">
+          <span class="absolute -top-3 right-4 bg-amber-500 text-slate-950 font-black text-[10px] px-2 py-0.5 rounded-full uppercase">Phổ Biến Nhất</span>
+          <div class="w-10 h-10 rounded-xl bg-brand-navy text-amber-400 font-black flex items-center justify-center text-sm mb-4">LỘ TRÌNH 2</div>
+          <h3 class="font-bold text-brand-navy text-lg mb-1 font-heading">Học Sinh Hết Lớp 11 (17 Tuổi)</h3>
+          <span class="text-xs text-amber-700 font-semibold block mb-3">Tốt nghiệp Cử nhân tuổi 20</span>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Không cần thi tốt nghiệp THPT tại Việt Nam &rarr; Vào thẳng khóa Dự bị hoặc Cao đẳng Diploma (8–12 tháng) &rarr; Chuyển tiếp lên năm 2 Cử nhân Đại học (16 tháng) nhận bằng Anh/Úc.
+          </p>
+          <div class="p-3 rounded-lg bg-emerald-50 text-[11px] text-emerald-900 font-semibold">
+            ✓ Tiết kiệm 1 năm ôn thi áp lực tại Việt Nam.
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-blue-600 text-white font-black flex items-center justify-center text-sm mb-4">LỘ TRÌNH 3</div>
+          <h3 class="font-bold text-brand-navy text-lg mb-1 font-heading">Học Sinh Hết Lớp 12</h3>
+          <span class="text-xs text-blue-700 font-semibold block mb-3">Chỉ mất 2 năm lấy bằng Cử nhân</span>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Vào thẳng chương trình Diploma hoặc Cử nhân Đại học (James Cook, Curtin, Kaplan, PSB). Nhận bằng Cử nhân danh giá của ĐH Úc/Anh chỉ sau 24 tháng học tập tập trung.
+          </p>
+          <div class="p-3 rounded-lg bg-blue-50 text-[11px] text-blue-900 font-semibold">
+            ✓ Tiết kiệm 2 năm so với học Đại học 4 năm ở VN.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PHẦN 5: FAQ KINH NGHIỆM DU HỌC SINGAPORE ==================== -->
+  <section id="kinh-nghiem" class="py-16 bg-white scroll-mt-28">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full">Hỏi Đáp Thực Tế</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Kinh Nghiệm Du Học Singapore & Câu Hỏi Thường Gặp
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">Những băn khoăn lớn nhất của phụ huynh khi cho con đi Singapore sớm.</p>
+      </div>
+
+      <div class="space-y-3.5" id="sg-faq-accordion">
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4.5 font-bold text-brand-navy flex justify-between items-center text-sm sm:text-base hover:text-amber-600 transition-colors">
+            <span>Chưa có chứng chỉ IELTS có du học Singapore được không?</span>
+            <span class="faq-icon text-xl text-slate-400 font-normal ml-3">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
+            <strong>Hoàn toàn được!</strong> Tất cả các học viện PSB, Kaplan, JCU, Curtin đều tổ chức bài kiểm tra tiếng Anh đầu vào trực tuyến miễn phí tại văn phòng Hằng Lương. Nếu chưa đạt điều kiện IELTS 5.5 - 6.0, học sinh sẽ sang Singapore học khóa tiếng Anh học thuật từ 2 đến 6 tháng trước khi vào khóa chính.
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4.5 font-bold text-brand-navy flex justify-between items-center text-sm sm:text-base hover:text-amber-600 transition-colors">
+            <span>Bằng cấp đại học tư thục ở Singapore có giá trị quốc tế không?</span>
+            <span class="faq-icon text-xl text-slate-400 font-normal ml-3">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
+            <strong>Có giá trị toàn cầu 100%!</strong> Sinh viên học tại Singapore nhưng bằng tốt nghiệp do chính các trường đại học danh tiếng tại Anh, Úc hoặc Ireland cấp (ví dụ ĐH London, ĐH Newcastle, ĐH Coventry, ĐH Murdoch). Bằng cấp này hoàn toàn giống như bằng cấp cho sinh viên học tại Anh hay Úc, được Bộ Giáo dục các nước công nhận và dễ dàng học tiếp lên Thạc sĩ hoặc xin việc làm khắp thế giới.
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4.5 font-bold text-brand-navy flex justify-between items-center text-sm sm:text-base hover:text-amber-600 transition-colors">
+            <span>Quy định khám sức khỏe và cấp thẻ Student Pass của Cục ICA Singapore?</span>
+            <span class="faq-icon text-xl text-slate-400 font-normal ml-3">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/60 pt-3">
+            Sau khi nhận thư IPA (In-Principle Approval) từ Cục Xuất Nhập Cảnh Singapore (ICA), học sinh nhập cảnh Singapore và tiến hành khám sức khỏe (chụp X-quang phổi và xét nghiệm máu) tại phòng khám chỉ định ở Singapore. Sau đó, chuyên viên trường sẽ đồng hành đưa học sinh đến tòa nhà ICA để lấy dấu vân tay và nhận thẻ cư trú sinh viên Student Pass chính thức.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-brand-navyDark text-slate-300 pt-14 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-amber-500 flex items-center justify-center text-slate-950 font-bold">HL</div>
+            <div>
+              <div class="font-extrabold text-white text-base font-heading">HẰNG LƯƠNG EDU</div>
+              <div class="text-[10px] text-amber-400 font-bold tracking-wider">SINGAPORE EDUCATION HUB</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            20 năm uy tín tư vấn du học Singapore. Đại diện tuyển sinh chính thức của hơn 20+ trường đại học và học viện hàng đầu tại Singapore.
+          </p>
+          <div class="text-xs text-slate-400">
+            <strong>Hotline 24/7:</strong> <a href="tel:0908558959" class="text-amber-400 font-bold">0908 558 959</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Quốc Gia Trọng Điểm</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="/quoc-gia/singapore" class="text-amber-300 font-bold">&rarr; Du học Singapore (Rút ngắn)</a></li>
+            <li><a href="/quoc-gia/malaysia" class="hover:text-amber-400 transition-colors">&rarr; Du học Malaysia</a></li>
+            <li><a href="/quoc-gia/uc" class="hover:text-amber-400 transition-colors">&rarr; Du học Úc (Australia)</a></li>
+            <li><a href="/quoc-gia/philippines" class="hover:text-amber-400 transition-colors">&rarr; Du học Philippines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Học Viện Singapore</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="/truong-hoc#psb" class="hover:text-amber-400 transition-colors">&rarr; Học viện PSB Academy</a></li>
+            <li><a href="/truong-hoc#jcu" class="hover:text-amber-400 transition-colors">&rarr; Đại học James Cook Singapore</a></li>
+            <li><a href="/truong-hoc#kaplan" class="hover:text-amber-400 transition-colors">&rarr; Học viện Kaplan Singapore</a></li>
+            <li><a href="/truong-hoc#curtin-singapore" class="hover:text-amber-400 transition-colors">&rarr; Đại học Curtin Singapore</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Hệ Thống Chi Nhánh</h4>
+          <div class="space-y-2.5 text-xs text-slate-400">
+            <p><strong>Trụ sở TP.HCM:</strong> 1086 đường 3/2, P.12, Q.11, TP.HCM</p>
+            <p><strong>Chi nhánh Lâm Đồng:</strong> Số 12 Nguyễn Công Trứ, TP. Đà Lạt</p>
+            <p><strong>Chi nhánh Tây Ninh:</strong> 25 Đường số 3, TP. Tây Ninh</p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 flex justify-between items-center text-xs text-slate-500">
+        <p>© 2004 - 2026 Du Học Quốc Tế Hằng Lương. Bảo lưu mọi quyền.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal & Mobile Drawer -->
+  <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="document.getElementById('consult-modal').classList.add('hidden'); document.body.style.overflow='auto';" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold cursor-pointer">&times;</button>
+      <div class="mb-5">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Tư Vấn 1:1 Singapore</span>
+        <h3 id="consult-modal-title" class="text-xl font-black text-brand-navy font-heading mt-1">Đăng Ký Tư Vấn Du Học Singapore</h3>
+      </div>
+      <form class="lead-form space-y-3.5">
+        <input type="hidden" name="country" value="Singapore">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên *</label>
+          <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Số điện thoại *</label>
+            <input type="tel" name="phone" required placeholder="0908 xxx xxx" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Email</label>
+            <input type="email" name="email" placeholder="email@gmail.com" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Ghi chú hoặc nguyện vọng</label>
+          <input type="text" name="note" placeholder="Ví dụ: Xin học bổng JCU hoặc PSB..." class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-colors shadow">
+          Xác Nhận Đăng Ký Tư Vấn
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="mobile-drawer-backdrop" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm lg:hidden"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 z-50 w-72 h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-between p-6 overflow-y-auto">
+    <div class="space-y-6">
+      <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+        <span class="font-bold text-brand-navy font-heading">Menu Du Học</span>
+        <button id="mobile-drawer-close" class="p-1 text-slate-400 hover:text-slate-700 text-2xl leading-none">&times;</button>
+      </div>
+      <nav class="space-y-3 text-sm font-semibold text-slate-700">
+        <a href="/quoc-gia" class="block py-1.5 text-amber-600 font-bold">🌍 Quốc Gia Du Học</a>
+        <div class="pl-4 space-y-1.5 text-xs text-slate-600">
+          <a href="/quoc-gia/singapore" class="block py-1 font-bold text-amber-600">&rarr; Du học Singapore (Rút ngắn)</a>
+          <a href="/quoc-gia/malaysia" class="block py-1 hover:text-amber-600">&rarr; Du học Malaysia</a>
+          <a href="/quoc-gia/uc" class="block py-1 hover:text-amber-600">&rarr; Du học Úc (Australia)</a>
+          <a href="/quoc-gia/philippines" class="block py-1 hover:text-amber-600">&rarr; Du học Philippines</a>
+        </div>
+        <a href="/truong-hoc" class="block py-1.5 hover:text-amber-600">🏫 Trường Học Đối Tác</a>
+        <a href="/hoc-bong" class="block py-1.5 hover:text-amber-600">🎁 Học Bổng Du Học</a>
+        <a href="/tin-du-hoc" class="block py-1.5 hover:text-amber-600">📰 Tin Du Học</a>
+      </nav>
+    </div>
+    <div class="space-y-3 pt-6 border-t border-slate-100">
+      <a href="tel:0908558959" class="w-full py-2.5 bg-slate-100 text-slate-800 font-bold rounded-lg text-center block text-xs">📞 0908 558 959</a>
+      <button onclick="openConsultModal('Tư vấn nhanh mobile', 'Singapore', true)" class="w-full py-2.5 bg-amber-500 text-slate-950 font-bold rounded-lg text-center block text-xs shadow">Đặt Lịch Tư Vấn</button>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="/assets/js/main.js"></script>
+
+  <script>
+    // Calculator for Singapore
+    const sgCosts = {
+      english: { tuition: 150000000, sgd: 8000 },
+      diploma: { tuition: 280000000, sgd: 15000 },
+      bachelor: { tuition: 380000000, sgd: 20000 },
+      master: { tuition: 480000000, sgd: 26000 }
+    };
+
+    const sgLiving = {
+      hdb: 265000000,
+      dorm: 320000000,
+      condo: 420000000
+    };
+
+    function updateSgCalculator() {
+      const level = document.getElementById('sg-calc-level').value;
+      const living = document.getElementById('sg-calc-living').value;
+
+      const baseTuition = sgCosts[level] || sgCosts.bachelor;
+      const livingCost = sgLiving[living] || 265000000;
+      const total = baseTuition.tuition + livingCost;
+
+      document.getElementById('sg-res-tuition-vnd').textContent = baseTuition.tuition.toLocaleString('vi-VN') + ' VNĐ';
+      document.getElementById('sg-res-tuition-sgd').textContent = `~ ${baseTuition.sgd.toLocaleString()} SGD / năm`;
+      document.getElementById('sg-res-living-vnd').textContent = livingCost.toLocaleString('vi-VN') + ' VNĐ';
+      document.getElementById('sg-res-living-sgd').textContent = `~ ${(Math.round(livingCost / 12 / 19000)).toLocaleString()} SGD / tháng (~${(Math.round(livingCost / 12)).toLocaleString('vi-VN')} VNĐ)`;
+      document.getElementById('sg-res-total-vnd').textContent = total.toLocaleString('vi-VN') + ' VNĐ';
+    }
+
+    document.getElementById('sg-calc-level')?.addEventListener('change', updateSgCalculator);
+    document.getElementById('sg-calc-living')?.addEventListener('change', updateSgCalculator);
+
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+      document.querySelectorAll('#sg-faq-accordion .faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('#sg-faq-accordion .faq-icon').forEach(i => i.textContent = '+');
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Du Học Úc 2026 - 2027: Học Bổng 20% - 100%, Định Cư Tay Nghề, Visa 500 | Hằng Lương Edu</title>
+  <meta name="description" content="Cẩm nang du học Úc 2026 - 2027: Tuyển sinh Đại học Go8 & ATN (Monash, Deakin, UTS, RMIT), học bổng đến 100%, cập nhật Visa 500, bài thi GS và chính sách ở lại làm việc 2-4 năm cùng Hằng Lương Edu.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { navy: '#1B365D', navyDark: '#0F1E36', navyLight: '#2A4B7C', gold: '#C58A19', goldLight: '#EAB308', goldDark: '#9A6B0F', slate: '#F8FAFC' }
+          },
+          fontFamily: { sans: ['"Be Vietnam Pro"', 'sans-serif'], heading: ['"Outfit"', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans">
+
+  <!-- TOP NOTIFICATION BAR -->
+  <div class="bg-brand-navyDark text-slate-300 text-xs py-2 px-4 border-b border-slate-700/50 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-amber-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          Học bổng Úc 2026:
+        </span>
+        <span>Học bổng 50% - 100% Học phí ĐH Deakin & Monash đang mở đơn kỳ tháng 7/2026 và 11/2026!</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <button onclick="openConsultModal('Tư vấn du học Úc ngoài giờ', 'Úc', true)" class="text-amber-300 hover:text-amber-200 font-semibold flex items-center gap-1 transition-colors">
+          <span>🌙</span> Đặt lịch tư vấn ngoài giờ (17h00 - 21h00)
+        </button>
+        <span class="text-slate-600">|</span>
+        <a href="tel:0908558959" class="hover:text-amber-400 transition-colors flex items-center gap-1 font-semibold text-white">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          Hotline: 0908 558 959
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 shadow-sm bg-white">
+    <div class="bg-slate-100 border-b border-slate-200/80 text-[11px] sm:text-xs text-slate-600 py-1.5 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+        <div class="flex items-center flex-wrap gap-x-3 gap-y-1 justify-center sm:justify-start">
+          <span class="text-slate-500 hidden sm:inline">Bạn cần hỗ trợ tư vấn Úc?</span>
+          <a href="tel:0908558959" class="font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 transition-colors">
+            <svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            0908 558 959
+          </a>
+          <span class="text-slate-300">|</span>
+          <button onclick="openConsultModal('Đăng ký tư vấn du học Úc', 'Úc', false)" class="text-amber-600 hover:text-amber-700 font-bold hover:underline transition-colors flex items-center gap-1 cursor-pointer">
+            <span>Đăng Ký Tư Vấn</span>
+          </button>
+          <span class="text-slate-300 hidden lg:inline">|</span>
+          <span class="text-slate-500 hidden lg:inline flex items-center gap-1">
+            <span>📍</span> 3 Chi nhánh: TP.HCM • Lâm Đồng • Tây Ninh
+          </span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <form action="/tim-kiem" method="GET" class="flex items-center">
+            <input type="text" name="s" required placeholder="Tìm trường Úc, học bổng..." class="bg-white border border-slate-300 border-r-0 rounded-l-full px-3.5 py-1 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-amber-500 w-44 sm:w-56">
+            <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-3 py-1 rounded-r-full text-xs transition-colors flex items-center gap-1 cursor-pointer">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <span>Tìm</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white/95 backdrop-blur-md py-3 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brand-navy flex items-center justify-center text-brand-gold shadow-md group-hover:scale-105 transition-transform">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zm0 12.73L4.18 9.5 12 6l7.82 3.5L12 14.73zM12 16c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
+            </svg>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div>
+              <div class="text-base sm:text-lg font-black text-brand-navy tracking-tight font-heading leading-tight group-hover:text-amber-600 transition-colors">
+                HẰNG LƯƠNG
+              </div>
+              <div class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-500 tracking-wider">
+                INTERNATIONAL EDU
+              </div>
+            </div>
+            <div class="h-8 w-[1.5px] bg-slate-200 mx-1 hidden sm:block"></div>
+            <div class="hidden sm:flex items-center gap-1.5 pl-0.5">
+              <div class="text-2xl font-black font-heading bg-gradient-to-r from-amber-600 to-amber-500 bg-clip-text text-transparent leading-none">20</div>
+              <div class="text-[8.5px] font-extrabold uppercase leading-tight text-amber-700 tracking-tighter">
+                YEARS<br><span class="text-slate-400 font-semibold text-[7.5px]">2004 - 2026</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu Items with Mega Menu -->
+        <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <div class="relative group py-2">
+            <a href="/quoc-gia" class="text-brand-navy font-bold flex items-center gap-1 transition-colors">
+              Quốc Gia
+              <svg class="w-3.5 h-3.5 text-brand-navy group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            
+            <div class="absolute left-0 top-full hidden group-hover:block w-[820px] bg-white shadow-2xl rounded-2xl border border-slate-100 p-6 z-50 transform -translate-x-16">
+              <div class="grid grid-cols-4 divide-x divide-slate-100 text-sm">
+                <!-- Cột 1: Châu Á -->
+                <div class="pr-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU Á</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/malaysia" class="block py-1 hover:text-amber-600 transition-colors">Du học Malaysia</a></li>
+                    <li><a href="/quoc-gia/singapore" class="block py-1 hover:text-amber-600 transition-colors">Du học Singapore</a></li>
+                    <li><a href="/quoc-gia/philippines" class="block py-1 hover:text-amber-600 transition-colors">Du học Philippines</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 2: Châu Âu -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÂU</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                  </div>
+                  <ul class="space-y-1.5 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#anh" class="block py-0.5 hover:text-amber-600 transition-colors">Du học Anh Quốc</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 transition-colors text-slate-400">Du học Hà Lan</a></li>
+                    <li><a href="/quoc-gia#chau-au" class="block py-0.5 hover:text-amber-600 transition-colors text-slate-400">Du học Thụy Sĩ</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 3: Châu Mỹ -->
+                <div class="px-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU MỸ</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia#my" class="block py-1 hover:text-amber-600 transition-colors">Du học Mỹ (USA)</a></li>
+                    <li><a href="/quoc-gia#canada" class="block py-1 hover:text-amber-600 transition-colors">Du học Canada</a></li>
+                  </ul>
+                </div>
+                <!-- Cột 4: Châu Úc -->
+                <div class="pl-5 space-y-3">
+                  <div class="font-extrabold text-[12px] uppercase tracking-wider text-slate-900 font-heading flex items-center justify-between">
+                    <span>CHÂU ÚC</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  </div>
+                  <ul class="space-y-2 text-slate-600 font-medium text-[13px]">
+                    <li><a href="/quoc-gia/uc" class="flex items-center justify-between py-1 text-amber-600 font-bold bg-amber-50 px-2 rounded -mx-2"><span>Du học Úc</span><span class="text-[9px] bg-red-500 text-white font-bold px-1.5 py-0.5 rounded">Go8</span></a></li>
+                    <li><a href="/quoc-gia#new-zealand" class="block py-1 hover:text-amber-600 transition-colors text-slate-400">Du học New Zealand</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span class="text-slate-500">⭐ Hằng Lương Edu - Đại diện tuyển sinh chính thức các trường ĐH Úc</span>
+                <a href="/quoc-gia" class="text-brand-navy font-bold hover:text-amber-600 transition-colors">Xem tất cả quốc gia &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="/truong-hoc" class="hover:text-brand-navy transition-colors">Trường Học</a>
+          <a href="/hoc-bong" class="hover:text-brand-navy transition-colors flex items-center gap-1">
+            <span>Học Bổng</span>
+            <span class="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold">100%</span>
+          </a>
+          <a href="/hoi-thao" class="hover:text-brand-navy transition-colors">Hội Thảo</a>
+          <a href="/tin-du-hoc" class="hover:text-brand-navy transition-colors">Tin Du Học</a>
+          <a href="/tim-khoa-hoc" class="text-blue-700 hover:text-blue-800 transition-colors">Tìm Khóa Học</a>
+          <a href="/gioi-thieu" class="hover:text-brand-navy transition-colors">Giới Thiệu</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openConsultModal('Tư vấn du học Úc 2026', 'Úc', false)" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs px-4 py-2.5 rounded-full shadow-md transition-all cursor-pointer">
+            <span>Săn Học Bổng Úc 100%</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+          <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-700 hover:text-brand-navy">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-slate-100 border-b border-slate-200 text-xs py-2.5 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-slate-600">
+      <a href="/" class="hover:text-brand-navy">Trang chủ</a>
+      <span>/</span>
+      <a href="/quoc-gia" class="hover:text-brand-navy">Quốc gia du học</a>
+      <span>/</span>
+      <span class="text-amber-600 font-bold">Du học Úc (Australia) 2026</span>
+    </div>
+  </div>
+
+  <!-- HERO BANNER -->
+  <section class="relative bg-gradient-to-br from-brand-navy via-brand-navyDark to-slate-950 text-white py-14 lg:py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C58A19_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 text-xs font-bold tracking-wide">
+            <span>🇦🇺 DU HỌC ÚC (AUSTRALIA) 2026 - 2027</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>TOP 8 ĐẠI HỌC GO8 & ATN</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading leading-tight tracking-tight text-white">
+            Du Học Úc: <br class="hidden sm:block">
+            <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Học Bổng Đến 100%</span>, Lộ Trình Định Cư Tay Nghề
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            Sở hữu tấm bằng đẳng cấp quốc tế tại các trường Đại học Go8 & ATN hàng đầu nước Úc (Monash, Deakin, UTS, RMIT). Cơ hội ở lại làm việc từ <strong>2 – 4 năm</strong> sau tốt nghiệp với mức lương hấp dẫn!
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-amber-400 font-heading">ĐẾN 100%</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Học bổng Merit & Go8</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-emerald-400 font-heading">48H / 2 TUẦN</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Quyền làm thêm hợp pháp</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-amber-300 font-heading">2 - 4 NĂM</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Visa 485 ở lại làm việc</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
+              <div class="text-xl sm:text-2xl font-black text-blue-300 font-heading">20 NĂM</div>
+              <div class="text-[11px] text-slate-300 mt-0.5">Kinh nghiệm Visa 500</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#du-toan-chi-phi" class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-all shadow-lg hover:shadow-amber-500/25 flex items-center gap-2">
+              <span>Tính Dự Toán Chi Phí (AUD & VNĐ)</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <button onclick="openConsultModal('Nhận danh sách học bổng Úc 2026', 'Úc')" class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl text-sm transition-all border border-white/20 backdrop-blur-md">
+              Nhận Danh Sách Học Bổng Úc
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white text-slate-900 rounded-2xl p-6 sm:p-7 shadow-2xl border border-slate-100">
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-700 flex items-center justify-center font-bold">🇦🇺</div>
+              <div>
+                <h3 class="font-extrabold text-base text-brand-navy font-heading">Đánh Giá Hồ Sơ Du Học Úc</h3>
+                <p class="text-xs text-slate-500">Thẩm định tỷ lệ visa 500 & cơ hội học bổng 1:1</p>
+              </div>
+            </div>
+
+            <form class="lead-form space-y-3">
+              <input type="hidden" name="country" value="Úc">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên của bạn *</label>
+                <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Số điện thoại *</label>
+                  <input type="tel" name="phone" required placeholder="0908 xxx xxx" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Điểm GPA THPT/ĐH</label>
+                  <input type="text" name="gpa" placeholder="Ví dụ: 8.2" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Ngành học dự định</label>
+                <select name="major" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                  <option value="Điều dưỡng / Y tá">Y tá / Điều dưỡng (Ưu tiên định cư PR)</option>
+                  <option value="CNTT & AI">Công nghệ Thông tin & AI / Cyber</option>
+                  <option value="Kinh doanh">Kinh doanh, Tài chính, Kế toán</option>
+                  <option value="Kỹ thuật">Kỹ thuật & Cơ điện tử</option>
+                  <option value="Giáo dục">Giáo dục Mầm non / Tiểu học</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full py-3 bg-brand-navy hover:bg-brand-navyDark text-amber-400 font-extrabold rounded-xl text-sm transition-colors shadow flex items-center justify-center gap-2">
+                <span>Nhận Đánh Giá Hồ Sơ & Học Bổng</span>
+                <span>&rarr;</span>
+              </button>
+            </form>
+            <p class="text-[11px] text-slate-400 text-center mt-2.5">Chuyên viên Hằng Lương hỗ trợ sửa bài luận GS miễn phí</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAV -->
+  <nav class="sticky top-[68px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm py-2 px-4 overflow-x-auto no-scrollbar">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 text-xs font-bold text-slate-700 whitespace-nowrap">
+      <a href="#chinh-sach-moi" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">📜 Visa 500 & Bài thi GS</a>
+      <a href="#du-toan-chi-phi" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors text-amber-700 bg-amber-50">💰 Dự toán chi phí</a>
+      <a href="#chon-truong" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">🏫 Đại học Go8 & ATN</a>
+      <a href="#hoc-bong" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">🎁 Học bổng 20% - 100%</a>
+      <a href="#dinh-cu" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">🎯 Ngành ưu tiên định cư</a>
+      <a href="#kinh-nghiem" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">💡 Hỏi đáp & Kinh nghiệm</a>
+    </div>
+  </nav>
+
+  <!-- PHẦN 1: CHÍNH SÁCH MỚI -->
+  <section id="chinh-sach-moi" class="py-16 bg-white scroll-mt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Bộ Di Trú Úc Cập Nhật 2026</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Những Thay Đổi Cốt Lõi Về Visa Du Học Úc (Subclass 500)
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">Nắm rõ tiêu chí Genuine Student (GS) và quy định quyền làm việc mới nhất.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-br from-blue-50/80 to-white p-6 rounded-2xl border border-blue-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow">📝</div>
+          <span class="text-[11px] font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded">BÀI THI GS (GENUINE STUDENT)</span>
+          <h3 class="text-lg font-bold text-brand-navy mt-2 mb-2 font-heading">Thay Thế GTE Bằng GS Thực Chất</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Chính phủ Úc chuyển từ bài luận GTE chung chung sang bài thi <strong>Genuine Student (GS)</strong> với các câu hỏi nhắm thẳng vào mục tiêu học tập, lý do chọn ngành và giá trị bằng cấp đối với sự nghiệp tương lai.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-br from-amber-50/80 to-white p-6 rounded-2xl border border-amber-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center text-xl font-bold mb-4 shadow">💼</div>
+          <span class="text-[11px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded">QUYỀN LÀM THÊM 48H</span>
+          <h3 class="text-lg font-bold text-brand-navy mt-2 mb-2 font-heading">Làm Việc 48 Giờ / 2 Tuần</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Sinh viên được làm thêm tối đa <strong>48 giờ mỗi 2 tuần</strong> trong thời gian học và <strong>không giới hạn số giờ</strong> trong các kỳ nghỉ lễ, với mức lương tối thiểu theo luật Úc từ 24.10 AUD/giờ (~400.000 VNĐ/giờ).
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-br from-emerald-50/80 to-white p-6 rounded-2xl border border-emerald-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl font-bold mb-4 shadow">🎓</div>
+          <span class="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">SUBCLASS 485</span>
+          <h3 class="text-lg font-bold text-brand-navy mt-2 mb-2 font-heading">Ở Lại Làm Việc 2 – 4 Năm</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Sinh viên tốt nghiệp Cử nhân được ở lại làm việc <strong>2 năm</strong>, Thạc sĩ được ở lại <strong>3 năm</strong>. Đặc biệt khi học tại các khu vực <strong>Regional</strong> (ngoài Sydney, Melbourne, Brisbane), được cộng thêm 1 - 2 năm và cộng điểm định cư PR!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHẦN 2: DỰ TOÁN CHI PHÍ ÚC -->
+  <section id="du-toan-chi-phi" class="py-16 bg-slate-100 scroll-mt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Ước Tính Ngân Sách Úc</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Dự Toán Chi Phí Du Học Úc (AUD & VNĐ)
+        </h2>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sm:p-10 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-8 border-b border-slate-100">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wide">1. Nhóm trường Đại học</label>
+            <select id="au-calc-type" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-800 bg-slate-50 focus:ring-2 focus:ring-amber-500 focus:outline-none cursor-pointer">
+              <option value="go8">Đại học Top 8 Go8 (Monash, Melbourne, Sydney) - ~45.000 AUD/năm</option>
+              <option value="atn" selected>Đại học Công Nghệ ATN (Deakin, UTS, RMIT, QUT) - ~36.000 AUD/năm</option>
+              <option value="regional">Đại học Vùng Regional (Western Sydney, New England) - ~28.000 AUD/năm</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2 uppercase tracking-wide">2. Khu vực sinh sống</label>
+            <select id="au-calc-city" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm font-semibold text-slate-800 bg-slate-50 focus:ring-2 focus:ring-amber-500 focus:outline-none cursor-pointer">
+              <option value="metro" selected>Sydney / Melbourne (Trung tâm sôi động)</option>
+              <option value="regional">Adelaide / Brisbane / Perth / Geelong (Chi phí dễ thở, cộng điểm PR)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+            <span class="text-xs text-slate-500 font-semibold block mb-1">Học phí trung bình / năm</span>
+            <div id="au-res-tuition-vnd" class="text-xl font-extrabold text-brand-navy font-heading">595.000.000 VNĐ</div>
+            <div id="au-res-tuition-aud" class="text-xs text-amber-600 font-bold mt-1">~ 36.000 AUD / năm</div>
+          </div>
+
+          <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+            <span class="text-xs text-slate-500 font-semibold block mb-1">Sinh hoạt phí theo chuẩn Bộ Di Trú</span>
+            <div id="au-res-living-vnd" class="text-xl font-extrabold text-brand-navy font-heading">440.000.000 VNĐ</div>
+            <div id="au-res-living-aud" class="text-xs text-slate-600 font-bold mt-1">~ 25.000 AUD / năm</div>
+          </div>
+
+          <div class="bg-gradient-to-br from-brand-navy to-brand-navyDark text-white rounded-xl p-5 shadow-lg border border-brand-navyLight">
+            <span class="text-xs text-amber-400 font-bold uppercase tracking-wider block mb-1">Tổng chi phí 1 năm (Dự kiến)</span>
+            <div id="au-res-total-vnd" class="text-2xl sm:text-3xl font-black text-amber-300 font-heading">1.035.000.000 VNĐ</div>
+            <div class="text-[11px] text-slate-300 mt-1">Săn học bổng 20% - 50% giúp giảm 200 - 400 triệu/năm</div>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-xl bg-amber-50/70 border border-amber-200">
+          <div class="text-xs text-amber-900">
+            💡 <strong>Hỗ trợ việc làm thêm:</strong> Học sinh đi làm thêm 48h/2 tuần có thể tự chi trả 100% tiền ăn ở sinh hoạt tại Úc.
+          </div>
+          <button onclick="openConsultModal('Nhận bảng dự toán chi tiết du học Úc', 'Úc', false)" class="whitespace-nowrap px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-lg text-xs transition-colors shadow">
+            Tải Bảng Dự Toán (PDF/Zalo) &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHẦN 3: ĐẠI HỌC TIÊU BIỂU TẠI ÚC -->
+  <section id="chon-truong" class="py-16 bg-white scroll-mt-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full">Trường Đại Học Đối Tác</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-navy font-heading mt-3">
+          Top Các Trường Đại Học Hàng Đầu Nước Úc
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- School 1: Monash -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800 uppercase">Top 42 Thế Giới • Nhóm Go8</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Đại Học Monash (Monash University)</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Melbourne, Bang Victoria</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Thành viên nhóm 8 trường ĐH nghiên cứu tinh hoa (Group of Eight). Nổi tiếng về Kinh tế, Dược học (Top 2 thế giới), Kỹ thuật & CNTT.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">42.000 - 49.000 AUD/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">Đến 100% học phí</strong></div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Đại học Monash Úc', 'Tư vấn Monash')" class="w-full py-2.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold rounded-xl text-xs transition-colors">Tư Vấn Hồ Sơ Monash</button>
+        </div>
+
+        <!-- School 2: Deakin -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800 uppercase">Top 1% Thế Giới • Hài Lòng #1</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Đại Học Deakin (Deakin University)</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Melbourne & Geelong, Bang Victoria</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Trường ĐH số 1 bang Victoria về mức độ hài lòng của sinh viên. Thế mạnh Khoa học Thể thao, Y tá điều dưỡng, Khoa học Máy tính.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">34.000 - 41.000 AUD/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">50% - 100% Vice-Chancellor</strong></div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Đại học Deakin Úc', 'Tư vấn Deakin')" class="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs transition-colors">Săn Học Bổng Deakin 50-100%</button>
+        </div>
+
+        <!-- School 3: Western Sydney -->
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-amber-400 p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 uppercase">Top 2% Thế Giới • Học Phí Rất Tốt</span>
+            <h3 class="text-lg font-bold text-brand-navy font-heading mt-1">Đại Học Western Sydney (WSU)</h3>
+            <p class="text-xs text-slate-500 mb-3">📍 Sydney, Bang New South Wales</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Tọa lạc tại khu vực phát triển kinh tế nhanh nhất Sydney. Chi phí hợp lý, học bổng tự động từ 3.000 - 6.000 AUD/năm xét trên điểm học bạ.
+            </p>
+            <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mb-4">
+              <div class="flex justify-between"><span>Học phí:</span> <strong class="text-amber-700">29.000 - 35.000 AUD/năm</strong></div>
+              <div class="flex justify-between"><span>Học bổng:</span> <strong class="text-emerald-600">3.000 - 6.000 AUD/năm hoặc 50%</strong></div>
+            </div>
+          </div>
+          <button onclick="openConsultModal('Đại học Western Sydney', 'Tư vấn WSU')" class="w-full py-2.5 bg-brand-navy hover:bg-brand-navyDark text-white font-bold rounded-xl text-xs transition-colors">Tư Vấn Hồ Sơ WSU</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navyDark text-slate-300 pt-14 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-amber-500 flex items-center justify-center text-slate-950 font-bold">HL</div>
+            <div>
+              <div class="font-extrabold text-white text-base font-heading">HẰNG LƯƠNG EDU</div>
+              <div class="text-[10px] text-amber-400 font-bold tracking-wider">AUSTRALIA EDUCATION EXPERT</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            20 năm uy tín đồng hành cùng du học sinh Úc. Đại diện tuyển sinh chính thức của hơn 50+ trường Đại học, Cao đẳng tại Úc.
+          </p>
+          <div class="text-xs text-slate-400">
+            <strong>Hotline 24/7:</strong> <a href="tel:0908558959" class="text-amber-400 font-bold">0908 558 959</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Quốc Gia Trọng Điểm</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="/quoc-gia/uc" class="text-amber-300 font-bold">&rarr; Du học Úc (Australia)</a></li>
+            <li><a href="/quoc-gia/malaysia" class="hover:text-amber-400 transition-colors">&rarr; Du học Malaysia</a></li>
+            <li><a href="/quoc-gia/singapore" class="hover:text-amber-400 transition-colors">&rarr; Du học Singapore</a></li>
+            <li><a href="/quoc-gia/philippines" class="hover:text-amber-400 transition-colors">&rarr; Du học Philippines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Chuyên Mục Hữu Ích</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="/hoc-bong" class="hover:text-amber-400 transition-colors">&rarr; Săn học bổng 100%</a></li>
+            <li><a href="/truong-hoc" class="hover:text-amber-400 transition-colors">&rarr; Danh sách đại học Úc</a></li>
+            <li><a href="/tin-du-hoc" class="hover:text-amber-400 transition-colors">&rarr; Kinh nghiệm làm bài thi GS</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 font-heading border-l-2 border-amber-500 pl-2.5">Trụ Sở & Chi Nhánh</h4>
+          <div class="space-y-2.5 text-xs text-slate-400">
+            <p><strong>TP.HCM:</strong> 1086 đường 3/2, P.12, Q.11, TP.HCM</p>
+            <p><strong>Lâm Đồng:</strong> Số 12 Nguyễn Công Trứ, TP. Đà Lạt</p>
+            <p><strong>Tây Ninh:</strong> 25 Đường số 3, TP. Tây Ninh</p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 flex justify-between items-center text-xs text-slate-500">
+        <p>© 2004 - 2026 Du Học Quốc Tế Hằng Lương. Bảo lưu mọi quyền.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="consult-modal" class="modal-overlay hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="document.getElementById('consult-modal').classList.add('hidden'); document.body.style.overflow='auto';" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold cursor-pointer">&times;</button>
+      <div class="mb-5">
+        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Tư Vấn 1:1 Du Học Úc</span>
+        <h3 id="consult-modal-title" class="text-xl font-black text-brand-navy font-heading mt-1">Đăng Ký Tư Vấn & Thẩm Định Visa Úc</h3>
+      </div>
+      <form class="lead-form space-y-3.5">
+        <input type="hidden" name="country" value="Úc">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Họ và tên *</label>
+          <input type="text" name="fullname" required placeholder="Nguyễn Văn A" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Số điện thoại *</label>
+            <input type="tel" name="phone" required placeholder="0908 xxx xxx" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Email</label>
+            <input type="email" name="email" placeholder="email@gmail.com" class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Ghi chú hoặc câu hỏi</label>
+          <input type="text" name="note" placeholder="Ví dụ: Xin học bổng Deakin ngành IT..." class="w-full border border-slate-300 px-3.5 py-2.5 rounded-lg text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none">
+        </div>
+        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-sm transition-colors shadow">
+          Xác Nhận Đăng Ký Tư Vấn
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="/assets/js/main.js"></script>
+
+  <script>
+    const auRates = {
+      go8: 45000,
+      atn: 36000,
+      regional: 28000
+    };
+    const auLiving = {
+      metro: 26000,
+      regional: 21000
+    };
+    const AUD_RATE = 16500;
+
+    function updateAuCalculator() {
+      const type = document.getElementById('au-calc-type').value;
+      const city = document.getElementById('au-calc-city').value;
+
+      const audTuition = auRates[type] || 36000;
+      const audLiving = auLiving[city] || 25000;
+      const totalAud = audTuition + audLiving;
+
+      document.getElementById('au-res-tuition-vnd').textContent = (audTuition * AUD_RATE).toLocaleString('vi-VN') + ' VNĐ';
+      document.getElementById('au-res-tuition-aud').textContent = `~ ${audTuition.toLocaleString()} AUD / năm`;
+      document.getElementById('au-res-living-vnd').textContent = (audLiving * AUD_RATE).toLocaleString('vi-VN') + ' VNĐ';
+      document.getElementById('au-res-living-aud').textContent = `~ ${audLiving.toLocaleString()} AUD / năm`;
+      document.getElementById('au-res-total-vnd').textContent = (totalAud * AUD_RATE).toLocaleString('vi-VN') + ' VNĐ';
+    }
+
+    document.getElementById('au-calc-type')?.addEventListener('change', updateAuCalculator);
+    document.getElementById('au-calc-city')?.addEventListener('change', updateAuCalculator);
+  </script>
+</body>
+</html>
