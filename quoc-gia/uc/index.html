@@ -310,20 +310,99 @@
     </div>
   </section>
 
-  <!-- STICKY SUB-NAV -->
-  <nav class="sticky top-[68px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm py-2 px-4 overflow-x-auto no-scrollbar">
-    <div class="max-w-7xl mx-auto flex items-center gap-2 text-xs font-bold text-slate-700 whitespace-nowrap">
-      <a href="#tong-quan" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors flex items-center gap-1.5 text-amber-700 bg-amber-50">
-        <span>📖</span> Giới thiệu & Hệ thống GD
-      </a>
-      <a href="#chinh-sach-moi" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">📜 Visa 500 & Bài thi GS</a>
-      <a href="#du-toan-chi-phi" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">💰 Dự toán chi phí</a>
-      <a href="#chon-truong" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">🏫 Đại học Go8 & ATN</a>
-      <a href="#hoc-bong" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">🎁 Học bổng 20% - 100%</a>
-      <a href="#dinh-cu" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">🎯 Ngành ưu tiên định cư</a>
-      <a href="#kinh-nghiem" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 hover:text-amber-600 transition-colors">💡 Hỏi đáp & Kinh nghiệm</a>
+  <!-- ==================== MAIN CONTENT WITH LEFT SIDEBAR LAYOUT ==================== -->
+  <div class="max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    
+    <!-- MỤC LỤC DI ĐỘNG CHO PHỤ HUYNH (MÀN HÌNH NHỎ) -->
+    <div class="xl:hidden mb-6">
+      <details class="group bg-white rounded-2xl border-2 border-amber-400/80 shadow-md p-4 transition-all" id="mobile-toc-details">
+        <summary class="flex items-center justify-between font-extrabold text-brand-navy text-sm sm:text-base cursor-pointer list-none select-none">
+          <span class="flex items-center gap-2.5">
+            <span class="w-8 h-8 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center text-sm font-black shadow-sm">📋</span>
+            <span>MỤC LỤC CẨM NANG (Chạm để xem nhanh các mục)</span>
+          </span>
+          <span class="w-7 h-7 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center text-sm group-open:rotate-180 transition-transform">▾</span>
+        </summary>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4 pt-3 border-t border-slate-100 text-sm font-bold text-slate-700">
+          <a href="#tong-quan" onclick="document.getElementById('mobile-toc-details').removeAttribute('open')" class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-700 flex items-center gap-2.5 border border-slate-200">
+            <span>📖</span> 1. Giới thiệu & Hệ thống GD (AQF)
+          </a>
+          <a href="#chinh-sach-moi" onclick="document.getElementById('mobile-toc-details').removeAttribute('open')" class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-700 flex items-center gap-2.5 border border-slate-200">
+            <span>📜</span> 2. Visa 500 & Tiêu chí GS 2026
+          </a>
+          <a href="#du-toan-chi-phi" onclick="document.getElementById('mobile-toc-details').removeAttribute('open')" class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-700 flex items-center gap-2.5 border border-slate-200">
+            <span>💰</span> 3. Dự toán chi phí trọn gói
+          </a>
+          <a href="#chon-truong" onclick="document.getElementById('mobile-toc-details').removeAttribute('open')" class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-700 flex items-center gap-2.5 border border-slate-200">
+            <span>🏫</span> 4. Đại học Go8 & ATN Úc
+          </a>
+        </div>
+      </details>
     </div>
-  </nav>
+
+    <!-- 2 CỘT: TRÁI = MENU STICKY, PHẢI = NỘI DUNG -->
+    <div class="flex flex-col xl:flex-row gap-8 items-start">
+      
+      <!-- CỘT TRÁI: STICKY SIDEBAR NAVIGATION -->
+      <aside class="hidden xl:block w-72 2xl:w-80 flex-shrink-0 sticky top-[84px] z-30 self-start">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xl p-5 space-y-4 max-h-[calc(100vh-104px)] overflow-y-auto no-scrollbar">
+          
+          <div class="pb-3 border-b border-slate-100">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-black uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200/60">Cẩm nang du học</span>
+              <span class="text-[10px] font-extrabold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">Australia</span>
+            </div>
+            <h3 class="text-base font-black text-brand-navy font-heading flex items-center gap-2">
+              <span>📋</span> Mục Lục Cẩm Nang
+            </h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Dành cho Phụ huynh & Học sinh</p>
+          </div>
+
+          <nav class="space-y-1 text-xs font-bold text-slate-700" id="desktop-toc">
+            <a href="#tong-quan" class="toc-link group flex items-center gap-2.5 p-2.5 rounded-xl transition-all hover:bg-amber-50 hover:text-amber-800 text-slate-700 border border-transparent">
+              <span class="w-6 h-6 rounded-md bg-blue-100 text-blue-800 flex items-center justify-center text-xs font-bold flex-shrink-0">📖</span>
+              <span class="text-xs font-bold leading-tight">1. Giới thiệu & Hệ thống GD</span>
+            </a>
+
+            <a href="#chinh-sach-moi" class="toc-link group flex items-center gap-2.5 p-2.5 rounded-xl transition-all hover:bg-amber-50 hover:text-amber-800 text-slate-700 border border-transparent">
+              <span class="w-6 h-6 rounded-md bg-slate-100 text-slate-700 flex items-center justify-center text-xs font-bold flex-shrink-0">📜</span>
+              <span class="text-xs font-bold leading-tight">2. Visa 500 & Bài thi GS</span>
+            </a>
+
+            <a href="#du-toan-chi-phi" class="toc-link group flex items-center gap-2.5 p-2.5 rounded-xl transition-all hover:bg-amber-50 hover:text-amber-800 text-slate-700 border border-transparent">
+              <span class="w-6 h-6 rounded-md bg-emerald-100 text-emerald-800 flex items-center justify-center text-xs font-bold flex-shrink-0">💰</span>
+              <span class="text-xs font-bold leading-tight">3. Dự toán chi phí trọn gói</span>
+            </a>
+
+            <a href="#chon-truong" class="toc-link group flex items-center gap-2.5 p-2.5 rounded-xl transition-all hover:bg-amber-50 hover:text-amber-800 text-slate-700 border border-transparent">
+              <span class="w-6 h-6 rounded-md bg-amber-100 text-amber-800 flex items-center justify-center text-xs font-bold flex-shrink-0">🏫</span>
+              <span class="text-xs font-bold leading-tight">4. Đại học Go8 & ATN Úc</span>
+            </a>
+          </nav>
+
+          <div class="pt-3 border-t border-slate-100 space-y-2">
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50/50 rounded-xl p-3 border border-amber-200/80">
+              <div class="flex items-center gap-1.5 text-[11px] font-extrabold text-amber-900 uppercase">
+                <span>🛡️</span> Hotline phụ huynh
+              </div>
+              <a href="tel:0908558959" class="text-base font-black text-brand-navy hover:text-amber-600 block mt-0.5 tracking-tight">
+                0908 558 959
+              </a>
+              <span class="text-[10px] text-slate-500 font-medium">Hỗ trợ 24/7 • Miễn phí cước</span>
+            </div>
+
+            <button onclick="openConsultModal('Nhận Bảng Học Phí Từng Trường Úc')" class="w-full py-2.5 px-3 bg-brand-navy hover:bg-brand-navyDark text-amber-400 font-extrabold rounded-xl text-xs shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer">
+              <span>📥</span>
+              <span>Nhận Bảng Học Phí (PDF)</span>
+            </button>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- CỘT PHẢI: TOÀN BỘ NỘI DUNG -->
+      <main class="flex-1 min-w-0 space-y-12 w-full">
 
   <!-- ==================== PHẦN MỞ ĐẦU: GIỚI THIỆU - HỆ THỐNG GIÁO DỤC - BẠN SẼ HỌC GÌ ==================== -->
   <section id="tong-quan" class="py-16 bg-white scroll-mt-28 border-b border-slate-100">
@@ -597,6 +676,14 @@
       </div>
     </div>
   </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- NÚT NỔI FLOATING TOC Ở GÓC DƯỚI BÊN TRÁI MÀN HÌNH DI ĐỘNG -->
+  <button onclick="const dt = document.getElementById('mobile-toc-details'); if(dt) { dt.open = true; dt.scrollIntoView({behavior: 'smooth'}); }" class="xl:hidden fixed bottom-6 left-4 z-40 bg-brand-navy text-amber-400 font-black px-4 py-2.5 rounded-full shadow-2xl border-2 border-amber-400/80 flex items-center gap-2 text-xs hover:scale-105 active:scale-95 transition-all cursor-pointer">
+    <span>📋</span> Mục Lục
+  </button>
 
   <!-- FOOTER -->
   <footer class="bg-brand-navyDark text-slate-300 pt-14 pb-8 border-t border-slate-800">
@@ -719,6 +806,35 @@
 
     document.getElementById('au-calc-type')?.addEventListener('change', updateAuCalculator);
     document.getElementById('au-calc-city')?.addEventListener('change', updateAuCalculator);
+
+    // Scrollspy cho Menu Mục Lục Cột Trái
+    const tocLinks = document.querySelectorAll('#desktop-toc .toc-link');
+    const trackedSections = document.querySelectorAll('main section[id]');
+
+    function updateActiveToc() {
+      let currentId = '';
+      trackedSections.forEach(sec => {
+        const top = sec.offsetTop - 140;
+        if (window.scrollY >= top) {
+          currentId = sec.getAttribute('id');
+        }
+      });
+
+      tocLinks.forEach(link => {
+        const isActive = link.getAttribute('href') === '#' + currentId;
+        if (isActive) {
+          link.classList.add('bg-brand-navy', 'text-amber-400', 'font-extrabold', 'shadow-sm');
+          link.classList.remove('text-slate-700', 'hover:bg-amber-50');
+        } else {
+          link.classList.remove('bg-brand-navy', 'text-amber-400', 'font-extrabold', 'shadow-sm');
+          link.classList.add('text-slate-700');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveToc, { passive: true });
+    document.addEventListener('DOMContentLoaded', updateActiveToc);
+    updateActiveToc();
   </script>
 </body>
 </html>
